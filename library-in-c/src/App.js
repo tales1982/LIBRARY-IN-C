@@ -1,5 +1,6 @@
 import Header from "./Components/Header"
 import GlobalStyle from "./globalStyles"
+import SectionHome from "./Components/SectionHome/index"
 import { Container } from "./Components/Container/styles"
 
 function App() {
@@ -7,12 +8,7 @@ function App() {
   <GlobalStyle />
   <Header />
   <Container>
-    <aside>
-      ola
-    </aside>
-    <section>
-      texte
-    </section>
+  <SectionHome />
   </Container>
   </>
 }
