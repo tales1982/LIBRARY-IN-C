@@ -1,14 +1,22 @@
-import React from 'react';
-import { HeaderStyles, Nav } from './styles';
+import React from 'react'
+import * as S from './styles'
 
 const Header = () => {
   return (
-    <HeaderStyles>
-      <Nav>
-        <h1>Ola teste</h1>
-      </Nav>
-    </HeaderStyles>
-  );
-};
+    <S.HeaderStyles>
+      <S.SpanImg>
+        <img src="img/logo.png" alt="Logo Tales Technology" />
+      </S.SpanImg>
+      <S.Nav>
+        <S.Ul>
+          <li>MENU-1</li>
+          <li>MENU-2</li>
+          <li>MENU-3</li>
+          <li>MENU-4</li>
+        </S.Ul>
+      </S.Nav>
+    </S.HeaderStyles>
+  )
+}
 
-export default Header;
+export default Header
