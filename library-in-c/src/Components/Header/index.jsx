@@ -1,5 +1,6 @@
 import React from 'react'
 import * as S from './styles'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -9,7 +10,8 @@ const Header = () => {
       </S.SpanImg>
       <S.Nav>
         <S.Ul>
-          <li>TOOLS</li>
+          <Link to="/">HOME</Link>
+          <Link to="/SectionTools"> TOOLS</Link>
           <li>LIBFT</li>
           <li>MENU-3</li>
           <li>MENU-4</li>

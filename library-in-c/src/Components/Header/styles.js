@@ -1,4 +1,4 @@
-import { Colors } from '../../globalStyles'
+import { Colors, Fonts } from '../../globalStyles'
 import styled from 'styled-components'
 
 export const HeaderStyles = styled.header`
@@ -8,9 +8,8 @@ export const HeaderStyles = styled.header`
   align-items: center;
   justify-content: space-around;
   background-color: ${Colors.secondfund};
-  width: 100%;
+  width: 100vw;
   height: 100px;
-  color: ${Colors.textDestac};
   z-index: 1000; /* Ajuste o valor conforme necessário para garantir que seja maior que o z-index da SectionStyle */
 `
 export const SpanImg = styled.span`
@@ -27,6 +26,16 @@ export const Ul = styled.ul`
   justify-content: space-around;
   font-weight: bold;
   font-size: 18px;
+  
+  li{
+    text-decoration: none;
+  }
+
+  a{
+    text-decoration: none;
+    color: ${Colors.textDestac};
+    font-family: ${Fonts.fontDestaque};
+  }
 
 @media (max-width: 764px) {
   display: none;

@@ -1,7 +1,6 @@
 import GlobalStyle from "./globalStyles"
 import Header from "./Components/Header"
 import SectionHome from "./Components/SectionHome/index"
-import SectionTools from "./Components/Tools/index"
 
 
 function App() {
@@ -9,8 +8,6 @@ function App() {
   <GlobalStyle />
   <Header />
   <SectionHome />
-  <SectionTools />
-  
   </>
 }
 
