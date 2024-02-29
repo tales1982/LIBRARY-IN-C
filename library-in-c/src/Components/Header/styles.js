@@ -16,7 +16,6 @@ export const SpanImg = styled.span`
   & img {
     height: 100px;
   }
-  
 `
 
 export const Ul = styled.ul`
@@ -26,22 +25,21 @@ export const Ul = styled.ul`
   justify-content: space-around;
   font-weight: bold;
   font-size: 18px;
+
   
-  li{
+  li {
     text-decoration: none;
   }
 
-  a{
+  a {
     text-decoration: none;
     color: ${Colors.textDestac};
     font-family: ${Fonts.fontDestaque};
   }
 
-@media (max-width: 764px) {
-  display: none;
-  
-}
+  @media (max-width: 764px) {
+    display: none;
+  }
 `
 
-export const Nav = styled.nav`
-`
+export const Nav = styled.nav``

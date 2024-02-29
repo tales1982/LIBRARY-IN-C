@@ -15,16 +15,12 @@ export const SectionStyle = styled.section`
   flex-direction: column;
   align-items: center;
   position: relative;
-  display: flex;
   justify-content: center;
-  flex-direction: column;
-  width: 100%;
+  width: 100vw;
   height:calc( 100vh - 100px);
   background-color: #151820;
-  margin-top: 100px; /* Adicione um margin-top correspondente à altura do seu cabeçalho fixo */
-  padding: 30px;
-  z-index: 999; /* Ajuste o valor para ser menor que o z-index do HeaderStyles */
-
+  margin-top: 100px;
+  z-index: 1000;
   @media (max-width: 764px) {
     height: auto;
   }
@@ -41,7 +37,7 @@ export const Img = styled.img`
 `
 
 export const Span = styled.span`
- 
+
 `
 
 export const H1 = styled.h1`
