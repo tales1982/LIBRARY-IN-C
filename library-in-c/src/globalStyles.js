@@ -24,5 +24,6 @@ export const Colors = {
   mainColor: '#14161a',
   secondfund:'#0e1018',
   texto:'#fff',
-  textDestac: '#6cfaee'
+  textDestac: '#6cfaee',
+  colorRed: '#ca2314'
 }

@@ -1,13 +1,13 @@
 import React from "react";
-import { Img, H1, SectionStyle} from './styles'
+import { Img, H1, SectionStyle, Span} from './styles'
 
 const SectionHome = () => {
     return(
         <>
         <SectionStyle>
-          <span>
+          <Span>
              <Img src="img/C.jpg" alt="library C" />
-          </span>
+          </Span>
            <H1>Explore the C language, unveiling the transformative power of its libraries. Every line of code, a journey in pursuit of excellence in programming!</H1>
         </SectionStyle>
 

@@ -1,15 +1,16 @@
-import Header from "./Components/Header"
 import GlobalStyle from "./globalStyles"
+import Header from "./Components/Header"
 import SectionHome from "./Components/SectionHome/index"
-import { Container } from "./Components/Container/styles"
+import SectionTools from "./Components/Tools/index"
+
 
 function App() {
   return <>
   <GlobalStyle />
   <Header />
-  <Container>
   <SectionHome />
-  </Container>
+  <SectionTools />
+  
   </>
 }
 
