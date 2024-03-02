@@ -3,6 +3,7 @@ import GlobalStyle from './globalStyles'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './page/home'
 import Tools from './page/Tools/index'
+import Libft from './page/Libft'
 
 const rotas = createBrowserRouter([
   {
@@ -10,8 +11,12 @@ const rotas = createBrowserRouter([
     element: <Home />
   },
   {
-    path: 'Tools',
+    path: '/Tools',
     element: <Tools />
+  },
+  {
+    path: '/Libft',
+    element: <Libft />
   }
 ])
 

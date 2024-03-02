@@ -11,6 +11,12 @@ export const HeaderStyles = styled.header`
   width: 100vw;
   height: 100px;
   z-index: 1000; /* Ajuste o valor conforme necessário para garantir que seja maior que o z-index da SectionStyle */
+
+  @media (max-width: 764px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 `
 export const SpanImg = styled.span`
   & img {
@@ -26,7 +32,6 @@ export const Ul = styled.ul`
   font-weight: bold;
   font-size: 18px;
 
-  
   li {
     text-decoration: none;
   }

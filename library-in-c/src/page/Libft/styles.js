@@ -5,9 +5,9 @@ export const Div = styled.div`
   height: 10vh;
 `
 
-export const ContainerTools = styled.section`
+export const ContainerLibft = styled.section`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   position: relative;
   display: flex;

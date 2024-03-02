@@ -23,6 +23,7 @@ export const SectionStyle = styled.section`
   z-index: 1000;
   @media (max-width: 764px) {
     height: auto;
+    padding-top: 30px;
   }
 `
 
@@ -46,5 +47,6 @@ export const H1 = styled.h1`
   padding-top: 30px;
   @media (max-width: 764px) {
     font-size: 16px;
+    padding: 20px;
   }
 `
