@@ -6,6 +6,8 @@ export const footerStyles = styled.footer`
   align-items: center;
   justify-content: space-around;
   background-color: ${Colors.secondfund};
+  position: relative; /* Adicione esta linha */
+  z-index: 1000; /* ajuste conforme necessário */
   border-top: 1px solid gray;
   width: 100vw;
   height: 60px;

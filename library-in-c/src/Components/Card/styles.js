@@ -25,9 +25,6 @@ export const CardBox = styled.div`
     transform: rotate3d(0.5, 1, 0, 30deg);
     cursor: pointer;
   }
-
-  @media (max-width: 764px) {
-  }
 `
 
 export const ContentBox = styled.div`
