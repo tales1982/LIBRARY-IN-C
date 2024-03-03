@@ -4,6 +4,7 @@ import Home from './page/home';
 import Tools from './page/Tools/index';
 import Libft from './page/Libft';
 import HeaderFile from './page/HeaderFiles';
+import Struct from './page/Struct';
 
 const rotas = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const rotas = createBrowserRouter([
   {
     path: '/HeaderFiles',
     element: <HeaderFile />
+  },
+  {
+    path: '/Struct',
+    element: <Struct />
   }
 ]);
 

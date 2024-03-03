@@ -29,5 +29,8 @@ export const Colors = {
   textBlue: '#6dace3',
   textREd: '#d66b65',
   textGray: '#6b727b',
-  textREd2: '#ca2314'
+  textREd2: '#ca2314',
+  bgSection: '#151820',
+  textYellow: '#D98B0C',
+  textGreen:'#029A68'
 }

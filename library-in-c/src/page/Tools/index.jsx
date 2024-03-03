@@ -21,7 +21,7 @@ const SectionTools = () => {
           <Card
             title="C Structures"
             text="A structure is a feature that allows grouping different data types under a single name."
-            linkTo="/"
+            linkTo="/Struct"
             shadowColor="rgba(0, 255, 0, 0.973)" // Cor da sombra para o primeiro Card
             imgSrc="img/struct.png"
             alt="C Structures"

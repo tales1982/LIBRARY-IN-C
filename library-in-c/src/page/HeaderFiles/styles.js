@@ -22,7 +22,7 @@ export const ContaineHeadeFile = styled.section`
   width: 100%;
   height: auto;
   color: #fff;
-  background-color: #151820;
+  background-color: ${Colors.bgSection};
 
 `
 export const ContainerInfo = styled.section`

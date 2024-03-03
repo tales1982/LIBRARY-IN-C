@@ -18,7 +18,7 @@ export const SectionStyle = styled.section`
   justify-content: center;
   width: 100vw;
   height: calc(100vh - 200px);
-  background-color: #151820;
+  background-color: ${Colors.bgSection};
   margin-top: 100px;
   z-index: 1000;
   @media (max-width: 764px) {
