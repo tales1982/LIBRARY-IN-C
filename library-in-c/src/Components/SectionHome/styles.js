@@ -24,10 +24,10 @@ export const SectionStyle = styled.section`
   @media (max-width: 764px) {
     height: 100;
     padding-top: 0px;
-    height: calc(100vh - 150px);
+    height: calc(100vh - 100px);
   }
   @media (min-width: 765px) and (max-width: 1024px) {
-    padding: 30px;
+    padding: 0px;
   }
 `
 
