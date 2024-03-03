@@ -23,6 +23,7 @@ export const ContaineHeadeFile = styled.section`
   height: auto;
   color: #fff;
   background-color: #151820;
+
 `
 export const ContainerInfo = styled.section`
   display: flex;
@@ -34,6 +35,10 @@ export const ContainerInfo = styled.section`
   border-radius: 10px;
   box-shadow: 0px 20px 50px -25px rgba(0, 115, 255, 0.925);
   margin-bottom: 30px;
+  @media (max-width: 764px) {
+    width: 90vw;
+}
+
 `
 export const H1 = styled.h1`
   font-size: 34px;
@@ -41,8 +46,9 @@ export const H1 = styled.h1`
   color: ${Colors.textDestac};
   animation: ${shadowAnimation} 2s infinite alternate;
   filter: drop-shadow(10px 7px 50px var(--shadow-color));
+
   @media (max-width: 764px) {
-    height: 250px;
+    font-size: 20px;
   }
   /* Estilo para centralizar */
   margin: auto;
@@ -53,11 +59,18 @@ export const H3 = styled.h3`
   font-size: 22px;
   color: ${Colors.colorRed};
   font-family: ${Fonts.fontDestaque};
+
+  @media (max-width: 764px) {
+    font-size: 16px;
+}
 `
 
 export const Ol = styled.ol`
   padding-left: 100px;
   padding-bottom: 10px;
+  @media (max-width: 764px) {
+    padding-left: 10px;
+}
 `
 export const Li = styled.li`
   font-family: ${Fonts.fontDestaque};
@@ -68,6 +81,9 @@ export const Code = styled.div`
   display: flex;
   flex-direction: column;
   padding: 40px;
+  @media (max-width: 764px) {
+    padding: 0px;
+}
 `
 export const TextRed = styled.span`
   color: ${Colors.textREd};
@@ -95,4 +111,8 @@ export const P = styled.p`
 export const Span = styled.span`
   font-size: 16px;
   padding: 5px;
+
+  @media (max-width: 764px) {
+    font-size: 12px;
+}
 `
