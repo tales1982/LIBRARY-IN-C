@@ -13,6 +13,7 @@ const Header = () => {
           <Link to={'/'}>Home</Link>
           <Link to={'/Tools'}>Tools</Link>
           <Link to={'/Libft'}>Libft</Link>
+          <Link to={'/Libft'}>About-Me</Link>
           </S.Ul>
       </S.Nav>
     </S.HeaderStyles>
