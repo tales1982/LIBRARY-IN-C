@@ -28,7 +28,7 @@ export const CardBox = styled.div`
   }
 
   @media (max-width: 764px) {
-    margin-top: 200px;
+    margin-top: 300px;
 }
 `;
 

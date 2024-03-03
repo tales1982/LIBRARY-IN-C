@@ -23,7 +23,8 @@ export const SectionStyle = styled.section`
   z-index: 1000;
   @media (max-width: 764px) {
     height: 100;
-    padding-top: 30px;
+    padding-top: 0px;
+    height: calc(100vh - 150px);
   }
   @media (min-width: 765px) and (max-width: 1024px) {
     padding: 30px;
@@ -53,5 +54,6 @@ export const H1 = styled.h1`
   @media (max-width: 764px) {
     font-size: 16px;
     padding: 20px;
+    margin-top: 30px;
   }
 `
