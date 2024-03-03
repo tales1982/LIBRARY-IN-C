@@ -2,9 +2,13 @@ import styled from 'styled-components'
 
 export const Div = styled.div`
   width: 100vw;
-  margin-top: -70px;
-  height: calc(100vh + 450px);
+  height: 100vh;
   background-color: #151820;
+
+  @media (max-width: 764px) {
+    height: 100%;
+    margin-top: -100px;
+  }
 `
 
 export const ContainerTools = styled.section`
@@ -14,14 +18,12 @@ export const ContainerTools = styled.section`
   position: relative;
   display: flex;
   justify-content: center;
+  padding-top: 200px;
   width: 100%;
-  height: 100vh;
   color: #fff;
 
   @media (max-width: 764px) {
     display: flex;
     flex-direction: column;
-    margin-top: 150px;
-    padding-top: 400px;
   }
 `
