@@ -11,12 +11,11 @@ const shadowAnimation = keyframes`
   }
 `
 
-export const containerStruct = styled.section`
+export const containerMakefile = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
-
   width: 100;
   background-color: ${Colors.bgSection};
   color: #fff;
@@ -26,8 +25,6 @@ export const sectionDescrible = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80vw;
-
   margin-top: 100px;
 `
 export const Article = styled.article`
@@ -101,3 +98,30 @@ export const TextYellow = styled.span`
   color: ${Colors.textYellow};
   font-weight: 700;
 `
+export const SpanTab = styled.span`
+padding-left: 58px;
+`
+
+export const SpanTab2 = styled.span`
+padding-left: 58px;
+`
+
+export const SpanL = styled.span`
+line-height: 1.6;
+`
+export const Ol = styled.ol`
+padding-top: 50px;
+  padding-left: 100px;
+  padding-bottom: 10px;
+  @media (max-width: 764px) {
+    padding-left: 10px;
+}
+`
+export const Li = styled.li`
+  font-family: ${Fonts.fontHighlight};
+  padding-bottom: 4px;
+  line-height: 1.4;
+  font-weight: bold;
+  margin: 3px;
+`
+

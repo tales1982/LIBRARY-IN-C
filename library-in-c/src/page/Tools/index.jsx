@@ -30,10 +30,10 @@ const SectionTools = () => {
             title="Makefiles"
             text="
           Makefiles automate program compilation in Unix and related systems."
-            linkTo="/"
+            linkTo="/Makefile"
             shadowColor="rgba(255, 0, 0, 0.925)" // Cor da sombra para o segundo Card
             imgSrc="img/makefile.png"
-            alt="Makefiles"
+            alt="Makefile"
           />
         <Footer />
         </S.ContainerTools>

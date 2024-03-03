@@ -8,7 +8,7 @@ const Struct = () => {
       <Header />
       <S.containerStruct>
         <S.sectionDescrible>
-          <S.H2>Defining Structures:</S.H2>
+          <S.H1>Defining Structures:</S.H1>
           <S.P>
             Before creating structure variables, it is necessary to define their
             data type. The struct keyword is used to define a structure.
