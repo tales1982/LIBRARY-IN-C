@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../../Components/Header'
 import * as S from './styles'
+import Footer from '../../Components/Footer'
 
 const Struct = () => {
   return (
@@ -186,6 +187,7 @@ const Struct = () => {
           <br />
         </S.sectionDescrible>
       </S.containerStruct>
+      <Footer/>
     </>
   )
 }

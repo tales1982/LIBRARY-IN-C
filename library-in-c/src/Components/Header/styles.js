@@ -16,9 +16,6 @@ export const HeaderStyles = styled.header`
   @media (max-width: 764px) {
     display: flex;
     flex-direction: row;
-    &img{
-      display: none;
-    }
   }
 `
 export const SpanImg = styled.span`
@@ -27,11 +24,11 @@ export const SpanImg = styled.span`
   }
 
   @media (max-width: 764px) {
-
-    img{
-      display: none;
-    }
+    & img {
+    display: none;
   }
+  }
+
 `
 
 export const Ul = styled.ul`

@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../../Components/Header'
 import * as S from './styles'
+import Footer from '../../Components/Footer'
 
 const Makefile = () => {
   return (
@@ -120,8 +121,17 @@ const Makefile = () => {
             </S.Li>
           </S.Ol>
           <br />
-          <br />
+          <S.Ol>
+          <S.H2>How to Use:</S.H2>
+            <S.Li>° Run make to build the library.</S.Li>
+            <S.Li>° Run make clean to remove object files.</S.Li>
+            <S.Li>° Run make fclean to remove object files and the library.</S.Li>
+            <S.Li>° Run make re to rebuild the library from scratch.</S.Li>
+          </S.Ol>
+          <S.P>This Makefile is designed for a C library (libft.a) and follows common conventions. The all rule is the default target, so simply running make will build the library. Adjustments can be made to include additional rules or accommodate specific project requirements.</S.P>
         </S.sectionDescrible>
+        <br />
+        <Footer/>
       </S.containerMakefile>
     </>
   )

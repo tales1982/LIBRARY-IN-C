@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../../Components/Header'
+import Footer from '../../Components/Footer/index'
 import * as S from './styles'
 
 
@@ -178,6 +179,7 @@ const HeaderFile = () => {
             </S.TextRed>
           </S.Code>
         </S.ContainerInfo>
+        <Footer />
       </S.ContaineHeadeFile>
     </>
   )

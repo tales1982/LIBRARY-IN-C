@@ -17,7 +17,7 @@ export const SectionStyle = styled.section`
   position: relative;
   justify-content: center;
   width: 100vw;
-  height: calc(100vh - 200px);
+  height: calc(100vh - 150px);
   background-color: ${Colors.bgSection};
   margin-top: 100px;
   z-index: 1000;

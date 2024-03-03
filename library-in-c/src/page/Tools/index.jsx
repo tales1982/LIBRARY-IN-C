@@ -7,8 +7,8 @@ import Footer from '../../Components/Footer/index'
 const SectionTools = () => {
   return (
     <>
+      <Header />
       <S.Div>
-        <Header />
         <S.ContainerTools>
           <Card
             title="Header files"
@@ -35,16 +35,11 @@ const SectionTools = () => {
             imgSrc="img/makefile.png"
             alt="Makefile"
           />
-        <Footer />
         </S.ContainerTools>
-
       </S.Div>
+      <Footer />
     </>
   )
 }
 
 export default SectionTools
-/*
-Aqui coloco o caminho que e pra direcionar
-<Card title="° Título" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, sint." linkTo="/" />
-*/

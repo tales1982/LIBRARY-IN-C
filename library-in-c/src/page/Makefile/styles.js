@@ -68,6 +68,7 @@ font-family: ${Fonts.fontDestaque};
 `
 export const P = styled.p`
 font-size: 16px;
+padding: 10px;
 font-weight: bold;
 max-width: 900px;
 flex-wrap: wrap;

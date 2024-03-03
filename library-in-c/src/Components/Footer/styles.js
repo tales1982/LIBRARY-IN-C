@@ -8,15 +8,10 @@ export const footerStyles = styled.footer`
   background-color: ${Colors.secondfund};
   border-top: 1px solid gray;
   width: 100vw;
-  height: 100px;
-  position: fixed;
+  height: 60px;
   bottom: 0;
   left: 0;
   color: ${Colors.textDestac};
-
-@media (max-width: 764px) {
-  display: none;
-}
 
 `;
 
