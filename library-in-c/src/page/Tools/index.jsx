@@ -10,6 +10,7 @@ const SectionTools = () => {
       <S.Div>
         <Header />
         <S.ContainerTools>
+
           <Card
             title="Header files"
             text="This page will provide explanations about some of the concepts applied in header files."
@@ -35,8 +36,9 @@ const SectionTools = () => {
             imgSrc="img/makefile.png"
             alt="Makefiles"
           />
+          <Footer />
         </S.ContainerTools>
-        <Footer />
+
       </S.Div>
     </>
   )

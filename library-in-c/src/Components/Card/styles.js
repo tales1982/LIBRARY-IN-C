@@ -25,10 +25,11 @@ export const CardBox = styled.div`
   &:hover{
     background-position: 80% 20%;
     transform: rotate3d(0.5,1,0,30deg);
+    cursor: pointer;
   }
 
   @media (max-width: 764px) {
-    margin-top: 300px;
+
 }
 `;
 
@@ -48,7 +49,7 @@ export const ContentBox = styled.div`
 export const CardTitle = styled.h2`
   color: #fff;
   font-size: 24px;
-  font-weight: 800px;
+  font-weight: 800;
   transition: all 0.5s ease-in-out;
   transform: translate3d(0px, 0px, 20px);
 
@@ -84,6 +85,7 @@ a{
 &:hover{
     transform: translate3d(0px, 0px,50px);
   }
+
 `
 
 export const Icon = styled.span`

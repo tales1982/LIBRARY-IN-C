@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Div = styled.div`
   width: 100vw;
   margin-top: -70px;
-  height: calc(100vh + 450px);
+  height: calc(100vh + 400px);
   background-color: #151820;
 `
 
@@ -17,10 +17,11 @@ export const ContainerTools = styled.section`
   width: 100%;
   height: 100vh;
   color: #fff;
-  /* Adicione um margin-top correspondente à altura do seu cabeçalho fixo */
-  /* Ajuste o valor para ser menor que o z-index do HeaderStyles */
+
   @media (max-width: 764px) {
     display: flex;
     flex-direction: column;
+    padding-top: 500px;
+
   }
 `
