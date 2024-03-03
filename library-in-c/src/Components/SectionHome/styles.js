@@ -27,7 +27,7 @@ export const SectionStyle = styled.section`
     height: calc(100vh - 100px);
   }
   @media (min-width: 765px) and (max-width: 1024px) {
-    padding: 0px;
+    padding-top: 50px;
   }
 `
 
@@ -55,5 +55,8 @@ export const H1 = styled.h1`
     font-size: 16px;
     padding: 20px;
     margin-top: 30px;
+  }
+  @media (min-width: 765px) and (max-width: 1024px) {
+    padding: 40px;
   }
 `

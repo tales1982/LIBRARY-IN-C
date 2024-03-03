@@ -21,7 +21,7 @@ export const ContainerTools = styled.section`
   @media (max-width: 764px) {
     display: flex;
     flex-direction: column;
-    margin-top: 130px;
+    margin-top: 150px;
     padding-top: 400px;
   }
 `
