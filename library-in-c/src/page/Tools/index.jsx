@@ -11,7 +11,7 @@ const SectionTools = () => {
       <Card
           title="Header files"
           text="This page will provide explanations about some of the concepts applied in header files."
-          linkTo="/"
+          linkTo="/HeaderFiles"
           shadowColor="rgba(238, 255, 0, 0.925)"
           imgSrc="img/iconH.webp"
         />

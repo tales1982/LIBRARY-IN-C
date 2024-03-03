@@ -14,7 +14,6 @@ const Header = () => {
           <Link to={'/'}>Home</Link>
           <Link to={'/Tools'}>Tools</Link>
           <Link to={'/Libft'}>Libft</Link>
-          <li>MENU-4</li>
           </S.Ul>
       </S.Nav>
     </S.HeaderStyles>
