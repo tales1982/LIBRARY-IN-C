@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Div = styled.div`
   width: 100vw;
   margin-top: -70px;
-  height: calc(100vh + 400px);
+  height: calc(100vh + 450px);
   background-color: #151820;
 `
 
@@ -21,7 +21,7 @@ export const ContainerTools = styled.section`
   @media (max-width: 764px) {
     display: flex;
     flex-direction: column;
-    padding-top: 500px;
-
+    margin-top: 130px;
+    padding-top: 400px;
   }
 `

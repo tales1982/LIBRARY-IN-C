@@ -15,8 +15,7 @@ export const footerStyles = styled.footer`
   color: ${Colors.textDestac};
 
 @media (max-width: 764px) {
-  width: 100vw;
-  height: 60px;
+  display: none;
 }
 
 `;
