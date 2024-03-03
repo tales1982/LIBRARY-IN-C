@@ -11,16 +11,26 @@ export const HeaderStyles = styled.header`
   width: 100vw;
   height: 100px;
   z-index: 1000; /* Ajuste o valor conforme necessário para garantir que seja maior que o z-index da SectionStyle */
+  border-bottom: 1px solid gray;
 
   @media (max-width: 764px) {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    &img{
+      display: none;
+    }
   }
 `
 export const SpanImg = styled.span`
   & img {
     height: 100px;
+  }
+
+  @media (max-width: 764px) {
+
+    img{
+      display: none;
+    }
   }
 `
 
@@ -43,8 +53,13 @@ export const Ul = styled.ul`
   }
 
   @media (max-width: 764px) {
-    display: none;
   }
 `
 
-export const Nav = styled.nav``
+export const Nav = styled.nav`
+width: 300px;
+flex-wrap: wrap;
+display: flex;
+align-items: center;
+justify-content: center;
+`

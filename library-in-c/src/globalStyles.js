@@ -25,5 +25,9 @@ export const Colors = {
   secondfund:'#0e1018',
   texto:'#fff',
   textDestac: '#6cfaee',
-  colorRed: '#ca2314'
+  colorRed: '#ca2314',
+  textBlue: '#6dace3',
+  textREd: '#d66b65',
+  textGray: '#6b727b',
+  textREd2: '#ca2314'
 }

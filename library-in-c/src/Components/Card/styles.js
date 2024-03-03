@@ -7,6 +7,8 @@ export const Card = styled.div`
   width: 250px;
   padding: 20px;
   perspective: 1000px;
+  @media (max-width: 764px) {
+}
 `;
 
 export const CardBox = styled.div`
@@ -24,6 +26,10 @@ export const CardBox = styled.div`
     background-position: 80% 20%;
     transform: rotate3d(0.5,1,0,30deg);
   }
+
+  @media (max-width: 764px) {
+    margin-top: 200px;
+}
 `;
 
 export const ContentBox = styled.div`
@@ -71,7 +77,7 @@ text-transform: uppercase;
 
 padding-top: 15px;
 transition: all 0.5s ease-in-out;
-transform: translate3d(0px, 0px0 20px);
+transform: translate3d(0px, 0px 20px);
 a{
   color: #0088ff;
 }
