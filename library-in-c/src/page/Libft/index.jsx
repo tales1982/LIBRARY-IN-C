@@ -12,7 +12,7 @@ const Libft = () => {
         <S.H1>Libft</S.H1>
         <S.ContainerButton>
           <S.ContainerLibft>
-            <Button text="ft_isalpha" shadowColor="rgba(255, 0, 0, 0.8)" />
+          <Button text="ft_isalpha" shadowColor="rgba(255, 0, 0, 0.8)" to="isalpha" />
             <Button text="ft_isdigit.c" shadowColor="rgba(0, 100, 0, 0.8)" />
             <Button text="ft_isalnum.c" shadowColor="rgba(0, 0, 139, 0.8)" />
             <Button text="ft_isascii.c" shadowColor="rgba(139, 139, 0, 0.8)" />

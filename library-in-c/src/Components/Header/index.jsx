@@ -6,15 +6,15 @@ const Header = () => {
   return (
     <S.HeaderStyles>
       <S.SpanImg>
-        <img src="img/logo.png" alt="Logo Tales Technology" />
+        <img src="/img/logo.png" alt="Logo Tales Technology" />
       </S.SpanImg>
       <S.Nav>
         <S.Ul>
           <Link to={'/'}>Home</Link>
           <Link to={'/Tools'}>Tools</Link>
           <Link to={'/Libft'}>Libft</Link>
-          <Link to={'/'}>About me</Link>
-          </S.Ul>
+          {/*<Link to={'/'}>In_production</Link>*/}
+        </S.Ul>
       </S.Nav>
     </S.HeaderStyles>
   )

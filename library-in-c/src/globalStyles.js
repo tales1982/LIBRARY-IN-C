@@ -19,11 +19,10 @@ export const Fonts = {
   fontDestaque: "Vollkorn, serif",
   fontHighlight: "Roboto, sans-serif"
 };
-
 export const Colors = {
   mainColor: '#14161a',
-  secondfund:'#0e1018',
-  texto:'#fff',
+  secondfund: '#0e1018',
+  texto: '#fff',
   textDestac: '#6cfaee',
   colorRed: '#ca2314',
   textBlue: '#6dace3',
@@ -32,5 +31,5 @@ export const Colors = {
   textREd2: '#ca2314',
   bgSection: '#151820',
   textYellow: '#D98B0C',
-  textGreen:'#029A68'
-}
+  textGreen: '#029A68',
+};

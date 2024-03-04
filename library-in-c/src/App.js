@@ -6,6 +6,7 @@ import Libft from './page/Libft';
 import HeaderFile from './page/HeaderFiles';
 import Struct from './page/Struct';
 import Makefile from './page/Makefile';
+import Isalpha from './page/Libft/isalpha';
 
 const rotas = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const rotas = createBrowserRouter([
   {
     path: '/Makefile',
     element: <Makefile />
+  },
+  {
+    path: 'Libft/isalpha',
+    element: <Isalpha />
   }
 ]);
 
