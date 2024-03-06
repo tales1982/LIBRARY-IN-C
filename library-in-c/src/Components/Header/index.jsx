@@ -5,9 +5,11 @@ import { Link } from 'react-router-dom'
 const Header = () => {
   return (
     <S.HeaderStyles>
-      <S.SpanImg>
-        <img src="/img/logo.png" alt="Logo Tales Technology" />
-      </S.SpanImg>
+        <Link to="/">
+        <S.SpanImg>
+          <img src="/img/logo.png" alt="Logo Tales Technology" />
+        </S.SpanImg>
+      </Link>
       <S.Nav>
         <S.Ul>
           <Link to={'/'}>Home</Link>

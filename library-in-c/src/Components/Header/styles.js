@@ -1,5 +1,5 @@
 import { Colors, Fonts } from '../../globalStyles'
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes } from 'styled-components'
 
 const moveBorderAnimation = keyframes`
   0% {
@@ -11,7 +11,7 @@ const moveBorderAnimation = keyframes`
   100% {
     transform: translateX(0);
   }
-`;
+`
 const moveBorderAnimation2 = keyframes`
   0% {
     transform: translateX(0);
@@ -33,7 +33,7 @@ const moveBorderAnimation2 = keyframes`
     transform: translateX(100%);
     background-color: purple;
   }
-`;
+`
 
 export const HeaderStyles = styled.header`
   position: fixed;
@@ -53,16 +53,16 @@ export const HeaderStyles = styled.header`
   }
 `
 export const SpanImg = styled.span`
+  cursor: pointer;
   & img {
     height: 100px;
   }
 
   @media (max-width: 764px) {
     & img {
-    display: none;
+      display: none;
+    }
   }
-  }
-
 `
 
 export const Ul = styled.ul`
@@ -102,15 +102,14 @@ export const Ul = styled.ul`
     }
   }
 
-
   @media (max-width: 764px) {
   }
 `
 
 export const Nav = styled.nav`
-width: 300px;
-flex-wrap: wrap;
-display: flex;
-align-items: center;
-justify-content: center;
+  width: 300px;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `
