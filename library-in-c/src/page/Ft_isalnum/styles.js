@@ -83,7 +83,7 @@ export const H3 = styled.h3`
   color: ${Colors.textDestac};
   padding-top: 4px;
   padding-bottom: 2px;
-  width: 69%;
+  width: 70%;
 `
 /*********Estilizacao do paragrafo ********************/
 export const P = styled.p`
