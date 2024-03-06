@@ -14,8 +14,8 @@ const SectionHome = () => {
           libraries. Every line of code, a journey in pursuit of excellence in
           programming!
         </H1>
+        <Footer />
       </SectionStyle>
-      <Footer />
     </>
   )
 }

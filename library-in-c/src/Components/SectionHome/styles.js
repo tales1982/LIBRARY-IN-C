@@ -14,30 +14,26 @@ export const SectionStyle = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   position: relative;
-  justify-content: center;
-  width: 100vw;
-  height: calc(100vh - 160px);
+  height: 100vh;
   background-color: ${Colors.bgSection};
-  margin-top: 100px;
-  z-index: 1000;
   @media (max-width: 764px) {
-    height: 100;
-    padding-top: 0px;
-    height: calc(100vh - 100px);
+
   }
   @media (min-width: 765px) and (max-width: 1024px) {
-    padding-top: 50px;
+
   }
 `
 
 export const Img = styled.img`
   height: 550px;
   border-radius: 50%;
+  margin-top: 140px;
   animation: ${shadowAnimation} 5s infinite alternate;
   filter: drop-shadow(10px 7px 50px var(--shadow-color));
   @media (max-width: 764px) {
-    height: 250px;
+    height: 280px;
   }
 
   @media (min-width: 765px) and (max-width: 1024px) {
@@ -53,8 +49,8 @@ export const H1 = styled.h1`
   padding-top: 30px;
   @media (max-width: 764px) {
     font-size: 16px;
-    padding: 20px;
-    margin-top: 30px;
+    padding: 0 10px;
+    margin: 0px;
   }
   @media (min-width: 765px) and (max-width: 1024px) {
     padding: 40px;

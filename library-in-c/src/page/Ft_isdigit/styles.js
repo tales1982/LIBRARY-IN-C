@@ -18,7 +18,6 @@ export const ContainerMain = styled.div`
   align-items: center;
   justify-content: space-between;
   position: relative;
-  display: flex;
   width: 100vw;
   height: 100vh;
   background-color: ${Colors.bgSection};
