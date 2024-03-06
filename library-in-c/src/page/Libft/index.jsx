@@ -26,7 +26,7 @@ const Libft = () => {
             shadowColor="rgba(0, 0, 139, 0.8)"
             to="/Ft_isalnum"
           />
-          <Button text="ft_isascii.c" shadowColor="rgba(139, 139, 0, 0.8)" />
+          <Button text="ft_isascii.c" shadowColor="rgba(139, 139, 0, 0.8)" to="/Ft_isascii"/>
         </S.containerButao>
         <S.containerButao>
           <Button text="ft_isprint.c" shadowColor="rgba(139, 0, 139, 0.8)" />

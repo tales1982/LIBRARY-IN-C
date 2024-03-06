@@ -22,18 +22,18 @@ const Ft_isdigit = () => {
         <br />
         <span>
           <S.TextRed>int</S.TextRed> <S.TextRed2>ft_isdigit</S.TextRed2>(
-          <S.TextRed> int </S.TextRed>i)
+          <S.TextRed> int </S.TextRed>i )
         </span>
         <span>{'{'}</span>
         <S.SpanTab>
           <S.TextBlue>while</S.TextBlue>( <S.TextGreen>{"'0'"}</S.TextGreen>
-          {' <'}= i && {' <'}= <S.TextGreen>{" '9' "}</S.TextGreen>)
+          {' <'}= i && {' <'}= <S.TextGreen>{" '9' "} </S.TextGreen>)
         </S.SpanTab>
         <S.SpanTab2>
-          <S.TextBlue>return</S.TextBlue> (<S.TextRed2>1</S.TextRed2>)
+          <S.TextBlue>return</S.TextBlue> (<S.TextRed2> 1 </S.TextRed2>);
         </S.SpanTab2>
         <S.SpanTab>
-          <S.TextBlue>return</S.TextBlue> (<S.TextRed2>0</S.TextRed2>)
+          <S.TextBlue>return</S.TextBlue> (<S.TextRed2> 0 </S.TextRed2>);
         </S.SpanTab>
         <span>{'}'}</span>
       </S.SectionInfo>
@@ -70,14 +70,16 @@ const Ft_isdigit = () => {
         </S.Li>
         <S.P>
           In summary, the isdigit function checks if the provided integer value
-          represents a decimal digit. If yes, it <S.TextBlue>return</S.TextBlue> (<S.TextRed2>1</S.TextRed2>); if not, it <S.TextBlue>return</S.TextBlue> (<S.TextRed2>0</S.TextRed2>);
+          represents a decimal digit. If yes, it <S.TextBlue>return</S.TextBlue>{' '}
+          (<S.TextRed2>1</S.TextRed2>); if not, it{' '}
+          <S.TextBlue>return</S.TextBlue> (<S.TextRed2>0</S.TextRed2>);
           <br />
           <br />
-          This function is a simplified implementation of the isdigit
-          function in the standard C library. Note that the standard
-          implementation of this function typically takes an argument of type
-          int and returns a non-zero value (true) if the character is a digit,
-          and zero (false) otherwise.
+          This function is a simplified implementation of the isdigit function
+          in the standard C library. Note that the standard implementation of
+          this function typically takes an argument of type int and returns a
+          non-zero value (true) if the character is a digit, and zero (false)
+          otherwise.
         </S.P>
       </S.Ul>
       <Footer />

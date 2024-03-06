@@ -24,20 +24,20 @@ const Ft_isalpha = () => {
         <br />
         <span>
           <S.TextRed>int</S.TextRed> <S.TextRed2>ft_isalpha</S.TextRed2>(
-          <S.TextRed> int </S.TextRed>i)
+          <S.TextRed> int </S.TextRed>i )
         </span>
         <span>{'{'}</span>
         <S.SpanTab>
-          <S.TextBlue>if</S.TextBlue> ((<S.TextGreen> {"'a'"}</S.TextGreen>{' '}
-          {'<'}= i && i {'<'}= <S.TextGreen>{"'z'"}</S.TextGreen> ) || (
-          <S.TextGreen> {"'A'"} </S.TextGreen>
-          {'<'}= i && i {'<'}= <S.TextGreen>{"'Z'"}</S.TextGreen>))
+          <S.TextBlue>if</S.TextBlue> ((<S.TextGreen> {" 'a' "}</S.TextGreen>{' '}
+          {'<'}= i && i {'<'}= <S.TextGreen>{" 'z' "}</S.TextGreen> ) | | (
+          <S.TextGreen> {" 'A' "} </S.TextGreen>
+          {'<'}= i && i {'<'}= <S.TextGreen>{" 'Z' "} </S.TextGreen>))
         </S.SpanTab>
         <S.SpanTab2>
-          <S.TextBlue>return</S.TextBlue> (<S.TextRed2>1</S.TextRed2>)
+          <S.TextBlue>return</S.TextBlue> (<S.TextRed2> 1 </S.TextRed2>);
         </S.SpanTab2>
         <S.SpanTab>
-          <S.TextBlue>return</S.TextBlue> (<S.TextRed2>0</S.TextRed2>)
+          <S.TextBlue>return</S.TextBlue> (<S.TextRed2> 0 </S.TextRed2>);
         </S.SpanTab>
         <span>{'}'}</span>
       </S.SectionInfo>

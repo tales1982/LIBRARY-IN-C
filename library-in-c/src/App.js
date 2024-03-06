@@ -9,6 +9,7 @@ import Makefile from './page/Makefile';
 import Ft_isalpha from './page/Ft_isalpha';
 import Ft_isdigit from './page/Ft_isdigit';
 import Ft_isalnum from './page/Ft_isalnum';
+import Ft_isascii from './page/Ft_isascii';
 
 const rotas = createBrowserRouter([
   {
@@ -46,6 +47,10 @@ const rotas = createBrowserRouter([
   {
     path: '/Ft_isalnum',
     element: <Ft_isalnum />
+  },
+  {
+    path: '/Ft_isascii',
+    element: <Ft_isascii />
   }
 ]);
 
