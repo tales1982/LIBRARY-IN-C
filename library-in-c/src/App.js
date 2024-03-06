@@ -6,8 +6,8 @@ import Libft from './page/Libft';
 import HeaderFile from './page/HeaderFiles';
 import Struct from './page/Struct';
 import Makefile from './page/Makefile';
-import Isalpha from './page/Libft/isalpha';
-import Isdigit from './page/Libft/isdigit';
+import Ft_isalpha from './page/Ft_isalpha';
+import Ft_isdigit from './page/Ft_isdigit';
 
 const rotas = createBrowserRouter([
   {
@@ -35,12 +35,12 @@ const rotas = createBrowserRouter([
     element: <Makefile />
   },
   {
-    path: 'Libft/isalpha',
-    element: <Isalpha />
+    path: '/Ft_isalpha',
+    element: <Ft_isalpha />
   },
   {
-    path: 'Libft/isdigit',
-    element: <Isdigit />
+    path: '/Ft_isdigit',
+    element: <Ft_isdigit />
   }
 ]);
 

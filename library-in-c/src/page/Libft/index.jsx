@@ -11,16 +11,16 @@ const Libft = () => {
       <S.H1>Libft</S.H1>
       <S.ContainerLibft>
         <Button
-          text="ft_isalpha"
+          text="ft_isalpha.c"
           shadowColor="rgba(255, 0, 0, 0.8)"
-          to="isalpha"
+          to="/Ft_isalpha"
         />
         <Button
           text="ft_isdigit.c"
           shadowColor="rgba(0, 100, 0, 0.8)"
-          to="isdigit"
+          to="/Ft_isdigit"
         />
-        <Button text="ft_isalnum.c" shadowColor="rgba(0, 0, 139, 0.8)" />
+        <Button text="ft_isalnum.c" shadowColor="rgba(0, 0, 139, 0.8)" to=""/>
         <Button text="ft_isascii.c" shadowColor="rgba(139, 139, 0, 0.8)" />
         <Button text="ft_isprint.c" shadowColor="rgba(139, 0, 139, 0.8)" />
         <Button text="ft_strlen.c" shadowColor="rgba(0, 191, 255, 0.8)" />

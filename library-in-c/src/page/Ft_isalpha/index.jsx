@@ -3,7 +3,7 @@ import * as S from './styles'
 import Header from '../../Components/Header/index'
 import Footer from '../../Components/Footer/index'
 
-const Isalpha = () => {
+const Ft_isalpha = () => {
   return (
     <S.ContainerMain>
       <Header />
@@ -58,4 +58,4 @@ const Isalpha = () => {
   )
 }
 
-export default Isalpha
+export default Ft_isalpha

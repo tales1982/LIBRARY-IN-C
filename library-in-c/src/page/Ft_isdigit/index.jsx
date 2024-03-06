@@ -1,9 +1,9 @@
 import React from 'react'
 import Header from '../../Components/Header'
 import Footer from '../../Components/Footer'
-import * as S from './styles'
+import * as S from '../Libft/styles'
 
-const Isdigit = () => {
+const Ft_isdigit = () => {
   return (
     <S.ContainerMain>
       <Header />
@@ -59,4 +59,4 @@ const Isdigit = () => {
   )
 }
 
-export default Isdigit
+export default Ft_isdigit
