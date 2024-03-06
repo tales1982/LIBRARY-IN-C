@@ -10,7 +10,6 @@ const shadowAnimation = keyframes`
     filter: drop-shadow(0px 0px 50px var(--shadow-color, ${Colors.colorRed}));
   }
 `
-
 /************* container PAI ******************/
 export const ContainerMain = styled.div`
   display: flex;
@@ -33,14 +32,18 @@ export const ContainerMain = styled.div`
     text-align: center;
     height: 100%;
   }
+  @media (min-width: 1024px) and (max-width: 1280px) {
+
+  }
+
 `
 /************* Container de funcoes *******************/
 export const ContainerLibft = styled.section`
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
   background-color: ${Colors.bgSection};
-  width: 80%;
+  width: 100%;
   height: auto;
   color: #fff;
 
@@ -50,6 +53,15 @@ export const ContainerLibft = styled.section`
   }
   @media (min-width: 765px) and (max-width: 1024px) {
     width: 100%;
+  }
+`
+export const containerButao = styled.article`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @media (min-width: 1024px) and (max-width: 1280px) {
+    max-width: 1000px;
+    padding-left: 100px;
   }
 `
 /********* Secao de Informacoes **********************/

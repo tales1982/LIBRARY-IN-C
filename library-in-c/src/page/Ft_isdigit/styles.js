@@ -30,6 +30,8 @@ export const ContainerMain = styled.div`
 
   @media (min-width: 765px) and (max-width: 1024px) {
     text-align: center;
+  }
+  @media (min-width: 1025px) {
     height: 100%;
   }
 `
@@ -104,21 +106,19 @@ export const H3 = styled.h3`
 /*********Estilizacao do paragrafo ********************/
 export const P = styled.p`
   font-family: ${Fonts.fontHighlight};
-  width: 70%;
   font-size: 18px;
   font-weight: normal;
-  padding: 10px;
   line-height: 1.4;
   color: #fff;
 
   /***************** Resposabilidade Mobile *******************/
   @media (max-width: 764px) {
-    width: 90%;
+
     font-size: 16px;
   }
 
   @media (min-width: 765px) and (max-width: 1024px) {
-    width: 90%;
+  
     font-size: 16px;
   }
 `
@@ -188,6 +188,7 @@ export const Ul = styled.ul`
 color: #fff;
 font-size: 18px;
 width: 70%;
+padding-bottom: 20px;
 @media (max-width: 764px) {
   padding-top: 20px;
     width: 90%;

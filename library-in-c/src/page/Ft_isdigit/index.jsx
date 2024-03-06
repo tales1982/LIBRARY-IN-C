@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../../Components/Header'
 import Footer from '../../Components/Footer'
-import * as S from '../Libft/styles'
+import * as S from './styles'
 
 const Ft_isdigit = () => {
   return (
@@ -38,22 +38,46 @@ const Ft_isdigit = () => {
         <span>{'}'}</span>
       </S.SectionInfo>
       <S.Ul>
-            <S.H3>1° - Argument and Return:</S.H3>
-            <S.Li>The function takes an argument i, which is an integer value.</S.Li>
-            <S.Li>It returns an integer: 1 if the character represented by i is a digit, and 0 otherwise.</S.Li>
-            <S.H3>2° - Contrul Structure (while):</S.H3>
-            <S.Li>The function uses a while loop to check if the value of i is within the range of digits (
-            <S.TextGreen>{" '0' to '9' "}</S.TextGreen>)</S.Li>
-            <S.H3>3° - Condition in the Loop:</S.H3>
-            <S.Li>The loop condition ( <S.TextGreen>{"'0'"}</S.TextGreen>
-              {' <'}= i && {' <'}= <S.TextGreen>{" '9' "}</S.TextGreen>) checks if the value of i is within the range of characters corresponding to decimal digits.</S.Li>
-              <S.H3>4° - Return (Break in the Loop):</S.H3>
-            <S.Li>If the loop condition is true, the function immediately returns the value 1, indicating that the character is a digit.</S.Li>
-            <S.H3>5° - Default Return:</S.H3>
-            <S.Li>If the loop is not executed (i.e., if i is not within the range of digits), the function returns the value 0.</S.Li>
+        <S.H3>1° - Argument and Return:</S.H3>
+        <S.Li>
+          The function takes an argument i, which is an integer value.
+        </S.Li>
+        <S.Li>
+          It returns an integer: 1 if the character represented by i is a digit,
+          and 0 otherwise.
+        </S.Li>
+        <S.H3>2° - Contrul Structure (while):</S.H3>
+        <S.Li>
+          The function uses a while loop to check if the value of i is within
+          the range of digits (<S.TextGreen>{" '0' to '9' "}</S.TextGreen>)
+        </S.Li>
+        <S.H3>3° - Condition in the Loop:</S.H3>
+        <S.Li>
+          The loop condition ( <S.TextGreen>{"'0'"}</S.TextGreen>
+          {' <'}= i && {' <'}= <S.TextGreen>{" '9' "}</S.TextGreen>) checks if
+          the value of i is within the range of characters corresponding to
+          decimal digits.
+        </S.Li>
+        <S.H3>4° - Return (Break in the Loop):</S.H3>
+        <S.Li>
+          If the loop condition is true, the function immediately returns the
+          value 1, indicating that the character is a digit.
+        </S.Li>
+        <S.H3>5° - Default Return:</S.H3>
+        <S.Li>
+          If the loop is not executed (i.e., if i is not within the range of
+          digits), the function returns the value 0.
+        </S.Li>
+        <S.P>
+          In summary, the isdigit function checks if the provided integer value
+          represents a decimal digit. If yes, it returns 1; if not, it returns
+          0. This function is a simplified implementation of the isdigit
+          function in the standard C library. Note that the standard
+          implementation of this function typically takes an argument of type
+          int and returns a non-zero value (true) if the character is a digit,
+          and zero (false) otherwise.
+        </S.P>
       </S.Ul>
-      <br />
-      <S.P>In summary, the isdigit function checks if the provided integer value represents a decimal digit. If yes, it returns 1; if not, it returns 0. This function is a simplified implementation of the isdigit function in the standard C library. Note that the standard implementation of this function typically takes an argument of type int and returns a non-zero value (true) if the character is a digit, and zero (false) otherwise.</S.P>
       <Footer />
     </S.ContainerMain>
   )

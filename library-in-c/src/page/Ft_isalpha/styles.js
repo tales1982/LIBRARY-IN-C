@@ -18,7 +18,6 @@ export const ContainerMain = styled.div`
   align-items: center;
   justify-content: space-between;
   position: relative;
-  display: flex;
   width: 100vw;
   height: 100vh;
   background-color: ${Colors.bgSection};
@@ -31,7 +30,6 @@ export const ContainerMain = styled.div`
 
   @media (min-width: 765px) and (max-width: 1024px) {
     text-align: center;
-    height: 100%;
   }
 `
 /************* Container de funcoes *******************/
