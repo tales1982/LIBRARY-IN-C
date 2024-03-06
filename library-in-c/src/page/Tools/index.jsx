@@ -11,7 +11,7 @@ const SectionTools = () => {
       <S.Div>
         <S.ContainerTools>
           <Card
-            title="Header files"
+            title="Header"
             text="This page will provide explanations about some of the concepts applied in header files."
             linkTo="/HeaderFiles"
             shadowColor="rgba(238, 255, 0, 0.925)"
@@ -19,7 +19,7 @@ const SectionTools = () => {
             alt="Header files"
           />
           <Card
-            title="C Structures"
+            title="Struct"
             text="A structure is a feature that allows grouping different data types under a single name."
             linkTo="/Struct"
             shadowColor="rgba(0, 255, 0, 0.973)" // Cor da sombra para o primeiro Card

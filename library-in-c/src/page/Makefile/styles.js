@@ -43,6 +43,9 @@ export const Article = styled.article`
   @media (max-width: 764px) {
     width: 90vw;
   }
+  @media (min-width:765px) and (max-width: 1024px) {
+    width: 80vw;
+}
 `
 export const H1 = styled.h1`
   font-size: 34px;
@@ -73,6 +76,9 @@ font-weight: bold;
 max-width: 900px;
 flex-wrap: wrap;
 font-family: ${Fonts.fontHighlight};
+@media (min-width:765px) and (max-width: 1024px) {
+    width: 80vw;
+}
 `
 
 export const TextRed = styled.span`

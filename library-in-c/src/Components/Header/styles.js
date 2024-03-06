@@ -1,5 +1,39 @@
 import { Colors, Fonts } from '../../globalStyles'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components';
+
+const moveBorderAnimation = keyframes`
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+`;
+const moveBorderAnimation2 = keyframes`
+  0% {
+    transform: translateX(0);
+    background-color: blue;
+  }
+  20% {
+    background-color: orange;
+  }
+  40% {
+    background-color: yellow;
+  }
+  60% {
+    background-color: green;
+  }
+  80% {
+    background-color: blue;
+  }
+  100% {
+    transform: translateX(100%);
+    background-color: purple;
+  }
+`;
 
 export const HeaderStyles = styled.header`
   position: fixed;
@@ -47,7 +81,27 @@ export const Ul = styled.ul`
     text-decoration: none;
     color: ${Colors.textDestac};
     font-family: ${Fonts.fontDestaque};
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+    }
+
+    &:hover::before {
+      background-color: green; /* Cor da borda */
+      transform-origin: bottom left;
+      animation: ${moveBorderAnimation} 3s linear infinite;
+      animation: ${moveBorderAnimation2} 3s linear infinite;
+    }
   }
+
 
   @media (max-width: 764px) {
   }

@@ -25,4 +25,7 @@ export const ContainerTools = styled.section`
     flex-direction: column;
     margin-top: 200px;
   }
+  @media (min-width:765px) and (max-width: 1024px) {
+    width: 90vw;
+}
 `

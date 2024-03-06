@@ -9,6 +9,12 @@ const GlobalStyle = createGlobalStyle`
     list-style: none;
     text-decoration: none;
   }
+  html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 
 `
 

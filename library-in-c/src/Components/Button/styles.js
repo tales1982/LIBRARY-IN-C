@@ -30,6 +30,12 @@ export const StyledButton = styled.button`
   font-weight: bold;
   font-family: ${Fonts.fontDestaque};
 
+  @media (max-width: 764px) {
+    height: 60px;
+    width: 250px;
+  }
+
+
   box-shadow: ${(props) => props.shadowColor || 'rgba(0, 115, 255, 0.925)'} 0px
     20px 50px -25px;
   transition: all 0.5s ease-in-out;

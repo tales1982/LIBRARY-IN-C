@@ -16,14 +16,12 @@ export const ContaineHeadeFile = styled.section`
   flex-direction: column;
   align-items: center;
   position: relative;
-  display: flex;
   justify-content: center;
   margin-top: 100px;
   width: 100%;
   height: auto;
   color: #fff;
   background-color: ${Colors.bgSection};
-
 `
 export const ContainerInfo = styled.section`
   display: flex;
@@ -37,6 +35,10 @@ export const ContainerInfo = styled.section`
   margin-bottom: 30px;
   @media (max-width: 764px) {
     width: 90vw;
+}
+
+@media (min-width:765px) and (max-width: 1024px) {
+    width: 80vw;
 }
 
 `
@@ -73,7 +75,7 @@ export const Ol = styled.ol`
 }
 `
 export const Li = styled.li`
-  font-family: ${Fonts.fontDestaque};
+  font-family: ${Fonts.fontHighlight};
   padding-bottom: 4px;
 `
 
@@ -115,4 +117,7 @@ export const Span = styled.span`
   @media (max-width: 764px) {
     font-size: 12px;
 }
+
+
+text-align: center;
 `
