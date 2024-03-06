@@ -70,8 +70,10 @@ const Ft_isdigit = () => {
         </S.Li>
         <S.P>
           In summary, the isdigit function checks if the provided integer value
-          represents a decimal digit. If yes, it returns 1; if not, it returns
-          0. This function is a simplified implementation of the isdigit
+          represents a decimal digit. If yes, it <S.TextBlue>return</S.TextBlue> (<S.TextRed2>1</S.TextRed2>); if not, it <S.TextBlue>return</S.TextBlue> (<S.TextRed2>0</S.TextRed2>);
+          <br />
+          <br />
+          This function is a simplified implementation of the isdigit
           function in the standard C library. Note that the standard
           implementation of this function typically takes an argument of type
           int and returns a non-zero value (true) if the character is a digit,

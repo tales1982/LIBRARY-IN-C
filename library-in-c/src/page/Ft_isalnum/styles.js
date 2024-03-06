@@ -10,6 +10,7 @@ const shadowAnimation = keyframes`
     filter: drop-shadow(0px 0px 50px var(--shadow-color, ${Colors.colorRed}));
   }
 `
+
 /************* container PAI ******************/
 export const ContainerMain = styled.div`
   display: flex;
@@ -17,9 +18,8 @@ export const ContainerMain = styled.div`
   align-items: center;
   justify-content: space-between;
   position: relative;
-  display: flex;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background-color: ${Colors.bgSection};
 
   /***************** Resposabilidade Mobile *******************/
@@ -32,37 +32,8 @@ export const ContainerMain = styled.div`
     text-align: center;
     height: 100%;
   }
-
 `
-/************* Container de funcoes *******************/
-export const ContainerLibft = styled.section`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: ${Colors.bgSection};
-  width: 100%;
-  height: auto;
-  color: #fff;
 
-  /***************** Resposabilidade Mobile *******************/
-  @media (max-width: 764px) {
-    width: 100%;
-  }
-  @media (min-width: 765px) and (max-width: 1024px) {
-    width: 100%;
-  }
-`
-export const containerButao = styled.article`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-
-  @media (min-width: 1024px) and (max-width: 1280px) {
-    max-width: 1000px;
-    padding-left: 100px;
-  }
-`
 /********* Secao de Informacoes **********************/
 export const SectionInfo = styled.section`
   display: flex;
@@ -112,6 +83,7 @@ export const H3 = styled.h3`
   color: ${Colors.textDestac};
   padding-top: 4px;
   padding-bottom: 2px;
+  width: 69%;
 `
 /*********Estilizacao do paragrafo ********************/
 export const P = styled.p`

@@ -22,7 +22,7 @@ export const ContainerMain = styled.div`
   height: 100vh;
   background-color: ${Colors.bgSection};
 
-/***************** Resposabilidade Mobile *******************/
+  /***************** Resposabilidade Mobile *******************/
   @media (max-width: 764px) {
     text-align: center;
     height: 100%;
@@ -30,27 +30,10 @@ export const ContainerMain = styled.div`
 
   @media (min-width: 765px) and (max-width: 1024px) {
     text-align: center;
+    height: 100%;
   }
   @media (min-width: 1025px) {
     height: 100%;
-  }
-`
-/************* Container de funcoes *******************/
-export const ContainerLibft = styled.section`
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  background-color: ${Colors.bgSection};
-  width: 80%;
-  height: auto;
-  color: #fff;
-
-  /***************** Resposabilidade Mobile *******************/
-  @media (max-width: 764px) {
-    width: 100%;
-  }
-  @media (min-width: 765px) and (max-width: 1024px) {
-    width: 100%;
   }
 `
 /********* Secao de Informacoes **********************/
@@ -63,7 +46,7 @@ export const SectionInfo = styled.section`
   color: #fff;
   line-height: 1.8;
   font-family: ${Fonts.fontHighlight};
-  max-width: 70%;
+  max-width: 60%;
   width: 100%;
   height: auto;
   border-radius: 10px;
@@ -108,18 +91,20 @@ export const P = styled.p`
   font-family: ${Fonts.fontHighlight};
   font-size: 18px;
   font-weight: normal;
+  padding-bottom: 20px;
+  width: 60%;
   line-height: 1.4;
   color: #fff;
 
   /***************** Resposabilidade Mobile *******************/
   @media (max-width: 764px) {
-
     font-size: 16px;
+    width: 100%;
   }
 
   @media (min-width: 765px) and (max-width: 1024px) {
-  
     font-size: 16px;
+    width: 100%;
   }
 `
 /******** Estilizacao das cores para os span ********** */
@@ -185,23 +170,26 @@ export const SpanTab2 = styled.span`
 `
 /****************  Estilizacao do UL ***********/
 export const Ul = styled.ul`
-color: #fff;
-font-size: 18px;
-width: 70%;
-padding-bottom: 20px;
-@media (max-width: 764px) {
-  padding-top: 20px;
-    width: 90%;
-    font-size: 14px;
+  color: #fff;
+  font-size: 18px;
+  width: 60%;
+  padding: 40px 0;
+  @media (max-width: 764px) {
+    padding: 10px ;
+    width: 100%;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   @media (min-width: 765px) and (max-width: 1024px) {
     padding-top: 20px;
     width: 90%;
-    font-size: 16px;
+    font-size: 18px;
   }
 `
 /*************** Estilizacao do Li *****************/
 export const Li = styled.li`
-  padding-bottom: 4px;
+padding: 6px 0;
 `

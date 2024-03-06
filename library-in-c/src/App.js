@@ -8,6 +8,7 @@ import Struct from './page/Struct';
 import Makefile from './page/Makefile';
 import Ft_isalpha from './page/Ft_isalpha';
 import Ft_isdigit from './page/Ft_isdigit';
+import Ft_isalnum from './page/Ft_isalnum';
 
 const rotas = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const rotas = createBrowserRouter([
   {
     path: '/Ft_isdigit',
     element: <Ft_isdigit />
+  },
+  {
+    path: '/Ft_isalnum',
+    element: <Ft_isalnum />
   }
 ]);
 

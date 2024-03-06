@@ -24,7 +24,7 @@ const Libft = () => {
           <Button
             text="ft_isalnum.c"
             shadowColor="rgba(0, 0, 139, 0.8)"
-            to=""
+            to="/Ft_isalnum"
           />
           <Button text="ft_isascii.c" shadowColor="rgba(139, 139, 0, 0.8)" />
         </S.containerButao>
