@@ -26,10 +26,18 @@ const Libft = () => {
             shadowColor="rgba(0, 0, 139, 0.8)"
             to="/Ft_isalnum"
           />
-          <Button text="ft_isascii.c" shadowColor="rgba(139, 139, 0, 0.8)" to="/Ft_isascii"/>
+          <Button
+            text="ft_isascii.c"
+            shadowColor="rgba(139, 139, 0, 0.8)"
+            to="/Ft_isascii"
+          />
         </S.containerButao>
         <S.containerButao>
-          <Button text="ft_isprint.c" shadowColor="rgba(139, 0, 139, 0.8)" />
+          <Button
+            text="ft_isprint.c"
+            shadowColor="rgba(139, 0, 139, 0.8)"
+            to="/Ft_isprint"
+          />
           <Button text="ft_strlen.c" shadowColor="rgba(0, 191, 255, 0.8)" />
           <Button text="ft_memset.c" shadowColor="rgba(144, 238, 144, 0.8)" />
           <Button text="ft_bzero.c" shadowColor="rgba(255, 165, 0, 0.8)" />

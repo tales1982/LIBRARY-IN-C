@@ -10,6 +10,7 @@ import Ft_isalpha from './page/Ft_isalpha';
 import Ft_isdigit from './page/Ft_isdigit';
 import Ft_isalnum from './page/Ft_isalnum';
 import Ft_isascii from './page/Ft_isascii';
+import Ft_isprint from './page/Ft_isprint';
 
 const rotas = createBrowserRouter([
   {
@@ -51,6 +52,10 @@ const rotas = createBrowserRouter([
   {
     path: '/Ft_isascii',
     element: <Ft_isascii />
+  },
+  {
+    path: '/Ft_isprint',
+    element: <Ft_isprint />
   }
 ]);
 
