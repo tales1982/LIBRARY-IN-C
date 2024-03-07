@@ -11,11 +11,16 @@ import Ft_isdigit from './page/Ft_isdigit';
 import Ft_isalnum from './page/Ft_isalnum';
 import Ft_isascii from './page/Ft_isascii';
 import Ft_isprint from './page/Ft_isprint';
+import Construcao from './page/Construcao';
 
 const rotas = createBrowserRouter([
   {
     path: '/',
     element: <Home />
+  },
+  {
+    path: '/Construcao',
+    element: <Construcao />
   },
   {
     path: '/Tools',
