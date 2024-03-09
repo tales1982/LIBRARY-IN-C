@@ -9,6 +9,7 @@ const Ft_memset = () => {
       <Header />
       <S.H1>ft_memset</S.H1>
       <S.P>
+        <S.Gold></S.Gold>
         The <strong>ft_memset</strong> function is a custom implementation of
         the memset function from the standard C library, which is used to fill a
         block of memory with a specified value. Here is what each part of it
@@ -17,45 +18,43 @@ const Ft_memset = () => {
       <S.H3>Function Prototype: </S.H3>
       <S.SectionInfo>
         <span>
-          # <S.TextBlue>include </S.TextBlue>{' '}
-          <S.TextGreen>{'"libft.h"'}</S.TextGreen>{' '}
+          <S.Red># include </S.Red> <S.Green>{'"libft.h"'}</S.Green>{' '}
         </span>
         <br />
         <span>
-          <S.TextRed>int </S.TextRed> <S.TextRed2> *ft_memset</S.TextRed2>(
-          <S.TextRed> void </S.TextRed> <S.TextBlue> *</S.TextBlue>b,{' '}
-          <S.TextRed>int </S.TextRed> c, <S.TextRed>size_t </S.TextRed> len )
+          int <S.Lilas> *ft_memset</S.Lilas>( void <S.Green>* </S.Green>b, int
+          c, size_t len )
         </span>
         <span>{'{'}</span>
         <S.SpanTab>
-          <S.TextRed>char </S.TextRed>{' '}
+          char{' '}
           <S.SpanTab>
-            <S.TextBlue> * </S.TextBlue>
+            <S.Green>*</S.Green>
           </S.SpanTab>
           p ;
         </S.SpanTab>
         <br />
         <S.SpanTab>
-          p = ( <S.TextRed>char </S.TextRed> <S.TextBlue> * </S.TextBlue> )b ;
+          p = ( char <S.Green>* </S.Green> )b ;
         </S.SpanTab>
         <S.SpanTab>
-          <S.TextBlue>while </S.TextBlue>( len
-          <S.TextBlue> {'>'} </S.TextBlue>0 )
+          <S.Red>while </S.Red>( len
+          <S.Green>{' >'}</S.Green> 0 )
         </S.SpanTab>
         <S.SpanTab>
           <span>{'{'}</span>
           <br />
           <S.SpanTab2>
-            p[ len <S.TextBlue> - </S.TextBlue> 1] = c ;
+            p[ len <S.Green>-</S.Green> 1] = c ;
           </S.SpanTab2>
           <br />
           <S.SpanTab2>
-            len <S.TextBlue>--</S.TextBlue>;
+            len<S.Green>--</S.Green>;
           </S.SpanTab2>
           <br />
           <span>{'}'}</span>
           <br />
-          <S.TextBlue>return</S.TextBlue> (<S.TextRed2> b </S.TextRed2>);
+          <S.Red>return</S.Red> ( b );
         </S.SpanTab>
         <span>{'}'}</span>
       </S.SectionInfo>
@@ -63,39 +62,36 @@ const Ft_memset = () => {
       <br />
       <S.H3>Function Body:</S.H3>
       <S.P>
-        ° <S.TextRed> char </S.TextRed> <S.TextBlue> * </S.TextBlue> ; declares
-        a pointer to char called {'`p`'}. This is necessary because pointer
-        arithmetic in C with <S.TextRed> void </S.TextRed>{' '}
-        <S.TextBlue> * </S.TextBlue>is not allowed. By converting b to{' '}
-        <S.TextRed> void </S.TextRed> <S.TextBlue> * </S.TextBlue>, we can
-        manipulate {'`b`'} byte by byte, since <S.TextRed> char </S.TextRed> is
-        guaranteed to be 1 byte in size by standard.
+        ° <S.Gold> char * </S.Gold> ; declares a pointer to char called{' '}
+        <S.Gold>{'`p`'}</S.Gold>. This is necessary because pointer arithmetic
+        in C with <S.Gold> void * </S.Gold> is not allowed. By converting b to{' '}
+        <S.Gold> void *</S.Gold> , we can manipulate <S.Gold>{'`b`'}</S.Gold>{' '}
+        byte by byte, since <S.Gold> char </S.Gold> is guaranteed to be 1 byte
+        in size by standard.
       </S.P>
       <S.P>
-        ° p = ( <S.TextRed>char </S.TextRed> <S.TextBlue> * </S.TextBlue> )b ;
-        converts the <S.TextRed> void </S.TextRed> <S.TextBlue> * </S.TextBlue>{' '}
-        pointer to a <S.TextRed>char </S.TextRed> <S.TextBlue> * </S.TextBlue>{' '}
-        pointer. This allows the function to manipulate the memory pointed to by{' '}
-        {'`b`'} byte by byte.
+        ° p = ( <S.Gold>char *</S.Gold> )b ; converts the{' '}
+        <S.Gold>void *</S.Gold> pointer to a <S.Gold>char * </S.Gold> pointer.
+        This allows the function to manipulate the memory pointed to by{' '}
+        <S.Gold>{'`b`'}</S.Gold> byte by byte.
       </S.P>
       <S.P>
-        ° The while (len <S.TextBlue> {'>'} </S.TextBlue> 0) loop continues to
-        iterate as long as len, the number of bytes to be filled, is greater
-        than 0. This ensures that the function will fill exactly len bytes of
-        memory.
+        ° The while ( <S.Gold>len {'>'} 0</S.Gold> ) loop continues to iterate
+        as long as len, the number of bytes to be filled, is greater than{' '}
+        <S.Gold>0</S.Gold> . This ensures that the function will fill exactly
+        len bytes of memory.
       </S.P>
       <S.P>
-        ° Inside the loop, p[ len <S.TextBlue> - </S.TextBlue> 1 ] = c ; is
-        where the actual filling occurs. This assigns the byte at position len{' '}
-        <S.TextBlue> - </S.TextBlue> 1 of the memory block the value c. Note
-        that c is implicitly converted to a char when assigned to p[ len{' '}
-        <S.TextBlue> - </S.TextBlue> 1 ], as p is a pointer to char. Thus, only
-        the least significant byte of c is used.
+        ° Inside the loop, <S.Gold>[ len - 1 ] = c </S.Gold>; is where the
+        actual filling occurs. This assigns the byte at position len{' '}
+        <S.Gold>-1</S.Gold> of the memory block the value c. Note that c is
+        implicitly converted to a char when assigned to{' '}
+        <S.Gold>p[ len - 1 ]</S.Gold>, as p is a pointer to char. Thus, only the
+        least significant byte of c is used.
       </S.P>
       <S.P>
-        ° len <S.TextBlue>--</S.TextBlue> ; decrements len, moving the{' '}
-        {'"position"'} of filling one byte backwards, towards the beginning of
-        the memory block.
+        ° <S.Gold>len--</S.Gold> ; decrements len, moving the {'"position"'} of
+        filling one byte backwards, towards the beginning of the memory block.
       </S.P>
       <br />
       <S.H3>Function Return: return (b);</S.H3>
@@ -106,8 +102,12 @@ const Ft_memset = () => {
         without the need for an intermediate variable. Essentially, ft_memset
         fills the last len bytes of the memory block pointed to by b with the
         least significant byte of the integer c, starting from the end of the
-        block (p[ len <S.TextBlue> - </S.TextBlue> 1 ]) and moving towards the
-        beginning, and then returns the original pointer to the memory block.
+        block{' '}
+        <S.Gold>
+          ( p[ len <S.TextBlue> - </S.TextBlue> 1 ] )
+        </S.Gold>{' '}
+        and moving towards the beginning, and then returns the original pointer
+        to the memory block.
       </S.P>
       <Footer />
     </S.ContainerMain>
