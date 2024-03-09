@@ -18,6 +18,7 @@ import Ft_bzero from './page/Ft_bzero';
 import Ft_memcpy from './page/Ft_memcpy';
 import Ft_memmove from './page/Ft_memmove';
 import Ft_strcpy from './page/Ft_strcpy';
+import Ft_strlcat from './page/Ft_strlcat';
 
 const rotas = createBrowserRouter([
   {
@@ -91,6 +92,10 @@ const rotas = createBrowserRouter([
   {
     path: '/Ft_strcpy',
     element: <Ft_strcpy />
+  },
+  {
+    path: '/Ft_strlcat',
+    element: <Ft_strlcat />
   }
 ]);
 function App() {

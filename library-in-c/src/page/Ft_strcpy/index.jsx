@@ -80,21 +80,43 @@ const Ft_strcpy = () => {
         character.{' '}
       </S.P>
       <S.P>
-        ° If true, <S.TextBlue>ft_memcpy(dst, src, src_len + 1);</S.TextBlue>  is called to copy <S.TextBlue>src_len +
-        1 bytes</S.TextBlue>  (the content of src plus the null character) to dst.{' '}
+        ° If true, <S.TextBlue>ft_memcpy(dst, src, src_len + 1);</S.TextBlue> is
+        called to copy <S.TextBlue>src_len + 1 bytes</S.TextBlue> (the content
+        of src plus the null character) to dst.{' '}
       </S.P>
       <S.H3>Handling Smaller Destination Buffer:</S.H3>
       <S.P>
-        ° <S.TextBlue>If src_len + 1</S.TextBlue> is not less than dstsize (indicating that dst cannot safely accommodate the entire <S.TextBlue>src</S.TextBlue> ), the function checks if dstsize is not 0 to avoid accessing a zero-sized array, which would be undefined.
+        ° <S.TextBlue>If src_len + 1</S.TextBlue> is not less than dstsize
+        (indicating that dst cannot safely accommodate the entire{' '}
+        <S.TextBlue>src</S.TextBlue> ), the function checks if dstsize is not 0
+        to avoid accessing a zero-sized array, which would be undefined.
       </S.P>
       <S.P>
-        °  If dstsize is not 0, <S.TextBlue>ft_memcpy(dst, src, dstsize - 1);</S.TextBlue> copies <S.TextBlue>dstsize - 1 </S.TextBlue>bytes from <S.TextBlue>src </S.TextBlue>to <S.TextBlue>dst</S.TextBlue>, the maximum possible leaving space for a null character. Then, <S.TextBlue>dst[ dstsize - 1 ] = 0;</S.TextBlue> explicitly adds a null character at the end of dst to ensure the resulting string is properly terminated.
+        ° If dstsize is not 0,{' '}
+        <S.TextBlue>ft_memcpy(dst, src, dstsize - 1);</S.TextBlue> copies{' '}
+        <S.TextBlue>dstsize - 1 </S.TextBlue>bytes from{' '}
+        <S.TextBlue>src </S.TextBlue>to <S.TextBlue>dst</S.TextBlue>, the
+        maximum possible leaving space for a null character. Then,{' '}
+        <S.TextBlue>dst[ dstsize - 1 ] = 0;</S.TextBlue> explicitly adds a null
+        character at the end of dst to ensure the resulting string is properly
+        terminated.
       </S.P>
       <S.P>
-        ° <strong>Return:</strong> The function returns src_len, the length of the source string. This is useful for checking if the string was truncated when copied to <S.TextBlue>dst</S.TextBlue>.
+        ° <strong>Return:</strong> The function returns src_len, the length of
+        the source string. This is useful for checking if the string was
+        truncated when copied to <S.TextBlue>dst</S.TextBlue>.
       </S.P>
       <S.H3>Summary</S.H3>
-      <S.P>The <S.TextBlue>ft_strlcpy</S.TextBlue> function copies a string from src to dst safely, ensuring that dst is always null-terminated and that there is no overflow of the destination buffer (dst). It addresses cases where the destination buffer is smaller than the source string, performing the copy of as many characters as possible while still correctly terminating the destination string. The return of the function indicates the length of the source string, allowing the caller to know if the operation resulted in a truncated string.</S.P>
+      <S.P>
+        The <S.TextBlue>ft_strlcpy</S.TextBlue> function copies a string from
+        src to dst safely, ensuring that dst is always null-terminated and that
+        there is no overflow of the destination buffer (dst). It addresses cases
+        where the destination buffer is smaller than the source string,
+        performing the copy of as many characters as possible while still
+        correctly terminating the destination string. The return of the function
+        indicates the length of the source string, allowing the caller to know
+        if the operation resulted in a truncated string.
+      </S.P>
       <Footer />
     </S.ContainerMain>
   )
