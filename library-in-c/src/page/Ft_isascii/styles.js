@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components'
-import { Colors, Fonts } from '../../globalStyles'
+import { Colors, Fonts,FCor } from '../../globalStyles'
 
 const shadowAnimation = keyframes`
   0% {
@@ -84,7 +84,7 @@ export const H3 = styled.h3`
   color: ${Colors.textDestac};
   padding-top: 4px;
   padding-bottom: 2px;
-  width: 60%;
+  width: 68%;
   text-align: start;
   @media (max-width: 764px) {
     width: 90%;
@@ -203,4 +203,25 @@ width: 70%;
 /*************** Estilizacao do Li *****************/
 export const Li = styled.li`
   padding-bottom: 4px;
+`
+
+/************ Cores Tags ***************/
+
+export const White = styled.span`
+color: ${FCor.white};
+`
+export const Green = styled.span`
+color: ${FCor.green};
+`
+export const Gold = styled.span`
+color: ${FCor.gold};
+`
+export const Black = styled.span`
+color: ${FCor.black};
+`
+export const Red = styled.span`
+color: ${FCor.red};
+`
+export const Lilas = styled.span`
+color: ${FCor.lila};
 `
