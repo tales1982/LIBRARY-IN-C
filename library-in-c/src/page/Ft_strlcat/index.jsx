@@ -8,7 +8,7 @@ const Ft_strlcat = () => {
     <S.ContainerMain>
       <Header />
       <S.H1>ft_strlcat</S.H1>
-      <S.P>The ft_strlcat function is a custom implementation of the strlcat function found in some C libraries. It is designed to concatenate strings safely, ensuring that the destination buffer is not overwritten and that it always ends with a null character \0, even when the size of the destination buffer is not sufficient to contain the complete concatenation. Let's detail the function:</S.P>
+      <S.P>The ft_strlcat function is a custom implementation of the strlcat function found in some C libraries. It is designed to concatenate strings safely, ensuring that the destination buffer is not overwritten and that it always ends with a null character \0, even when the size of the destination buffer is not sufficient to contain the complete concatenation. {"Let's"} detail the function:</S.P>
 
       <S.SectionInfo>
         <span>
