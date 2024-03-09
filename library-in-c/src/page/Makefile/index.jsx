@@ -83,7 +83,7 @@ const Makefile = () => {
 
             <S.SpanL>{'all: ${NAME}'}</S.SpanL>
 
-            <S.SpanL>clean:</S.SpanL>
+            <S.SpanL>fclean:</S.SpanL>
             <S.SpanTab2>
               {' '}
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@ ${'{RM} ${NAME}'}
