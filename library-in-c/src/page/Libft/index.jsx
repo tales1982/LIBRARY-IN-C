@@ -39,8 +39,8 @@ const Libft = () => {
             to="/Ft_isprint"
           />
           <Button text="ft_strlen.c" shadowColor="rgba(0, 191, 255, 0.8)" to="/Ft_strlen"/>
-          <Button text="ft_memset.c" shadowColor="rgba(144, 238, 144, 0.8)" to="/Construcao"/>
-          <Button text="ft_bzero.c" shadowColor="rgba(255, 165, 0, 0.8)" to="/Construcao"/>
+          <Button text="ft_memset.c" shadowColor="rgba(144, 238, 144, 0.8)" to="/Ft_memset"/>
+          <Button text="ft_bzero.c" shadowColor="rgba(255, 165, 0, 0.8)" to="/Ft_bzero"/>
         </S.containerButao>
         <S.containerButao>
           <Button text="ft_memcpy.c" shadowColor="rgba(255, 182, 193, 0.8)" to="/Construcao"/>

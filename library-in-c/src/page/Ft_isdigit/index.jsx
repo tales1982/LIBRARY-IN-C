@@ -7,7 +7,7 @@ const Ft_isdigit = () => {
   return (
     <S.ContainerMain>
       <Header />
-      <S.H1>ft_isdigit.c</S.H1>
+      <S.H1>ft_isdigit</S.H1>
       <S.P>
         This function aims to check if a character represented by an integer
         value (int) falls within the range corresponding to decimal digits (
@@ -68,6 +68,7 @@ const Ft_isdigit = () => {
           If the loop is not executed (i.e., if i is not within the range of
           digits), the function returns the value 0.
         </S.Li>
+      </S.Ul>
         <S.P>
           In summary, the isdigit function checks if the provided integer value
           represents a decimal digit. If yes, it <S.TextBlue>return</S.TextBlue>{' '}
@@ -81,7 +82,6 @@ const Ft_isdigit = () => {
           non-zero value (true) if the character is a digit, and zero (false)
           otherwise.
         </S.P>
-      </S.Ul>
       <Footer />
     </S.ContainerMain>
   )

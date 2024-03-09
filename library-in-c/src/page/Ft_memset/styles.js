@@ -19,7 +19,7 @@ export const ContainerMain = styled.div`
   justify-content: space-between;
   position: relative;
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   background-color: ${Colors.bgSection};
 
   /***************** Resposabilidade Mobile *******************/
@@ -32,8 +32,10 @@ export const ContainerMain = styled.div`
     text-align: center;
     height: 100%;
   }
+  @media (min-width: 1025px) {
+    height: 100%;
+  }
 `
-
 /********* Secao de Informacoes **********************/
 export const SectionInfo = styled.section`
   display: flex;
@@ -44,7 +46,7 @@ export const SectionInfo = styled.section`
   color: #fff;
   line-height: 1.8;
   font-family: ${Fonts.fontHighlight};
-  max-width: 70%;
+  max-width: 60%;
   width: 100%;
   height: auto;
   border-radius: 10px;
@@ -81,10 +83,10 @@ export const H1 = styled.h1`
 /***************** H3 ************** */
 export const H3 = styled.h3`
   color: ${Colors.textDestac};
-  align-items: center;
   padding-top: 4px;
   padding-bottom: 2px;
   width: 60%;
+  padding-bottom: 10px;
   text-align: start;
   @media (max-width: 764px) {
     width: 90%;
@@ -93,17 +95,17 @@ export const H3 = styled.h3`
 
   @media (min-width: 765px) and (max-width: 1024px) {
     padding-left: 10px;
-    width: 100%;
+    width: 90%;
     height: 100%;
   }
 `
 /*********Estilizacao do paragrafo ********************/
 export const P = styled.p`
   font-family: ${Fonts.fontHighlight};
-  width: 70%;
   font-size: 18px;
   font-weight: normal;
-  padding: 10px;
+  padding-bottom: 20px;
+  width: 60%;
   line-height: 1.4;
   color: #fff;
 
@@ -111,7 +113,7 @@ export const P = styled.p`
   @media (max-width: 764px) {
     font-size: 16px;
     padding: 10px;
-    width: 100%;
+    width: 96%;
     text-align: start;
   }
 
@@ -119,7 +121,7 @@ export const P = styled.p`
     padding: 10px;
     font-size: 16px;
     text-align: start;
-    width: 100%;
+    width: 92%;
   }
 `
 /******** Estilizacao das cores para os span ********** */
@@ -185,22 +187,26 @@ export const SpanTab2 = styled.span`
 `
 /****************  Estilizacao do UL ***********/
 export const Ul = styled.ul`
-color: #fff;
-font-size: 18px;
-width: 70%;
-@media (max-width: 764px) {
-  padding-top: 20px;
-    width: 90%;
-    font-size: 14px;
+  color: #fff;
+  font-size: 18px;
+  width: 60%;
+  padding: 40px 0;
+  @media (max-width: 764px) {
+    padding: 10px ;
+    width: 100%;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   @media (min-width: 765px) and (max-width: 1024px) {
     padding-top: 20px;
     width: 90%;
-    font-size: 16px;
+    font-size: 18px;
   }
 `
 /*************** Estilizacao do Li *****************/
 export const Li = styled.li`
-  padding-bottom: 4px;
+padding: 6px 0;
 `

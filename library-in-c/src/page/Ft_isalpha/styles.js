@@ -112,13 +112,17 @@ export const P = styled.p`
 
   /***************** Resposabilidade Mobile *******************/
   @media (max-width: 764px) {
-    width: 90%;
     font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    text-align: start;
   }
 
   @media (min-width: 765px) and (max-width: 1024px) {
-    width: 90%;
+    padding: 10px;
     font-size: 16px;
+    text-align: start;
+    width: 100%;
   }
 `
 /******** Estilizacao das cores para os span ********** */

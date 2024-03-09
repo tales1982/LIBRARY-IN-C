@@ -85,6 +85,20 @@ export const H3 = styled.h3`
   color: ${Colors.textDestac};
   padding-top: 4px;
   padding-bottom: 2px;
+  width: 60%;
+  text-align: start;
+  
+  @media (max-width: 764px) {
+    width: 90%;
+    text-align: start;
+  }
+
+  @media (min-width: 765px) and (max-width: 1024px) {
+    padding-left: 46px;
+    width: 100%;
+    height: 100%;
+  }
+
 `
 /*********Estilizacao do paragrafo ********************/
 export const P = styled.p`
@@ -99,12 +113,16 @@ export const P = styled.p`
   /***************** Resposabilidade Mobile *******************/
   @media (max-width: 764px) {
     font-size: 16px;
+    padding: 10px;
     width: 100%;
+    text-align: start;
   }
 
   @media (min-width: 765px) and (max-width: 1024px) {
+    padding: 10px;
     font-size: 16px;
-    width: 100%;
+    text-align: start;
+    width: 90%;
   }
 `
 /******** Estilizacao das cores para os span ********** */

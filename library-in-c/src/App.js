@@ -13,6 +13,8 @@ import Ft_isascii from './page/Ft_isascii';
 import Ft_isprint from './page/Ft_isprint';
 import Construcao from './page/Construcao';
 import Ft_strlen from './page/Ft_strlen';
+import Ft_memset from './page/Ft_memset';
+import Ft_bzero from './page/Ft_bzero';
 
 const rotas = createBrowserRouter([
   {
@@ -66,6 +68,14 @@ const rotas = createBrowserRouter([
   {
     path: '/Ft_strlen',
     element: <Ft_strlen />
+  },
+  {
+    path: '/Ft_memset',
+    element: <Ft_memset />
+  },
+  {
+    path: '/Ft_bzero',
+    element: <Ft_bzero />
   }
 ]);
 

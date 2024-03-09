@@ -7,7 +7,7 @@ const Ft_isprint = () => {
   return (
     <S.ContainerMain>
       <Header />
-      <S.H1>ft_isprint.c</S.H1>
+      <S.H1>ft_isprint</S.H1>
       <S.P>
         The ft_isprint function is a custom implementation of the isprint
         function. The isprint function in C is part of the standard C library,
