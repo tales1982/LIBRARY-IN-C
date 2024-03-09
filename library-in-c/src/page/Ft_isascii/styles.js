@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components'
-import { Colors, Fonts,FCor } from '../../globalStyles'
+import { Colors, Fonts, FCor } from '../../globalStyles'
 
 const shadowAnimation = keyframes`
   0% {
@@ -185,11 +185,11 @@ export const SpanTab2 = styled.span`
 `
 /****************  Estilizacao do UL ***********/
 export const Ul = styled.ul`
-color: #fff;
-font-size: 18px;
-width: 70%;
-@media (max-width: 764px) {
-  padding-top: 20px;
+  color: #fff;
+  font-size: 18px;
+  width: 70%;
+  @media (max-width: 764px) {
+    padding-top: 20px;
     width: 90%;
     font-size: 14px;
   }
@@ -208,20 +208,20 @@ export const Li = styled.li`
 /************ Cores Tags ***************/
 
 export const White = styled.span`
-color: ${FCor.white};
+  color: ${FCor.white};
 `
 export const Green = styled.span`
-color: ${FCor.green};
+  color: ${FCor.green};
 `
 export const Gold = styled.span`
-color: ${FCor.gold};
+  color: ${FCor.gold};
 `
 export const Black = styled.span`
-color: ${FCor.black};
+  color: ${FCor.black};
 `
 export const Red = styled.span`
-color: ${FCor.red};
+  color: ${FCor.red};
 `
 export const Lilas = styled.span`
-color: ${FCor.lila};
+  color: ${FCor.lila};
 `
