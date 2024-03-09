@@ -45,7 +45,7 @@ const Ft_memset = () => {
           <span>{'{'}</span>
           <br />
           <S.SpanTab2>
-            p[ len <S.Green>-</S.Green> 1] = c ;
+            p[ len <S.Green>-</S.Green> 1] <S.Green>=</S.Green> c ;
           </S.SpanTab2>
           <br />
           <S.SpanTab2>
