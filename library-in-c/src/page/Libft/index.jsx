@@ -43,7 +43,7 @@ const Libft = () => {
           <Button text="ft_bzero.c" shadowColor="rgba(255, 165, 0, 0.8)" to="/Ft_bzero"/>
         </S.containerButao>
         <S.containerButao>
-          <Button text="ft_memcpy.c" shadowColor="rgba(255, 182, 193, 0.8)" to="/Construcao"/>
+          <Button text="ft_memcpy.c" shadowColor="rgba(255, 182, 193, 0.8)" to="/Ft_memcpy"/>
           <Button text="ft_memmove.c" shadowColor="rgba(105, 105, 105, 0.8)" to="/Construcao"/>
           <Button text="ft_strlcpy.c" shadowColor="rgba(255, 0, 0, 0.8)" to="/Construcao"/>
           <Button text="ft_strlcat.c" shadowColor="rgba(0, 100, 0, 0.8)" to="/Construcao"/>

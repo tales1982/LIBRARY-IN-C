@@ -15,6 +15,7 @@ import Construcao from './page/Construcao';
 import Ft_strlen from './page/Ft_strlen';
 import Ft_memset from './page/Ft_memset';
 import Ft_bzero from './page/Ft_bzero';
+import Ft_memcpy from './page/Ft_memcpy';
 
 const rotas = createBrowserRouter([
   {
@@ -76,9 +77,12 @@ const rotas = createBrowserRouter([
   {
     path: '/Ft_bzero',
     element: <Ft_bzero />
+  },
+  {
+    path: '/Ft_memcpy',
+    element: <Ft_memcpy />
   }
 ]);
-
 function App() {
   return (
     <>
