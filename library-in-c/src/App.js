@@ -19,6 +19,10 @@ import Ft_memcpy from './page/Ft_memcpy';
 import Ft_memmove from './page/Ft_memmove';
 import Ft_strcpy from './page/Ft_strcpy';
 import Ft_strlcat from './page/Ft_strlcat';
+import Printf from './page/Printf';
+import MakefilePrintf from './page/Function_Printf/makefile';
+import HeaderPrntf from './page/Function_Printf/header';
+import Printf_C from './page/Function_Printf/ft_printc';
 
 const rotas = createBrowserRouter([
   {
@@ -36,6 +40,22 @@ const rotas = createBrowserRouter([
   {
     path: '/Libft',
     element: <Libft />
+  },
+  {
+    path: '/Printf',
+    element: <Printf />
+  },
+  {
+    path: '/page/Function_printf/makefile',
+    element: <MakefilePrintf />
+  },
+  {
+    path: '/page/Function_printf/header',
+    element: <HeaderPrntf />
+  },
+  {
+    path: '/page/Function_printf/ft_printc',
+    element: <Printf_C />
   },
   {
     path: '/HeaderFiles',

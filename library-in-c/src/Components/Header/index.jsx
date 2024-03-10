@@ -15,7 +15,7 @@ const Header = () => {
           <Link to={'/'}>Home</Link>
           <Link to={'/Tools'}>Tools</Link>
           <Link to={'/Libft'}>Libft</Link>
-          {/*<Link to={'/'}>In_production</Link>*/}
+          <Link to={'/Printf'}>Printf</Link>
         </S.Ul>
       </S.Nav>
     </S.HeaderStyles>

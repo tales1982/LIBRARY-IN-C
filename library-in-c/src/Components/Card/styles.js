@@ -7,6 +7,7 @@ export const Card = styled.div`
   width: 250px;
   padding: 20px;
   perspective: 1000px;
+
 `
 
 export const CardBox = styled.div`
@@ -42,13 +43,20 @@ export const ContentBox = styled.div`
 
 export const CardTitle = styled.h2`
   color: #fff;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 800;
   transition: all 0.5s ease-in-out;
   transform: translate3d(0px, 0px, 20px);
 
   &:hover {
     transform: translate3d(0px, 0px, 50px);
+  }
+
+  @media (max-width: 764px) {
+    font-size: 16px;
+  }
+  @media (min-width: 765px) and (max-width: 1024px) {
+    font-size: 18px;
   }
 `
 
