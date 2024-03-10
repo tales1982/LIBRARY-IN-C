@@ -186,7 +186,7 @@ const Printf_C = () => {
         </span>
         <span>
           <S.Margin />
-          <S.Margin />
+          
           <S.SpanTab />i<S.Green> = </S.Green> i <S.Green>+</S.Green>{' '}
           print_char( <S.Green>*</S.Green>input );
         </span>
