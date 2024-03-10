@@ -80,11 +80,11 @@ const Ft_memmove = () => {
         </S.SpanTab>
         <S.SpanTab>{'{'}</S.SpanTab>
         <S.SpanTab2>
-          <S.SpanTab>len = 0;</S.SpanTab>{' '}
+          <S.SpanTab>len <S.Green>=</S.Green> 0;</S.SpanTab>{' '}
         </S.SpanTab2>
         <S.SpanTab2>
           <S.SpanTab>
-            <S.Red>while</S.Red> ( len {'< '}n )
+            <S.Red>while</S.Red> ( len <S.Green>{' < '}</S.Green>n )
           </S.SpanTab>
         </S.SpanTab2>
         <S.SpanTab2>
@@ -92,7 +92,7 @@ const Ft_memmove = () => {
         </S.SpanTab2>
         <S.SpanTab2>
           <S.SpanTab2>
-            (( unsigned char <S.Green>*</S.Green>) s1 )[ len ] = (( unsigned
+            (( unsigned char <S.Green>*</S.Green>) s1 )[ len ] <S.Green>=</S.Green> (( unsigned
             char <S.Green>*</S.Green>) s2 )[ len ];
           </S.SpanTab2>
         </S.SpanTab2>
