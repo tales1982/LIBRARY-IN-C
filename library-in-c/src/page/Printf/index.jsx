@@ -25,15 +25,15 @@ const Printf = () => {
             linkTo="/page/Function_Printf/header"
             shadowColor="rgba(238, 255, 0, 0.925)"
             imgSrc="img/iconH.webp"
-            alt="Header files"
+            alt="ft_printf.h"
           />
           <Card
             title="ft_printf.c"
             text=""
             linkTo="/page/Function_Printf/ft_printc"
             shadowColor="rgba(0, 255, 0, 0.973)" // Cor da sombra para o primeiro Card
-            imgSrc="img/struct.png"
-            alt="C Structures"
+            imgSrc="img/C.ico"
+            alt="ft_printf.c"
           />
           </S.ContainerCard>
           <S.ContainerCard>
@@ -42,24 +42,24 @@ const Printf = () => {
             text=""
             linkTo="/"
             shadowColor="rgba(57, 255, 20, 0.84)" // Cor da sombra para o primeiro Card
-            imgSrc="img/struct.png"
-            alt="C Structures"
+            imgSrc="img/C.ico"
+            alt="ft_print_char.c"
           />
           <Card
             title="ft_print_hex.c"
             text=""
             linkTo="/"
             shadowColor="rgba(150, 7, 0, 0.973)" // Cor da sombra para o primeiro Card
-            imgSrc="img/struct.png"
-            alt="C Structures"
+            imgSrc="img/C.ico"
+            alt="ft_print_hex.c"
           />
           <Card
             title="ft_print_int.c"
             text=""
             linkTo="/"
             shadowColor="rgba(57, 255, 20, 0.84)" // Cor da sombra para o primeiro Card
-            imgSrc="img/struct.png"
-            alt="C Structures"
+            imgSrc="img/C.ico"
+            alt="ft_print_int.c"
           />
           </S.ContainerCard>
           <S.ContainerCard>
@@ -68,24 +68,24 @@ const Printf = () => {
             text=""
             linkTo="/"
             shadowColor="rgba(0, 255, 255, 0.886)" // Cor da sombra para o primeiro Card
-            imgSrc="img/struct.png"
-            alt="C Structures"
+            imgSrc="img/C.ico"
+            alt="ft_print_pointer.c"
           />
            <Card
             title="ft_print_string.c"
             text=""
             linkTo="/"
             shadowColor="rgba(255, 255, 0, 0.831)" // Cor da sombra para o primeiro Card
-            imgSrc="img/struct.png"
-            alt="C Structures"
+            imgSrc="img/C.ico"
+            alt="ft_print_string.c"
           />
            <Card
             title="ft_print_unsigned.c"
             text=""
             linkTo="/"
             shadowColor="rgba(255, 65, 108, 0.904)" // Cor da sombra para o primeiro Card
-            imgSrc="img/struct.png"
-            alt="C Structures"
+            imgSrc="img/C.ico"
+            alt="ft_print_unsigned.c"
           />
           </S.ContainerCard>
 
