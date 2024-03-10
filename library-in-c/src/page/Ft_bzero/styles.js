@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components'
-import { Colors, Fonts } from '../../globalStyles'
+import { Colors, Fonts,FCor } from '../../globalStyles'
 
 const shadowAnimation = keyframes`
   0% {
@@ -210,3 +210,24 @@ export const Ul = styled.ul`
 export const Li = styled.li`
 padding: 6px 0;
 `
+/************ Cores Tags ***************/
+
+export const White = styled.span`
+  color: ${FCor.white};
+`
+export const Green = styled.span`
+  color: ${FCor.green};
+`
+export const Gold = styled.span`
+  color: ${FCor.gold};
+`
+export const Black = styled.span`
+  color: ${FCor.black};
+`
+export const Red = styled.span`
+  color: ${FCor.red};
+`
+export const Lilas = styled.span`
+  color: ${FCor.lila};
+`
+

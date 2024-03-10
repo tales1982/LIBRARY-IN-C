@@ -11,47 +11,45 @@ const Ft_memmove = () => {
       <S.P>
         The ft_memmove function is a customized implementation of the standard C{' '}
         {"library's"} memmove function, designed to copy n bytes of memory from
-        a source location (s2) to a destination location (s1), safely handling
-        overlaps between the source and destination memory regions. {"Let's"}{' '}
-        explore what this function does in detail:
+        a source location <S.Gold>(s2)</S.Gold>to a destination location{' '}
+        <S.Gold>(s1)</S.Gold>, safely handling overlaps between the source and
+        destination memory regions. {"Let's"} explore what this function does in
+        detail:
       </S.P>
 
       <S.SectionInfo>
         <span>
-          # <S.TextBlue>include </S.TextBlue>{' '}
-          <S.TextGreen>{'"libft.h"'}</S.TextGreen>{' '}
+          <S.Red># include </S.Red> <S.Green>{'"libft.h"'}</S.Green>{' '}
         </span>
         <span>
-          <S.TextRed>void </S.TextRed>{' '}
-          <S.TextRed2>
-            {' '}
-            <S.TextBlue> *</S.TextBlue>ft_memmove
-          </S.TextRed2>
-          (<S.TextRed> void </S.TextRed> <S.TextBlue> *</S.TextBlue>s1,{' '}
-          <S.TextRed>const </S.TextRed> void <S.TextBlue> *</S.TextBlue>s2,{' '}
-          <S.TextRed>size_t </S.TextRed> n )
+          void
+          <S.Green> *</S.Green>
+          <S.Lilas>ft_memmove</S.Lilas>( void <S.Green> *</S.Green>s1,{' '}
+          <S.Red>const </S.Red> void <S.Green> *</S.Green>s2, size_t n )
         </span>
         <span>{'{'}</span>
         <S.SpanTab>
-          <S.TextRed>
-            <S.TextRed>size_t </S.TextRed>
-          </S.TextRed>
+          size_t
           <S.SpanTab>len;</S.SpanTab>
         </S.SpanTab>
         <br />
-        <S.SpanTab>len = 0;</S.SpanTab>
         <S.SpanTab>
-          <S.TextRed>if</S.TextRed> ( s2 {'< '}s1 )
+          len<S.Green> = </S.Green>0;
+        </S.SpanTab>
+        <S.SpanTab>
+          <S.Red>if</S.Red> ( s2 <S.Green>{'< '}</S.Green>s1 )
         </S.SpanTab>
         <S.SpanTab>{'{'}</S.SpanTab>
         <S.SpanTab2>
-          <S.SpanTab>len = n;</S.SpanTab>{' '}
+          <S.SpanTab>
+            len <S.Green> = </S.Green> n;
+          </S.SpanTab>{' '}
         </S.SpanTab2>
         <S.SpanTab2>
           <S.SpanTab>
-            <S.TextRed>while</S.TextRed>
+            <S.Red>while</S.Red>
           </S.SpanTab>
-          ( len {'> '}0 )
+          ( len <S.Green> {'> '} </S.Green>0 )
         </S.SpanTab2>
         <S.SpanTab2>
           <S.SpanTab></S.SpanTab> {'{'}
@@ -60,17 +58,16 @@ const Ft_memmove = () => {
           <S.SpanTab>
             {' '}
             <S.SpanTab>
-              len<S.TextBlue>--</S.TextBlue>;
+              len<S.Green>--</S.Green>;
             </S.SpanTab>{' '}
           </S.SpanTab>
         </S.SpanTab2>
         <S.SpanTab2>
           <S.SpanTab>
             <S.SpanTab>
-              (( <S.TextRed>unsigned char </S.TextRed>{' '}
-              <S.TextBlue>*</S.TextBlue>) s1 )[ len ] = ((
-              <S.TextRed>unsigned char </S.TextRed> <S.TextBlue>*</S.TextBlue>)
-              s2 )[ len ];
+              (( unsigned char <S.Green>*</S.Green>) s1 )[ len ]{' '}
+              <S.Green> = </S.Green> (( unsigned char <S.Green>*</S.Green>) s2
+              )[ len ];
             </S.SpanTab>
           </S.SpanTab>
         </S.SpanTab2>
@@ -79,7 +76,7 @@ const Ft_memmove = () => {
         </S.SpanTab>
         <S.SpanTab>{'}'}</S.SpanTab>
         <S.SpanTab>
-          <S.TextRed>else</S.TextRed>
+          <S.Red>else</S.Red>
         </S.SpanTab>
         <S.SpanTab>{'{'}</S.SpanTab>
         <S.SpanTab2>
@@ -87,7 +84,7 @@ const Ft_memmove = () => {
         </S.SpanTab2>
         <S.SpanTab2>
           <S.SpanTab>
-            <S.TextRed>while</S.TextRed> ( len {'< '}n )
+            <S.Red>while</S.Red> ( len {'< '}n )
           </S.SpanTab>
         </S.SpanTab2>
         <S.SpanTab2>
@@ -95,15 +92,13 @@ const Ft_memmove = () => {
         </S.SpanTab2>
         <S.SpanTab2>
           <S.SpanTab2>
-            (( <S.TextRed>unsigned char </S.TextRed> <S.TextBlue>*</S.TextBlue>)
-            s1 )[ len ] = ((
-            <S.TextRed>unsigned char </S.TextRed> <S.TextBlue>*</S.TextBlue>) s2
-            )[ len ];
+            (( unsigned char <S.Green>*</S.Green>) s1 )[ len ] = (( unsigned
+            char <S.Green>*</S.Green>) s2 )[ len ];
           </S.SpanTab2>
         </S.SpanTab2>
         <S.SpanTab2>
           <S.SpanTab2>
-            len<S.TextBlue>++</S.TextBlue>;
+            len<S.Green>++</S.Green>;
           </S.SpanTab2>
         </S.SpanTab2>
         <S.SpanTab2>
@@ -111,14 +106,14 @@ const Ft_memmove = () => {
         </S.SpanTab2>
         <S.SpanTab>{'}'}</S.SpanTab>
         <S.SpanTab>
-          <S.TextBlue>return</S.TextBlue> ( <S.TextRed2> s1 </S.TextRed2> );
+          <S.Red>return</S.Red> ( s1 );
         </S.SpanTab>
         {'}'}
       </S.SectionInfo>
       <br />
       <S.H3>Function Body:</S.H3>
       <S.P>
-        ° The function begins by declaring a <S.TextRed>size_t len</S.TextRed>;
+        ° The function begins by declaring a <S.Gold>size_t len</S.Gold>;
         variable that will be used to control the copy loop.
       </S.P>
       <S.P>
@@ -129,44 +124,43 @@ const Ft_memmove = () => {
         the copy is performed from back to front:
       </S.P>
       <S.P>
-        ° <S.TextBlue>len = n</S.TextBlue>; initializes len with the total
-        number of bytes to be copied.
+        ° <S.Gold>len = n</S.Gold>; initializes len with the total number of
+        bytes to be copied.
       </S.P>
       <S.P>
-        ° The loop while <S.TextBlue>( len {'>'} 0 ) </S.TextBlue>decrements len
-        on each iteration, copying bytes one by one from the end to the
-        beginning. This ensures that the copy of overlapping areas is done
-        without overwriting data not yet copied.
+        ° The loop while <S.Gold>( len {'>'} 0 ) </S.Gold>decrements len on each
+        iteration, copying bytes one by one from the end to the beginning. This
+        ensures that the copy of overlapping areas is done without overwriting
+        data not yet copied.
       </S.P>
       <S.P>
-        ° If <S.TextBlue>s2 </S.TextBlue> is not less than{' '}
-        <S.TextBlue> s1</S.TextBlue>, there is no risk of overlap that could
-        impair the copy, or the overlap occurs in a way that the beginning of
-        the source region is within or after the destination region. In this
-        case, the copy is made from beginning to end:
+        ° If <S.Gold>s2 </S.Gold> is not less than <S.Gold> s1</S.Gold>, there
+        is no risk of overlap that could impair the copy, or the overlap occurs
+        in a way that the beginning of the source region is within or after the
+        destination region. In this case, the copy is made from beginning to
+        end:
       </S.P>
       <S.P>
-        ° <S.TextBlue>len = 0; </S.TextBlue> reinitializes{' '}
-        <S.TextBlue>len</S.TextBlue>.
+        ° <S.Gold>len = 0; </S.Gold> reinitializes <S.Gold>len</S.Gold>.
       </S.P>
       <S.P>
-        ° The loop while ( len{'<'} n ) increments len on each iteration,
-        copying the bytes one by one from the beginning to the end.
+        ° The loop while <S.Gold>( len{' < '} n )</S.Gold> increments len on
+        each iteration, copying the bytes one by one from the beginning to the
+        end.
       </S.P>
-      <S.H3>
-        Function Return: return ( <S.TextRed>s1</S.TextRed> );
-      </S.H3>
+      <S.H3>Function Return: return ( s1 );</S.H3>
       <S.P>
         ° After copying the n bytes, the function returns the pointer to the
-        destination <S.TextBlue>(s1)</S.TextBlue> . This allows the result of
-        the function to be used in chains of calls.
+        destination <S.Gold>(s1)</S.Gold> . This allows the result of the
+        function to be used in chains of calls.
       </S.P>
       <S.H3>Summary: </S.H3>
       <S.P>
-        ° The ft_memmove safely copies n bytes from one memory location to
-        another, correctly handling overlaps between the source and destination
-        memory regions. Unlike memcpy, which does not guarantee data integrity
-        in case of overlap, ft_memmove ensures that the data are copied intact,
+        ° The <S.Gold>ft_memmove</S.Gold> safely copies n bytes from one memory
+        location to another, correctly handling overlaps between the source and
+        destination memory regions. Unlike <S.Gold>memcpy</S.Gold>, which does
+        not guarantee data integrity in case of overlap,{' '}
+        <S.Gold>ft_memmove</S.Gold> ensures that the data are copied intact,
         whether by performing the copy from back to front when necessary, or
         proceeding from beginning to end, depending on the relationship between
         the source and destination addresses.

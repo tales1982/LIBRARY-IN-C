@@ -8,82 +8,90 @@ const Ft_strlcat = () => {
     <S.ContainerMain>
       <Header />
       <S.H1>ft_strlcat</S.H1>
-      <S.P>The ft_strlcat function is a custom implementation of the strlcat function found in some C libraries. It is designed to concatenate strings safely, ensuring that the destination buffer is not overwritten and that it always ends with a null character \0, even when the size of the destination buffer is not sufficient to contain the complete concatenation. {"d"} detail the function:</S.P>
+      <S.P>
+        The <S.Gold>ft_strlcat</S.Gold> function is a custom implementation of
+        the <S.Gold>strlcat</S.Gold> function found in some C libraries. It is
+        designed to concatenate strings safely, ensuring that the destination
+        buffer is not overwritten and that it always ends with a null character{' '}
+        <S.Gold>\0</S.Gold>, even when the size of the destination buffer is not
+        sufficient to contain the complete concatenation. detail the function:
+      </S.P>
 
       <S.SectionInfo>
         <span>
-          <S.TextBlue>size_t </S.TextBlue>
-          <S.TextRed2>ft_strlcat</S.TextRed2>( <S.TextRed>char </S.TextRed>{' '}
-          <S.TextBlue>*</S.TextBlue>dst, <S.TextRed>const </S.TextRed>char{' '}
-          <S.TextBlue>*</S.TextBlue>src, <S.TextRed>size_t </S.TextRed>dstsize )
+          size_t
+          <S.Lilas> ft_strlcat</S.Lilas>( char <S.Green>*</S.Green>dst,{' '}
+          <S.TextRed>const </S.TextRed>char <S.Green>*</S.Green>src, size_t
+          dstsize )
         </span>
         <span>{'{'}</span>
         <S.SpanTab>
-          <S.TextRed>size_t </S.TextRed>
+          size_t
           <S.SpanTab>src_len;</S.SpanTab>
         </S.SpanTab>
         <S.SpanTab>
-          <S.TextRed>size_t </S.TextRed>
+          size_t
           <S.SpanTab>dst_len;</S.SpanTab>
         </S.SpanTab>
-
         <S.SpanTab>
-          <S.TextRed>char </S.TextRed>
+          char
           <S.SpanTab>
-            <S.TextBlue>*</S.TextBlue>s;
+            <S.Green>*</S.Green>s;
           </S.SpanTab>
         </S.SpanTab>
         <br />
         <S.SpanTab>
-          s = ({' '}
-          <S.TextRed>
-            char <S.TextBlue>*</S.TextBlue>{' '}
-          </S.TextRed>{' '}
-          ) src ;
+          s <S.Green> = </S.Green> ( char <S.Green>*</S.Green>) src ;
         </S.SpanTab>
         <S.SpanTab></S.SpanTab>
         <S.SpanTab>
-          src_len = <S.TextRed2>ft_strlen</S.TextRed2>( s );
+          src_len <S.Green> = </S.Green> <S.Lilas>ft_strlen</S.Lilas>( s );
         </S.SpanTab>
         <S.SpanTab>
-          dst_len = <S.TextRed2>ft_strlen</S.TextRed2>( dst );
+          dst_len <S.Green> = </S.Green> <S.Lilas>ft_strlen</S.Lilas>( dst );
         </S.SpanTab>
         <S.SpanTab>
-          <S.TextRed>if</S.TextRed> ( dst_len{' >'}= dstsize )
-        </S.SpanTab>
-        <S.SpanTab2>dst_len = dstsize;</S.SpanTab2>
-        <S.SpanTab>
-          <S.TextRed>if</S.TextRed> ( dst_len == dstsize )
+          <S.Red>if</S.Red> ( dst_len <S.Green>{' >'}= </S.Green> dstsize )
         </S.SpanTab>
         <S.SpanTab2>
-          <S.TextBlue>return</S.TextBlue> ( <S.TextRed>dstsize</S.TextRed> +{' '}
-          <S.TextRed>src_len</S.TextRed> );
+          dst_len <S.Green>= </S.Green>dstsize;
         </S.SpanTab2>
         <S.SpanTab>
-          <S.TextRed>if</S.TextRed> ( src_len {'<'} dstsize - dst_len )
+          <S.Red>if</S.Red> ( dst_len <S.Green>== </S.Green> dstsize )
         </S.SpanTab>
         <S.SpanTab2>
-          <S.TextRed2>ft_memcpy</S.TextRed2> (dst + dst_len, src, src_len + 1);
+          <S.Red>return</S.Red> ( dstsize <S.Green>+ </S.Green> src_len);
         </S.SpanTab2>
         <S.SpanTab>
-          <S.TextRed>else</S.TextRed>
+          <S.Red>if</S.Red> ( src_len <S.Green>{'<'} </S.Green> dstsize{' '}
+          <S.Green>- </S.Green>dst_len )
+        </S.SpanTab>
+        <S.SpanTab2>
+          <S.Lilas>ft_memcpy</S.Lilas> (dst <S.Green>+ </S.Green>dst_len, src,
+          src_len <S.Green>+ </S.Green>1);
+        </S.SpanTab2>
+        <S.SpanTab>
+          <S.Red>else</S.Red>
           <br />
           <span>{'{'}</span>
           <br />
           <S.SpanTab2>
-            <S.TextRed2>ft_memcpy</S.TextRed2> ( dst {'+'} dst_len, src, dstsize
-            - dst_len - 1 )
+            <S.Lilas>ft_memcpy</S.Lilas> ( dst <S.Green> {'+'}</S.Green>{' '}
+            dst_len, src, dstsize
+            <S.Green> - </S.Green> dst_len <S.Green> - </S.Green>1 )
           </S.SpanTab2>
         </S.SpanTab>
         <S.SpanTab2>
-          <S.SpanTab>dst[ dstsize - 1] = {"'\\0'"};</S.SpanTab>
+          <S.SpanTab>
+            dst[ dstsize <S.Green> - </S.Green> 1] <S.Green> = </S.Green>{' '}
+            {"'\\0'"};
+          </S.SpanTab>
         </S.SpanTab2>
         <S.SpanTab>
           <span>{'}'}</span>
         </S.SpanTab>
         <S.SpanTab>
-          <S.TextBlue>return</S.TextBlue> ( <S.TextRed>dst_len</S.TextRed> +{' '}
-          <S.TextRed>src_len</S.TextRed>);
+          <S.Red>return</S.Red> ( dst_len <S.Green> + </S.Green> src_len );
         </S.SpanTab>
         <span>{'}'}</span>
       </S.SectionInfo>
@@ -91,62 +99,56 @@ const Ft_strlcat = () => {
       <S.H3>Function Body</S.H3>
       <S.P>
         ° <strong>Determining the Source Length:</strong>{' '}
-        <S.TextBlue>size_t src_len = ft_strlen(src);</S.TextBlue> calculates the
-        length of the source string <S.TextBlue>(src)</S.TextBlue> using the{' '}
-        <S.TextBlue>ft_strlen</S.TextBlue> function, which returns the number of
+        <S.Gold>size_t src_len = ft_strlen(src);</S.Gold> calculates the length
+        of the source string <S.Gold>(src)</S.Gold> using the{' '}
+        <S.Gold>ft_strlen</S.Gold> function, which returns the number of
         characters in src before the null termination character.
       </S.P>
       <S.P>
-        °{' '}
-        <strong>
-          Conditional Copy with Null Termination:The function then checks if{' '}
-          <S.TextBlue>src_len + 1 {'< '}dstsize</S.TextBlue>. This condition
-          verifies whether there is sufficient space in the destination{' '}
-          <S.TextBlue>(dst)</S.TextBlue> to copy the entire source string{' '}
-          <S.TextBlue>(src)</S.TextBlue>, including the null termination
-          character.
-        </strong>
+        ° <strong>Conditional Copy with Null Termination:</strong>The function
+        then checks if <S.Gold>src_len + 1 {'< '}dstsize</S.Gold>. This
+        condition verifies whether there is sufficient space in the destination{' '}
+        <S.Gold>(dst)</S.Gold> to copy the entire source string{' '}
+        <S.Gold>(src)</S.Gold>, including the null termination character.
       </S.P>
       <S.P>
-        ° If true, <S.TextBlue>ft_memcpy(dst, src, src_len + 1);</S.TextBlue> is
-        called to copy <S.TextBlue>src_len + 1</S.TextBlue> bytes (the content
-        of src plus the null character) to <S.TextBlue>dst</S.TextBlue>.
+        ° If true, <S.Gold>ft_memcpy(dst, src, src_len + 1);</S.Gold> is called
+        to copy <S.Gold>src_len + 1</S.Gold> bytes (the content of src plus the
+        null character) to <S.Gold>dst</S.Gold>.
       </S.P>
       <S.P>
         ° <strong>Handling Smaller Destination Buffer:</strong>If{' '}
-        <S.TextBlue>src_len + 1</S.TextBlue> is not less than dstsize
-        (indicating that dst cannot safely accommodate the entire{' '}
-        <S.TextBlue>src</S.TextBlue>), the function checks if dstsize is not 0
+        <S.Gold>src_len + 1</S.Gold> is not less than dstsize (indicating that
+        dst cannot safely accommodate the entire <S.Gold>src</S.Gold>), the
+        function checks if dstsize is not <S.Gold>0 </S.Gold>
         to avoid accessing a zero-sized array, which would be undefined.
       </S.P>
       <S.P>
         ° If dstsize is not 0,{' '}
-        <S.TextBlue>ft_memcpy(dst, src, dstsize - 1);</S.TextBlue> copies{' '}
-        <S.TextBlue>dstsize - 1</S.TextBlue> bytes from{' '}
-        <S.TextBlue>src</S.TextBlue> to <S.TextBlue>dst</S.TextBlue>, the
-        maximum possible leaving space for a null character. Then,{' '}
-        <S.TextBlue>dst[dstsize - 1] = 0;</S.TextBlue> explicitly adds a null
-        character at the end of dst to ensure the resulting string is properly
-        terminated.
+        <S.Gold>ft_memcpy(dst, src, dstsize - 1);</S.Gold> copies{' '}
+        <S.Gold>dstsize - 1</S.Gold> bytes from <S.Gold>src</S.Gold> to{' '}
+        <S.Gold>dst</S.Gold>, the maximum possible leaving space for a null
+        character. Then, <S.Gold>dst[dstsize - 1] = 0;</S.Gold> explicitly adds
+        a null character at the end of dst to ensure the resulting string is
+        properly terminated.
       </S.P>
       <S.P>
-        ° <strong>Return:</strong> The function returns{' '}
-        <S.TextBlue>src_len</S.TextBlue>, the length of the source string. This
-        is useful for checking if the string was truncated when copied to{' '}
-        <S.TextBlue>dst</S.TextBlue>.
+        ° <strong>Return:</strong> The function returns <S.Gold>src_len</S.Gold>
+        , the length of the source string. This is useful for checking if the
+        string was truncated when copied to <S.Gold>dst</S.Gold>.
       </S.P>
       <S.H3>Summary</S.H3>
       <S.P>
-        The <S.TextRed2>ft_strlcpy</S.TextRed2> function copies a string from
-        src to dst safely, ensuring that dst is always null-terminated and that
-        there is no overflow of the destination buffer (dst). It addresses cases
-        where the destination buffer is smaller than the source string,
-        performing the copy of as many characters as possible while still
-        correctly terminating the destination string. The return of the function
-        indicates the length of the source string, allowing the caller to know
-        if the operation resulted in a truncated string.
+        The <S.Gold>ft_strlcpy</S.Gold> function copies a string from
+        <S.Gold>src </S.Gold>to dst safely, ensuring that dst is always
+        null-terminated and that there is no overflow of the destination buffer{' '}
+        <S.Gold>(dst)</S.Gold>. It addresses cases where the destination buffer
+        is smaller than the source string, performing the copy of as many
+        characters as possible while still correctly terminating the destination
+        string. The return of the function indicates the length of the source
+        string, allowing the caller to know if the operation resulted in a
+        truncated string.
       </S.P>
-
       <Footer />
     </S.ContainerMain>
   )
