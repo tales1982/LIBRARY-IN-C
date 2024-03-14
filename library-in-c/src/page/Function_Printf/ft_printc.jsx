@@ -182,7 +182,7 @@ const Printf_C = () => {
       </S.SectionInfo>
       <br />
       <S.H3>Function check_type:</S.H3>
-     <S.P>° check_type is a static helper function that receives a character representing the format specifier  <S.Gold>{"(such as 'c', 's', 'p', etc.)"}</S.Gold> and a variable argument list  <S.Gold>(va_list)</S.Gold>.</S.P>
+     <S.P>° check_type is a static helper function that receives a character representing the format specifier  <S.Gold>{"(such as 'c', 's', 'p', etc.)"}</S.Gold> and a variable argument list  <S.Gold>(va_list)</S.Gold>.</S.P>ft_memcpy
      <S.P>° <S.Gold></S.Gold>It checks the format specifier and calls the appropriate print function, passing the argument extracted using  <S.Gold>va_arg </S.Gold>with the corresponding type.</S.P>
      <S.P>° For different format specifiers, different print functions are called:</S.P>
      <S.P>°  <S.Gold>Returns</S.Gold> the total number of characters printed.</S.P>

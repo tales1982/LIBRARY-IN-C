@@ -23,6 +23,7 @@ import Printf from './page/Printf';
 import MakefilePrintf from './page/Function_Printf/makefile';
 import HeaderPrntf from './page/Function_Printf/header';
 import Printf_C from './page/Function_Printf/ft_printc';
+import Ft_toupper from './page/Ft_toupper';
 
 const rotas = createBrowserRouter([
   {
@@ -116,6 +117,10 @@ const rotas = createBrowserRouter([
   {
     path: '/Ft_strlcat',
     element: <Ft_strlcat />
+  },
+  {
+    path: '/Ft_toupper',
+    element: <Ft_toupper />
   }
 ]);
 function App() {
