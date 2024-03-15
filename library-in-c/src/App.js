@@ -25,6 +25,7 @@ import HeaderPrntf from './page/Function_Printf/header';
 import Printf_C from './page/Function_Printf/ft_printc';
 import Ft_toupper from './page/Ft_toupper';
 import Ft_tolower from './page/Ft_tolower';
+import Ft_strchr from './page/Ft_strchr';
 
 const rotas = createBrowserRouter([
   {
@@ -122,11 +123,14 @@ const rotas = createBrowserRouter([
   {
     path: '/Ft_toupper',
     element: <Ft_toupper />
-  }
-  ,
+  },
   {
     path: '/Ft_tolower',
     element: <Ft_tolower />
+  },
+  {
+    path: '/Ft_strchr',
+    element: <Ft_strchr />
   }
 ]);
 function App() {
