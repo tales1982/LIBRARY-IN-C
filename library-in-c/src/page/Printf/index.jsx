@@ -30,7 +30,7 @@ const Printf = () => {
           <Card
             title="ft_printf.c"
             text=""
-            linkTo="/page/Function_Printf/ft_printc"
+            linkTo="/page/Function_Printf/ft_print_c"
             shadowColor="rgba(0, 255, 0, 0.973)" // Cor da sombra para o primeiro Card
             imgSrc="img/C.ico"
             alt="ft_printf.c"
@@ -40,7 +40,7 @@ const Printf = () => {
              <Card
             title="ft_print_char.c"
             text=""
-            linkTo="/"
+            linkTo="/page/Function_Printf/ft_printchar_c"
             shadowColor="rgba(57, 255, 20, 0.84)" // Cor da sombra para o primeiro Card
             imgSrc="img/C.ico"
             alt="ft_print_char.c"

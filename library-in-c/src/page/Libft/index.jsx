@@ -14,44 +14,44 @@ const Libft = () => {
           <Button
             text="ft_isalpha.c"
             shadowColor="rgba(255, 0, 0, 0.8)"
-            to="/Ft_isalpha"
+            to="/LIBFT/Ft_isalpha"
           />
           <Button
             text="ft_isdigit.c"
             shadowColor="rgba(0, 100, 0, 0.8)"
-            to="/Ft_isdigit"
+            to="/LIBFT/Ft_isdigit"
           />
           <Button
             text="ft_isalnum.c"
             shadowColor="rgba(0, 0, 139, 0.8)"
-            to="/Ft_isalnum"
+            to="/LIBFT/Ft_isalnum"
           />
           <Button
             text="ft_isascii.c"
             shadowColor="rgba(139, 139, 0, 0.8)"
-            to="/Ft_isascii"
+            to="/LIBFT/Ft_isascii"
           />
         </S.containerButao>
         <S.containerButao>
           <Button
             text="ft_isprint.c"
             shadowColor="rgba(139, 0, 139, 0.8)"
-            to="/Ft_isprint"
+            to="/LIBFT/Ft_isprint"
           />
-          <Button text="ft_strlen.c" shadowColor="rgba(0, 191, 255, 0.8)" to="/Ft_strlen"/>
-          <Button text="ft_memset.c" shadowColor="rgba(144, 238, 144, 0.8)" to="/Ft_memset"/>
-          <Button text="ft_bzero.c" shadowColor="rgba(255, 165, 0, 0.8)" to="/Ft_bzero"/>
+          <Button text="ft_strlen.c" shadowColor="rgba(0, 191, 255, 0.8)" to="/LIBFT/Ft_strlen"/>
+          <Button text="ft_memset.c" shadowColor="rgba(144, 238, 144, 0.8)" to="/LIBFT/Ft_memset"/>
+          <Button text="ft_bzero.c" shadowColor="rgba(255, 165, 0, 0.8)" to="/LIBFT/Ft_bzero"/>
         </S.containerButao>
         <S.containerButao>
-          <Button text="ft_memcpy.c" shadowColor="rgba(255, 182, 193, 0.8)" to="/Ft_memcpy"/>
-          <Button text="ft_memmove.c" shadowColor="rgba(105, 105, 105, 0.8)" to="/Ft_memmove"/>
-          <Button text="ft_strlcpy.c" shadowColor="rgba(255, 0, 0, 0.8)" to="/Ft_strcpy"/>
-          <Button text="ft_strlcat.c" shadowColor="rgba(0, 100, 0, 0.8)" to="/Ft_strlcat"/>
+          <Button text="ft_memcpy.c" shadowColor="rgba(255, 182, 193, 0.8)" to="/LIBFT/Ft_memcpy"/>
+          <Button text="ft_memmove.c" shadowColor="rgba(105, 105, 105, 0.8)" to="/LIBFT/Ft_memmove"/>
+          <Button text="ft_strlcpy.c" shadowColor="rgba(255, 0, 0, 0.8)" to="/LIBFT/Ft_strcpy"/>
+          <Button text="ft_strlcat.c" shadowColor="rgba(0, 100, 0, 0.8)" to="/LIBFT/Ft_strlcat"/>
         </S.containerButao>
         <S.containerButao>
-          <Button text="ft_toupper.c" shadowColor="rgba(0, 0, 139, 0.8)" to="/Ft_toupper"/>
-          <Button text="ft_tolower.c" shadowColor="rgba(139, 139, 0, 0.8)" to="/Ft_tolower"/>
-          <Button text="ft_strchr.c" shadowColor="rgba(139, 0, 139, 0.8)" to="/Ft_strchr"/>
+          <Button text="ft_toupper.c" shadowColor="rgba(0, 0, 139, 0.8)" to="/LIBFT/Ft_toupper"/>
+          <Button text="ft_tolower.c" shadowColor="rgba(139, 139, 0, 0.8)" to="/LIBFT/Ft_tolower"/>
+          <Button text="ft_strchr.c" shadowColor="rgba(139, 0, 139, 0.8)" to="/LIBFT/Ft_strchr"/>
           <Button text="ft_strrchr.c" shadowColor="rgba(0, 191, 255, 0.8)" to="/Construcao"/>
         </S.containerButao>
         <S.containerButao>

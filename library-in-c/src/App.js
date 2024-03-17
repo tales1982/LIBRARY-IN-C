@@ -6,26 +6,27 @@ import Libft from './page/Libft';
 import HeaderFile from './page/HeaderFiles';
 import Struct from './page/Struct';
 import Makefile from './page/Makefile';
-import Ft_isalpha from './page/Ft_isalpha';
-import Ft_isdigit from './page/Ft_isdigit';
-import Ft_isalnum from './page/Ft_isalnum';
-import Ft_isascii from './page/Ft_isascii';
-import Ft_isprint from './page/Ft_isprint';
+import Ft_isalpha from './page/LIBFT/Ft_isalpha';
+import Ft_isdigit from './page/LIBFT/Ft_isdigit';
+import Ft_isalnum from './page/LIBFT/Ft_isalnum';
+import Ft_isascii from './page/LIBFT/Ft_isascii';
+import Ft_isprint from './page/LIBFT/Ft_isprint';
 import Construcao from './page/Construcao';
-import Ft_strlen from './page/Ft_strlen';
-import Ft_memset from './page/Ft_memset';
-import Ft_bzero from './page/Ft_bzero';
-import Ft_memcpy from './page/Ft_memcpy';
-import Ft_memmove from './page/Ft_memmove';
-import Ft_strcpy from './page/Ft_strcpy';
-import Ft_strlcat from './page/Ft_strlcat';
+import Ft_strlen from './page/LIBFT/Ft_strlen';
+import Ft_memset from './page/LIBFT/Ft_memset';
+import Ft_bzero from './page/LIBFT/Ft_bzero';
+import Ft_memcpy from './page/LIBFT/Ft_memcpy';
+import Ft_memmove from './page/LIBFT/Ft_memmove';
+import Ft_strcpy from './page/LIBFT/Ft_strcpy';
+import Ft_strlcat from './page/LIBFT/Ft_strlcat';
 import Printf from './page/Printf';
 import MakefilePrintf from './page/Function_Printf/makefile';
 import HeaderPrntf from './page/Function_Printf/header';
-import Printf_C from './page/Function_Printf/ft_printc';
-import Ft_toupper from './page/Ft_toupper';
-import Ft_tolower from './page/Ft_tolower';
-import Ft_strchr from './page/Ft_strchr';
+import Printf_C from './page/Function_Printf/ft_print_c';
+import Ft_toupper from './page/LIBFT//Ft_toupper';
+import Ft_tolower from './page/LIBFT//Ft_tolower';
+import Ft_strchr from './page/LIBFT//Ft_strchr';
+import Ft_pint_char_C from './page/Function_Printf/ft_printchar_c';
 
 const rotas = createBrowserRouter([
   {
@@ -57,8 +58,12 @@ const rotas = createBrowserRouter([
     element: <HeaderPrntf />
   },
   {
-    path: '/page/Function_printf/ft_printc',
+    path: '/page/Function_printf/ft_print_c',
     element: <Printf_C />
+  },
+  {
+    path: '/page/Function_printf/ft_printchar_c',
+    element: <Ft_pint_char_C />
   },
   {
     path: '/HeaderFiles',
@@ -73,63 +78,63 @@ const rotas = createBrowserRouter([
     element: <Makefile />
   },
   {
-    path: '/Ft_isalpha',
+    path: '/LIBFT/Ft_isalpha',
     element: <Ft_isalpha />
   },
   {
-    path: '/Ft_isdigit',
+    path: '/LIBFT/Ft_isdigit',
     element: <Ft_isdigit />
   },
   {
-    path: '/Ft_isalnum',
+    path: '/LIBFT/Ft_isalnum',
     element: <Ft_isalnum />
   },
   {
-    path: '/Ft_isascii',
+    path: '/LIBFT/Ft_isascii',
     element: <Ft_isascii />
   },
   {
-    path: '/Ft_isprint',
+    path: '/LIBFT/Ft_isprint',
     element: <Ft_isprint />
   },
   {
-    path: '/Ft_strlen',
+    path: '/LIBFT/Ft_strlen',
     element: <Ft_strlen />
   },
   {
-    path: '/Ft_memset',
+    path: '/LIBFT/Ft_memset',
     element: <Ft_memset />
   },
   {
-    path: '/Ft_bzero',
+    path: '/LIBFT/Ft_bzero',
     element: <Ft_bzero />
   },
   {
-    path: '/Ft_memcpy',
+    path: '/LIBFT/Ft_memcpy',
     element: <Ft_memcpy />
   },
   {
-    path: '/Ft_memmove',
+    path: '/LIBFT/Ft_memmove',
     element: <Ft_memmove />
   },
   {
-    path: '/Ft_strcpy',
+    path: '/LIBFT/Ft_strcpy',
     element: <Ft_strcpy />
   },
   {
-    path: '/Ft_strlcat',
+    path: '/LIBFT/Ft_strlcat',
     element: <Ft_strlcat />
   },
   {
-    path: '/Ft_toupper',
+    path: '/LIBFT/Ft_toupper',
     element: <Ft_toupper />
   },
   {
-    path: '/Ft_tolower',
+    path: '/LIBFT/Ft_tolower',
     element: <Ft_tolower />
   },
   {
-    path: '/Ft_strchr',
+    path: '/LIBFT/Ft_strchr',
     element: <Ft_strchr />
   }
 ]);

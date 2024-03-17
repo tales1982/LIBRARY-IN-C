@@ -36,7 +36,7 @@ const MakefilePrintf = () => {
           <S.Green>@make -C $(LIBFTDIR)</S.Green>{' '}
         </S.Margin>
         <S.Margin>
-          <S.Green>@cp $(LIBFTDIR)/$(LIBFTNAME)</S.Green>
+          <S.Green>@cp $(LIBFTDIR)/$(LIBFTNAME)  .</S.Green>
         </S.Margin>
         <S.Margin>
           <S.Green>@mv $(LIBFTNAME) $(NAME)</S.Green>
