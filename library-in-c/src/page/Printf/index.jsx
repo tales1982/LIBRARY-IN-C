@@ -56,7 +56,7 @@ const Printf = () => {
           <Card
             title="ft_print_int.c"
             text=""
-            linkTo="/"
+            linkTo="/page/Function_Printf/ft_print_int"
             shadowColor="rgba(57, 255, 20, 0.84)" // Cor da sombra para o primeiro Card
             imgSrc="img/C.ico"
             alt="ft_print_int.c"

@@ -134,14 +134,12 @@ const Ft_print_hex = () => {
           {' '}
           int
           <S.SpanTab />
-
           <S.SpanTab2 />i ;
         </S.SpanTab>
         <S.SpanTab>
           {' '}
           int
           <S.SpanTab />
-
           <S.SpanTab2 />
           <S.Green>*</S.Green>iptr ;
         </S.SpanTab>
@@ -161,7 +159,6 @@ const Ft_print_hex = () => {
         </S.SpanTab>
         <S.SpanTab>
           {' '}
-
           <S.SpanTab />
           <S.Red>return</S.Red> ( 0 ) ;
         </S.SpanTab>
@@ -169,7 +166,7 @@ const Ft_print_hex = () => {
           <S.Red>while</S.Red> ( tempval <S.Green>!= </S.Green> 0 )
         </S.SpanTab>
         <span>
-          <S.SpanTab/>
+          <S.SpanTab />
           {'{'}
         </span>
         <S.SpanTab2>

@@ -11,6 +11,7 @@ const Printf_C = () => {
       <S.P>
       This code represents a simplified implementation of the printf function named  <S.Gold>ft_printf</S.Gold>, which mimics the behavior of the standard printf function from the C library, allowing formatting and printing of various types of data. The code is divided into two main parts: the check_type function and the main  <S.Gold>ft_printf </S.Gold>function.
       </S.P>
+      <S.H3>Função check_type</S.H3>
       <S.SectionInfo>
         <span>
           <S.Red>#include</S.Red> <S.Green>{'"ft_printf.h"'}</S.Green>
@@ -106,7 +107,18 @@ const Printf_C = () => {
         </span>
         <span>{'}'}</span>
         <br />
-        <span>
+
+      </S.SectionInfo>
+      <br />
+  
+      <S.P>° check_type is a static helper function that receives a character representing the format specifier  <S.Gold>{"(such as 'c', 's', 'p', etc.)"}</S.Gold> and a variable argument list  <S.Gold>(va_list)</S.Gold>.</S.P>
+     <S.P>° <S.Gold></S.Gold>It checks the format specifier and calls the appropriate print function, passing the argument extracted using  <S.Gold>va_arg </S.Gold>with the corresponding type.</S.P>
+     <S.P>° For different format specifiers, different print functions are called:</S.P>
+     <S.P>°  <S.Gold>Returns</S.Gold> the total number of characters printed.</S.P>
+     <br />
+     <S.H3>Function ft_printf:</S.H3>
+      <S.SectionInfo>
+      <span>
           int <S.Lilas>ft_printf</S.Lilas>( <S.Red>const</S.Red> char{' '}
           <S.Green>*</S.Green> input, ... )
         </span>
@@ -144,8 +156,6 @@ const Printf_C = () => {
           <S.Red>if</S.Red> ( <S.Green>*</S.Green>input <S.Green>==</S.Green> {"'%'"} )
         </span>
         <span>
-
-
         </span>
         <span>
           <S.Margin />
@@ -154,7 +164,7 @@ const Printf_C = () => {
         </span>
         <span>
           <S.Margin />
-          <S.Red>else</S.Red> 
+          <S.Red>else</S.Red>
         </span>
         <span>
           <S.Margin />
@@ -180,12 +190,6 @@ const Printf_C = () => {
         <span>{'}'}</span>
       </S.SectionInfo>
       <br />
-      <S.H3>Function check_type:</S.H3>
-     <S.P>° check_type is a static helper function that receives a character representing the format specifier  <S.Gold>{"(such as 'c', 's', 'p', etc.)"}</S.Gold> and a variable argument list  <S.Gold>(va_list)</S.Gold>.</S.P>ft_memcpy
-     <S.P>° <S.Gold></S.Gold>It checks the format specifier and calls the appropriate print function, passing the argument extracted using  <S.Gold>va_arg </S.Gold>with the corresponding type.</S.P>
-     <S.P>° For different format specifiers, different print functions are called:</S.P>
-     <S.P>°  <S.Gold>Returns</S.Gold> the total number of characters printed.</S.P>
-     <S.H3>Function ft_printf:</S.H3>
      <S.P>° The main function that mimics printf, accepting a format string followed by a variable number of arguments.</S.P>
      <S.P>° It iterates over the format string. If it finds a <S.Gold>{" '%' "}</S.Gold>character, it identifies that the next character specifies the type of data to be printed and calls check_type passing that specifier and the argument list.</S.P>
      <S.P>° f the character is not <S.Gold>{" '%'"}</S.Gold>, the character is printed directly to the output, being part of the literal string format.</S.P>
