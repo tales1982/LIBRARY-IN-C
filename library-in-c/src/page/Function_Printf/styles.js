@@ -121,7 +121,7 @@ export const P = styled.p`
 
 /********Tabulacao para os codigos *************/
 export const SpanTab = styled.span`
-  padding-left: 30px;
+  padding-left: 40px;
 
   /***************** Resposabilidade Mobile *******************/
   @media (max-width: 764px) {
@@ -132,6 +132,20 @@ export const SpanTab = styled.span`
     padding-left: 20px;
   }
 `
+export const SpanTab2 = styled.span`
+  padding-left: 80px;
+
+  /***************** Resposabilidade Mobile *******************/
+  @media (max-width: 764px) {
+    padding-left: 10px;
+  }
+
+  @media (min-width: 765px) and (max-width: 1024px) {
+    padding-left: 20px;
+  }
+`
+
+
 export const Margin = styled.span`
  margin-left: 66px;
 

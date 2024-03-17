@@ -48,7 +48,7 @@ const Printf = () => {
           <Card
             title="ft_print_hex.c"
             text=""
-            linkTo="/"
+            linkTo="/page/Function_Printf/ft_print_hex"
             shadowColor="rgba(150, 7, 0, 0.973)" // Cor da sombra para o primeiro Card
             imgSrc="img/C.ico"
             alt="ft_print_hex.c"
