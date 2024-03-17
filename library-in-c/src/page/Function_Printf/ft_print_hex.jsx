@@ -185,8 +185,7 @@ const Ft_print_hex = () => {
       <S.P>° Uses <S.Gold>ft_putstr_fd</S.Gold> to print the string to the standard output <S.Gold>(file descriptor 1</S.Gold>).</S.P>
       <S.P>° Frees the allocated string.</S.P>
       <S.P>° If the original value is <S.Gold>0</S.Gold>, it explicitly prints <S.Gold>{"'0'"}</S.Gold> by calling print_char and adjusts the return length.</S.P>
-      <S.P>° Return Value: Returns the number of characters printed, including the <S.Gold>{"'0'"}</S.Gold> if the original value was <S.Gold>0</S.Gold>.</S.P>
-      <S.P>Este código lida de forma eficiente com a conversão e impressão hexadecimal, incluindo a alocação de memória para a string e a personalização do caso dos dígitos hexadecimais através do parâmetro asc. No entanto, existem alguns problemas potenciais ou melhorias que poderiam ser feitas, especialmente no tratamento de erros e na lógica para o caso em que o valor original é 0 ( parece tratá-lo explicitamente em vez de deixar o loop cuidar disso, o que pode ser redundante ou propenso a erros ).</S.P>
+      <S.P>° This code efficiently handles hexadecimal conversion and printing, including memory allocation for the string and customization of hexadecimal digit case through the asc parameter. However, there are some potential issues or improvements that could be made, especially in error handling and the logic for the case where the original value is 0 (it seems to handle it explicitly rather than letting the loop take care of it, which might be redundant or error-prone).</S.P>
       <br />
       <Footer />
     </S.ContainerMain>
