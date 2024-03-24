@@ -48,23 +48,24 @@ const Ft_print_unsigned = () => {
         <span>{'}'}</span>
       </S.SectionInfo>
       <br />
+      <S.H3>Objective</S.H3>
       <S.P>
-        ° <S.Gold>Objective: </S.Gold> <br /> <S.Green>*</S.Green>This recursive
+        <S.Gold>° </S.Gold>This recursive
         function prints an unsigned integer (unsigned int) character by
         character. The base case for the recursion is when nb is less than or
         equal to 9, i.e., when {"it's"} a single digit.
       </S.P>
+      <S.H3>Process:</S.H3>
       <S.P>
-        ° <S.Gold>Process: </S.Gold> <br /> <t />
-        <S.Green>*</S.Green>If nb is greater than 9, the function calls itself
+        <S.Gold>° </S.Gold>If nb is greater than 9, the function calls itself
         (print_unsigned) with nb divided by 10. This splits the number into
         digits, starting from the most significant digit to the least
         significant one. <br />
-        <S.Green>*</S.Green>If nb is less than or equal to 9 (base case of
+        <S.Gold>° </S.Gold>If nb is less than or equal to 9 (base case of
         recursion), the digit is converted to its corresponding ASCII character
         by adding 48 (the ASCII code for {"'0'"}) and printed using
         ft_putchar_fd. <br />
-        <S.Green>*</S.Green>After processing the base case, it prints the last
+        <S.Gold>° </S.Gold>After processing the base case, it prints the last
         digit of the number, obtained by the remainder of nb divided by 10 (nb %
         10), also converting it to the corresponding ASCII character.
       </S.P>
@@ -115,24 +116,23 @@ const Ft_print_unsigned = () => {
         length of the number (how many characters were printed).
       </S.P>
       <S.P>
-        <S.Gold>Process:</S.Gold>
-        <br />
-        <S.Green>*</S.Green> The function starts by calling convert_num to print
+        <S.H3>Process:</S.H3>
+        <S.Gold>° </S.Gold> The function starts by calling convert_num to print
         the number.
         <br />
-        <S.Green>*</S.Green> The variable i is initialized to 1, assuming that
+        <S.Gold>° </S.Gold> The variable i is initialized to 1, assuming that
         there is at least one digit to print.
         <br />
-        <S.Green>*</S.Green> A while loop counts how many digits the number has
+        <S.Gold>° </S.Gold> A while loop counts how many digits the number has
         by dividing the number by 10 until it is less than or equal to 9. With
         each division, the counter i is incremented.
         <br />
-        <S.Green>*</S.Green> Returns i, which is the total number of digits of
+        <S.Gold>° </S.Gold> Returns i, which is the total number of digits of
         the number, thus representing the length of the printed number.
       </S.P>
       <S.H3>Additional Observations</S.H3>
       <S.P>
-        This function prints a character to the specified file descriptor, in
+      <S.Gold>° </S.Gold>This function prints a character to the specified file descriptor, in
         this case, 1, which corresponds to the standard output (stdout). The use
         of 48 to convert numbers into characters is based on the ASCII table,
         where the digits 0 to 9 are represented by the ASCII codes 48 to 57,

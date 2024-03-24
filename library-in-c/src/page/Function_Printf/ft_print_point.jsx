@@ -87,24 +87,24 @@ const Ft_print_int = () => {
       </S.SectionInfo>
       <br />
       <S.P>
-        ° <S.Gold>Initial Variables:</S.Gold> Creates a temporary variable temp
+        <S.Gold>° </S.Gold> Initial Variables: Creates a temporary variable temp
         and a variable i to count the number of digits.
       </S.P>
       <S.P>
-        ° <S.Gold>Digit Counting: </S.Gold>Uses a loop to count how many digits
+        <S.Gold>° </S.Gold> Digit Counting: Uses a loop to count how many digits
         are needed to represent value in base 16 (hexadecimal).
       </S.P>
       <S.P>
-        ° <S.Gold>Memory Allocation: </S.Gold>Allocates enough memory for the
+        <S.Gold>° </S.Gold> Memory Allocation: Allocates enough memory for the
         resulting string, including the null termination character, using
         calloc, which initializes the allocated memory to zero.
       </S.P>
       <S.P>
-        ° <S.Gold>Updating *strlen: </S.Gold>Updates the value pointed by strlen
-        to be the length of the string (number of digits) minus one
+        <S.Gold>° </S.Gold> Updating *strlen: Updates the value pointed by
+        strlen to be the length of the string (number of digits) minus one
       </S.P>
       <S.P>
-        ° <S.Gold>Returning the Allocated String: </S.Gold>Returns the pointer
+        <S.Gold>° </S.Gold> Returning the Allocated String: Returns the pointer
         to the allocated string.
       </S.P>
       <S.H3>Function printnil</S.H3>
@@ -144,15 +144,15 @@ const Ft_print_int = () => {
       </S.SectionInfo>
       <br />
       <S.P>
-        ° <S.Gold>Counter Initialization: </S.Gold> Starts a character printed
+        <S.Gold>° </S.Gold> Counter Initialization: Starts a character printed
         counter (count) as 0 .
       </S.P>
       <S.P>
-        ° <S.Gold>Condition and Printing:</S.Gold> If value is 0, prints{' '}
+        <S.Gold>° </S.Gold> Condition and Printing: If value is 0, prints{' '}
         {'"(nil)"'} and increments count with the number of printed characters.
       </S.P>
       <S.P>
-        ° <S.Gold>Counter Return: </S.Gold>Returns the total number of
+        <S.Gold>° </S.Gold> Counter Return: Returns the total number of
         characters printed.
       </S.P>
       <S.H3>Function print_pointer</S.H3>
@@ -223,28 +223,94 @@ const Ft_print_int = () => {
           <S.Green>&& </S.Green>i<S.Green>-- {'>='}</S.Green> 0)
         </S.SpanTab>
         <S.SpanTab2>{'{'}</S.SpanTab2>
-        <S.SpanTab><S.SpanTab2/><S.SpanTab2/><S.Red>if</S.Red> ( (value <S.Green>%</S.Green>16) <S.Green>{'<'}</S.Green> 10 )</S.SpanTab>
-        <S.SpanTab><S.SpanTab2/><S.SpanTab2/><S.SpanTab2/><S.SpanTab2/>printout[i <S.Green>+</S.Green> 1] <S.Green>=</S.Green> (value  <S.Green>%</S.Green> 16) <S.Green>+</S.Green> {"'0'"};</S.SpanTab>
-        <S.SpanTab><S.SpanTab2/><S.SpanTab2/><S.Red>else</S.Red></S.SpanTab>
-        <S.SpanTab><S.SpanTab2/><S.SpanTab2/><S.SpanTab2/><S.SpanTab2/>printout[i <S.Green>+</S.Green> 1] <S.Green>=</S.Green> (value <S.Green>%</S.Green> 16) <S.Green>+</S.Green> asc;</S.SpanTab>
-        <S.SpanTab><S.SpanTab2/><S.SpanTab2/>value <S.Green>/=</S.Green> 16;</S.SpanTab>
+        <S.SpanTab>
+          <S.SpanTab2 />
+          <S.SpanTab2 />
+          <S.Red>if</S.Red> ( (value <S.Green>%</S.Green>16){' '}
+          <S.Green>{'<'}</S.Green> 10 )
+        </S.SpanTab>
+        <S.SpanTab>
+          <S.SpanTab2 />
+          <S.SpanTab2 />
+          <S.SpanTab2 />
+          <S.SpanTab2 />
+          printout[i <S.Green>+</S.Green> 1] <S.Green>=</S.Green> (value{' '}
+          <S.Green>%</S.Green> 16) <S.Green>+</S.Green> {"'0'"};
+        </S.SpanTab>
+        <S.SpanTab>
+          <S.SpanTab2 />
+          <S.SpanTab2 />
+          <S.Red>else</S.Red>
+        </S.SpanTab>
+        <S.SpanTab>
+          <S.SpanTab2 />
+          <S.SpanTab2 />
+          <S.SpanTab2 />
+          <S.SpanTab2 />
+          printout[i <S.Green>+</S.Green> 1] <S.Green>=</S.Green> (value{' '}
+          <S.Green>%</S.Green> 16) <S.Green>+</S.Green> asc;
+        </S.SpanTab>
+        <S.SpanTab>
+          <S.SpanTab2 />
+          <S.SpanTab2 />
+          value <S.Green>/=</S.Green> 16;
+        </S.SpanTab>
         <S.SpanTab2>{'}'}</S.SpanTab2>
-        <S.SpanTab>count <S.Green>= </S.Green><S.Lilas>print_string</S.Lilas>( <S.Green>{'"0x"'}</S.Green> );</S.SpanTab>
-        <S.SpanTab>count <S.Green>+=</S.Green><S.Lilas>ft_strlen</S.Lilas>( printout );</S.SpanTab>
-        <S.SpanTab><S.Lilas>ft_putstr_fd</S.Lilas>( printout, 1 );</S.SpanTab>
-        <S.SpanTab><S.Lilas>free</S.Lilas>( printout );</S.SpanTab>
-        <S.SpanTab><S.Red>return</S.Red>( count );</S.SpanTab>
+        <S.SpanTab>
+          count <S.Green>= </S.Green>
+          <S.Lilas>print_string</S.Lilas>( <S.Green>{'"0x"'}</S.Green> );
+        </S.SpanTab>
+        <S.SpanTab>
+          count <S.Green>+=</S.Green>
+          <S.Lilas>ft_strlen</S.Lilas>( printout );
+        </S.SpanTab>
+        <S.SpanTab>
+          <S.Lilas>ft_putstr_fd</S.Lilas>( printout, 1 );
+        </S.SpanTab>
+        <S.SpanTab>
+          <S.Lilas>free</S.Lilas>( printout );
+        </S.SpanTab>
+        <S.SpanTab>
+          <S.Red>return</S.Red>( count );
+        </S.SpanTab>
         <span>{'}'}</span>
       </S.SectionInfo>
       <br />
-      <S.P>° <S.Gold>nil Check: </S.Gold>Uses printnil to check if the value is 0 and, if so, prints {'"(nil)"'} and </S.P>
-      <S.P>° <S.Gold>String Conversion: </S.Gold>Calls the string function to convert the pointer value into a hexadecimal string.</S.P>
-      <S.P>° <S.Gold>Allocation Check: </S.Gold>Checks if the string was correctly allocated.</S.P>
-      <S.P>° <S.Gold>Hexadecimal Formatting: </S.Gold>Uses a loop to convert each digit of value into its respective hexadecimal character, considering whether the digits are less than 10 or not, and adjusts the conversion based on the asc parameter for uppercase or lowercase letters.</S.P>
-      <S.P>° <S.Gold>Prefix and String Printing: </S.Gold>Prints the prefix 0x, followed by the hexadecimal string representing the pointer value.</S.P>
-      <S.P>° <S.Gold>Memory Release: </S.Gold>Frees the memory allocated for the hexadecimal string.</S.P>
-      <S.P>° <S.Gold>Counter Return: </S.Gold>Returns the total number of characters printed during the function.</S.P>
-      <S.P>° <S.Gold>The asc parameter </S.Gold> is used to adjust the initial character for hexadecimal digits above 9, allowing the choice between uppercase and lowercase letters in the hexadecimal representation.</S.P>
+      <S.P>
+        <S.Gold>° </S.Gold> nil Check: Uses printnil to check if the value is 0
+        and, if so, prints {'"(nil)"'} and{' '}
+      </S.P>
+      <S.P>
+        <S.Gold>° </S.Gold> String Conversion: Calls the string function to
+        convert the pointer value into a hexadecimal string.
+      </S.P>
+      <S.P>
+        <S.Gold>° </S.Gold> Allocation Check: Checks if the string was correctly
+        allocated.
+      </S.P>
+      <S.P>
+        <S.Gold>° </S.Gold> Hexadecimal Formatting: Uses a loop to convert each
+        digit of value into its respective hexadecimal character, considering
+        whether the digits are less than 10 or not, and adjusts the conversion
+        based on the asc parameter for uppercase or lowercase letters.
+      </S.P>
+      <S.P>
+        <S.Gold>° </S.Gold> Prefix and String Printing: Prints the prefix 0x,
+        followed by the hexadecimal string representing the pointer value.
+      </S.P>
+      <S.P>
+        <S.Gold>° </S.Gold> Memory Release: Frees the memory allocated for the
+        hexadecimal string.
+      </S.P>
+      <S.P>
+        <S.Gold>° </S.Gold> Counter Return: Returns the total number of
+        characters printed during the function.
+      </S.P>
+      <S.P>
+        <S.Gold>° </S.Gold> The asc parameter is used to adjust the initial
+        character for hexadecimal digits above 9, allowing the choice between
+        uppercase and lowercase letters in the hexadecimal representation.
+      </S.P>
       <Footer />
     </S.ContainerMain>
   )

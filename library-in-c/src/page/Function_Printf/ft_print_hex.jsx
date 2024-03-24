@@ -15,7 +15,7 @@ const Ft_print_hex = () => {
       </S.P>
       <S.H3>Function string</S.H3>
       <S.P>
-        The string function allocates and initializes a string that will be used
+      <S.Gold>° </S.Gold>The string function allocates and initializes a string that will be used
         to represent the hexadecimal value of an unsigned integer.
       </S.P>
       <S.SectionInfo>
@@ -81,38 +81,38 @@ const Ft_print_hex = () => {
       <br />
       <S.H3>Parameters:</S.H3>
       <S.P>
-        ° <S.Gold>unsigned int value:</S.Gold> The unsigned integer value to be
+        <S.Gold>° </S.Gold> unsigned int value: The unsigned integer value to be
         converted to hexadecimal.
       </S.P>
       <S.P>
-        ° <S.Gold>int *strlen:</S.Gold> A pointer to an integer where the length
+        <S.Gold>° </S.Gold> int *strlen: A pointer to an integer where the length
         of the resulting string (minus one) will be stored.
       </S.P>
       <S.H3>Process:</S.H3>
       <S.P>
-        It calculates the length of the hexadecimal representation by dividing
-        the value by <S.Gold>16</S.Gold> in a loop until the value becomes{' '}
-        <S.Gold>0</S.Gold>. Each division step counts the digits in the
+      <S.Gold>° </S.Gold>It calculates the length of the hexadecimal representation by dividing
+        the value by 16 in a loop until the value becomes{' '}
+        0. Each division step counts the digits in the
         hexadecimal representation.
       </S.P>
       <S.P>
-        It then allocates memory for the string using <S.Gold>calloc</S.Gold>,
+      <S.Gold>° </S.Gold>It then allocates memory for the string using calloc,
         which also initializes the memory to zero. The allocated size is the
-        number of <S.Gold>digits (i) </S.Gold>plus one for the{' '}
-        <S.Gold>null</S.Gold> terminator.
+        number of digits (i) plus one for the{' '}
+        null terminator.
       </S.P>
       <S.P>
-        The length of the string <S.Gold>(minus one)</S.Gold> is stored in the
+      <S.Gold>° </S.Gold>The length of the string (minus one) is stored in the
         location pointed to by strlen.
       </S.P>
       <S.H3>Return Value:</S.H3>
       <S.P>
-        It returns a pointer to the allocated string, which is not yet filled
+      <S.Gold>° </S.Gold>It returns a pointer to the allocated string, which is not yet filled
         with the hexadecimal digits ({"it's"} initialized to zeros).
       </S.P>
       <S.H3>Function print_hex</S.H3>
       <S.P>
-        The print_hex function prints an unsigned integer in hexadecimal format.
+      <S.Gold>° </S.Gold>The print_hex function prints an unsigned integer in hexadecimal format.
       </S.P>
       <S.SectionInfo>
         <span>
@@ -224,46 +224,46 @@ const Ft_print_hex = () => {
       <br />
       <S.H3>Parameters:</S.H3>
       <S.P>
-        ° <S.Gold>unsigned int value:</S.Gold> The value to be printed.
+        <S.Gold>° </S.Gold> unsigned int value: The value to be printed.
       </S.P>
       <S.P>
-        ° <S.Gold>int asc:</S.Gold> An adjustment value for the ASCII
+        <S.Gold>° </S.Gold> int asc: An adjustment value for the ASCII
         representation of digits above 9. This allows for customization of the
-        case <S.Gold>( uppercase or lowercase ) </S.Gold>of the hexadecimal
+        case ( uppercase or lowercase ) of the hexadecimal
         letters.
       </S.P>
       <S.H3>Process:</S.H3>
       <S.P>
-        ° Calls string function to allocate a string with sufficient length to
+        <S.Gold>° </S.Gold> Calls string function to allocate a string with sufficient length to
         hold the hexadecimal representation of value.
       </S.P>
       <S.P>
-        ° If allocation fails <S.Gold>( printout is NULL )</S.Gold>, it{' '}
-        <S.Gold>returns 0</S.Gold>.
+        <S.Gold>° </S.Gold> If allocation fails ( printout is NULL ), it{' '}
+        returns 0.
       </S.P>
       <S.P>
-        ° Fills the allocated string with hexadecimal digits by repeatedly
+        <S.Gold>° </S.Gold> Fills the allocated string with hexadecimal digits by repeatedly
         dividing value by 16 and using the remainder to calculate the character
         to store at each position. The calculation adjusts for numeric{' '}
-        <S.Gold>( 0-9 ) </S.Gold>and alphabetic <S.Gold>( a-f or A-F )</S.Gold>{' '}
+        ( 0-9 ) and alphabetic ( a-f or A-F ){' '}
         characters based on the remainder and the asc parameter.
       </S.P>
       <S.P>
-        ° The hexadecimal digits are filled in reverse order, starting from the
+        <S.Gold>° </S.Gold> The hexadecimal digits are filled in reverse order, starting from the
         end of the string.
       </S.P>
       <S.P>
-        ° Uses <S.Gold>ft_putstr_fd</S.Gold> to print the string to the standard
-        output <S.Gold>(file descriptor 1</S.Gold>).
+        <S.Gold>° </S.Gold> Uses ft_putstr_fd to print the string to the standard
+        output (file descriptor 1).
       </S.P>
-      <S.P>° Frees the allocated string.</S.P>
+      <S.P><S.Gold>° </S.Gold> Frees the allocated string.</S.P>
       <S.P>
-        ° If the original value is <S.Gold>0</S.Gold>, it explicitly prints{' '}
-        <S.Gold>{"'0'"}</S.Gold> by calling print_char and adjusts the return
+        <S.Gold>° </S.Gold> If the original value is 0, it explicitly prints{' '}
+        {"'0'"} by calling print_char and adjusts the return
         length.
       </S.P>
       <S.P>
-        ° This code efficiently handles hexadecimal conversion and printing,
+        <S.Gold>° </S.Gold> This code efficiently handles hexadecimal conversion and printing,
         including memory allocation for the string and customization of
         hexadecimal digit case through the asc parameter. However, there are
         some potential issues or improvements that could be made, especially in

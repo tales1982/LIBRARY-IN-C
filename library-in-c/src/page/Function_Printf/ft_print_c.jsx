@@ -116,16 +116,16 @@ const Printf_C = () => {
       <br />
 
       <S.P>
-        ° <S.Gold>check_type </S.Gold>is a static helper function that receives a character
+        <S.Gold>° </S.Gold> check_type is a static helper function that receives a character
         representing the format specifier {"(such as 'c', 's', 'p', etc.)"} and
         a variable argument list (va_list).
       </S.P>
       <S.P>
-        ° <S.Gold>It checks the format</S.Gold> specifier and calls the appropriate print
+        <S.Gold>° </S.Gold> It checks the format specifier and calls the appropriate print
         function, passing the argument extracted using va_arg with the
         corresponding type .For different format specifiers, different print functions are called.
       </S.P>
-      <S.P>° <S.Gold>Returns</S.Gold> the total number of characters printed.</S.P>
+      <S.P><S.Gold>° </S.Gold> Returns the total number of characters printed.</S.P>
       <S.H3>Function ft_printf:</S.H3>
       <S.SectionInfo>
         <span>
@@ -207,37 +207,37 @@ const Printf_C = () => {
       </S.SectionInfo>
       <br />
       <S.P>
-        ° <S.Gold>The main function</S.Gold> that mimics printf, accepting a format string
+        <S.Gold>° </S.Gold> The main function that mimics printf, accepting a format string
         followed by a variable number of arguments.
       </S.P>
       <S.P>
-        ° <S.Gold>It iterates over the format string</S.Gold>. If it finds a {" '%' "}character,
+        <S.Gold>° </S.Gold> It iterates over the format string. If it finds a {" '%' "}character,
         it identifies that the next character specifies the type of data to be
         printed and calls check_type passing that specifier and the argument
         list.
       </S.P>
       <S.P>
-        ° <S.Gold>if the character is not {" '%'"}</S.Gold>, the character is printed directly to
+        <S.Gold>° </S.Gold> if the character is not {" '%'"}, the character is printed directly to
         the output, being part of the literal string format.
       </S.P>
       <S.P>
-        ° <S.Gold>Uses the variable argument list</S.Gold> (va_list) to access the arguments
+        <S.Gold>° </S.Gold> Uses the variable argument list (va_list) to access the arguments
         passed after the format string, initiating it with va_start and
         finalizing it with va_end.
       </S.P>
-      <S.P>° <S.Gold>Returns</S.Gold> the total number of characters printed.</S.P>
+      <S.P><S.Gold>° </S.Gold> Returns the total number of characters printed.</S.P>
       <S.H3>General Considerations:</S.H3>
       <S.P>
-        ° This code is a modular implementation of printf functionality,
+        <S.Gold>° </S.Gold> This code is a modular implementation of printf functionality,
         allowing easy extension or modification.
       </S.P>
       <S.P>
-        ° The approach utilizes advanced C concepts, including variable
+        <S.Gold>° </S.Gold> The approach utilizes advanced C concepts, including variable
         arguments and argument list manipulation, to offer flexibility in
         formatting and printing different types of data.
       </S.P>
       <S.P>
-        ° Being a simplified implementation, it may not cover all use cases or
+        <S.Gold>° </S.Gold> Being a simplified implementation, it may not cover all use cases or
         format specifiers of the original printf, but it serves as a solid
         foundation for understanding how formatting functions work internally.
       </S.P>
