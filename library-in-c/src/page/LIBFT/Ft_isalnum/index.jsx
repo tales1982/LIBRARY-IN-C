@@ -12,8 +12,8 @@ const Ft_isalnum = () => {
       <S.P>
         This function is used to check whether a character passed as an argument
         is alphanumeric or not. An alphanumeric character is one that is either
-        a digit <S.Gold>( 0-9 ) </S.Gold>or a letter (uppercase or lowercase of
-        the alphabet, <S.Gold>A-Z</S.Gold>, and <S.Gold>a-z</S.Gold>).
+        a digit ( 0-9 ) or a letter (uppercase or lowercase of
+        the alphabet, A-Z, and a-z).
       </S.P>
       <S.H3>Function Prototype</S.H3>
       <S.P>
@@ -51,29 +51,29 @@ const Ft_isalnum = () => {
       <br />
       <S.H3>Parameters</S.H3>
       <S.P>
-        C: This is the character to be checked, represented by an int. Although{' '}
+      <S.Gold>°</S.Gold> C: This is the character to be checked, represented by an int. Although{' '}
         {"it's"} declared as int, the value actually passed to the function
-        should be an ASCII character or <S.Gold>EOF</S.Gold> (End Of File). The
+        should be an ASCII character or EOF (End Of File). The
         function expects a value that can be represented as an unsigned char or
-        that is equal to <S.Gold>EOF</S.Gold>. This allows the function to
+        that is equal to EOF. This allows the function to
         correctly process any possible character value, including non-ASCII
         characters in certain implementations.
       </S.P>
       <S.H3>Return Value</S.H3>
       <S.P>
-        The function returns a nonzero value <S.Gold>(true)</S.Gold> if the
+      <S.Gold>°</S.Gold> The function returns a nonzero value (true) if the
         character is alphanumeric. This includes any digit from{' '}
-        <S.Gold>0 </S.Gold>to <S.Gold>9</S.Gold>, or any letter of the alphabet
-        (uppercase and lowercase), from A to <S.Gold>Z </S.Gold>and from a to{' '}
-        <S.Gold>z</S.Gold>.
+        0 to 9, or any letter of the alphabet
+        (uppercase and lowercase), from A to Z and from a to{' '}
+        z.
       </S.P>
       <S.P>
-        If the character provided is not alphanumeric, the function returns{' '}
-        <S.Gold>0 (false)</S.Gold>.
+      <S.Gold>°</S.Gold> If the character provided is not alphanumeric, the function returns{' '}
+        0 (false).
       </S.P>
       <S.H3>Common Applications</S.H3>
       <S.P>
-        The ft_isalnum function is useful in many programming contexts,
+      <S.Gold>°</S.Gold> The ft_isalnum function is useful in many programming contexts,
         especially when it is necessary to validate user inputs or process and
         analyze text. For example, it can be used to ensure that a string
         contains only alphanumeric characters before proceeding with operations

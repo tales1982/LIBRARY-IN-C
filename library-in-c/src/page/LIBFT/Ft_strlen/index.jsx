@@ -12,8 +12,8 @@ const Ft_strlen = () => {
         The ft_strlen function is a custom implementation of the standard strlen
         function from the C library. {"It's"} designed to calculate the length
         of a string, meaning it counts the number of characters in the string
-        until it encounters the <S.Gold>null</S.Gold> termination character{' '}
-        <S.Gold>{"('\\0')"}</S.Gold>, which indicates the end of the string in
+        until it encounters the null termination character{' '}
+        {"('\\0')"}, which indicates the end of the string in
         C. This function is not part of the standard C library but follows a
         common pattern seen in custom implementations or educational projects,
         such as those by the 42 school.
@@ -52,33 +52,33 @@ const Ft_strlen = () => {
       </S.SectionInfo>
       <br />
       <S.P>
-        ° <strong> Initialization: </strong>The function begins by initializing
-        a local variable <S.Gold>i </S.Gold>to <S.Gold>0</S.Gold>. This variable
+        <S.Gold>° </S.Gold> <strong> Initialization: </strong>The function begins by initializing
+        a local variable i to 0. This variable
         is used to count the characters in the string.
       </S.P>
       <S.P>
-        ° <strong>Loop:</strong> Next, it enters a while loop that continues as
-        long as <S.Gold>str[i]</S.Gold> is not zero. In other words, the loop
+        <S.Gold>° </S.Gold> <strong>Loop:</strong> Next, it enters a while loop that continues as
+        long as str[i] is not zero. In other words, the loop
         iterates over each character in the string, one by one, until the{' '}
-        <S.Gold>null </S.Gold>termination character is found.
+        null termination character is found.
       </S.P>
       <S.P>
-        ° <strong>Increment: </strong>Inside the loop, i is incremented in each
+        <S.Gold>° </S.Gold> <strong>Increment: </strong>Inside the loop, i is incremented in each
         iteration. This effectively moves the index i along the string, counting
         each character.
       </S.P>
       <S.P>
-        ° <strong>Return: </strong>When the loop finds the <S.Gold>null</S.Gold>{' '}
+        <S.Gold>° </S.Gold> <strong>Return: </strong>When the loop finds the null{' '}
         termination character, it ends, and the function returns the current
-        value of <S.Gold>i</S.Gold>, which represents the number of characters
+        value of i, which represents the number of characters
         in the string (excluding the null termination character).
       </S.P>
       <S.P>
         <strong></strong>
       </S.P>
       <S.P>
-        ° In this example, the strlen function calculates the length of the
-        string <S.Gold>{'"Hello, World!"'}</S.Gold>, which is <S.Gold>13 </S.Gold>characters, and then the program
+        <S.Gold>° </S.Gold> In this example, the strlen function calculates the length of the
+        string {'"Hello, World!"'}, which is 13 characters, and then the program
         prints this length.
       </S.P>
       <S.P>

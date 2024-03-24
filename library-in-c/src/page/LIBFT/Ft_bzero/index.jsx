@@ -45,43 +45,43 @@ const Ft_bzero = () => {
       <br />
       <S.H3>Function Body:</S.H3>
       <S.P>
-        ° <S.Gold>unsigned char *</S.Gold>
-        ptr declares a pointer to <S.Gold>unsigned char</S.Gold> called ptr.
-        This type is chosen because an <S.Gold>unsigned char</S.Gold> ensures
+        <S.Gold>°</S.Gold> unsigned char *
+        ptr declares a pointer to unsigned char called ptr.
+        This type is chosen because an unsigned char ensures
         that we are explicitly working with memory bytes, and each{' '}
-        <S.Gold>unsigned char</S.Gold> occupies exactly one byte of memory.
+        unsigned char occupies exactly one byte of memory.
       </S.P>
       <S.P>
-        ° <S.Gold>ptr = (unsigned char * )b;</S.Gold> converts the generic{' '}
-        <S.Gold> void *</S.Gold> b pointer to an{' '}
-        <S.Gold>unsigned char * </S.Gold>
+        <S.Gold>°</S.Gold> ptr = (unsigned char * )b; converts the generic{' '}
+         void * b pointer to an{' '}
+        unsigned char *
         pointer. This conversion is necessary for performing the byte-by-byte
         filling operation since pointer arithmetic cannot be directly performed
-        with a <S.Gold> void *</S.Gold> .
+        with a  void * .
       </S.P>
       <S.P>
-        ° The loop while (<S.Gold>n--{' > '}0</S.Gold> ) executes the filling
+        <S.Gold>°</S.Gold> The loop while (n--{' > '}0 ) executes the filling
         operation. The loop condition checks if n is greater than 0 before each
         iteration and then decrements n. This means the loop will continue until
         all n bytes have been zeroed.
       </S.P>
       <S.P>
-        ° <S.Gold>*( ptr++ ) = 0;</S.Gold>
+        <S.Gold>°</S.Gold> *( ptr++ ) = 0;
         within the loop, this line effectively zeros the current byte pointed to
         by ptr and then increments the ptr pointer to point to the next byte of
         memory. The use of the post-increment operator{' '}
-        <S.Gold>(ptr ++ )</S.Gold> ensures that the current byte is zeroed
+        (ptr ++ ) ensures that the current byte is zeroed
         before ptr is incremented.
       </S.P>
       <S.P>
-        <strong>Overall Functioning:</strong>
+      <S.Gold>°</S.Gold> Overall Functioning:
         The ft_bzero function iterates over n bytes of the memory block pointed
         to by b, zeroing each byte. The ptr pointer is used to access each byte
         sequentially, and after each byte is zeroed, ptr is incremented to point
         to the next byte. The loop ends when all n bytes have been zeroed.
       </S.P>
       <S.P>
-        In summary, <S.Gold> ft_bzero</S.Gold> zeroes n bytes of memory starting
+      <S.Gold>°</S.Gold> In summary,  ft_bzero zeroes n bytes of memory starting
         from the address provided by b, ensuring that the specified memory block
         is completely filled with zero-value bytes. This is useful for
         initializing or clearing data in a memory block before its use.

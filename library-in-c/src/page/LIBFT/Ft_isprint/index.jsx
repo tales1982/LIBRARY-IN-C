@@ -12,7 +12,7 @@ const Ft_isprint = () => {
 
         The ft_isprint function is a custom implementation of the isprint
         function. The isprint function in C is part of the standard C library,
-        specifically the <S.Gold>{'<ctype.h>'}</S.Gold> library, and is used to check whether a
+        specifically the{'<ctype.h>'} library, and is used to check whether a
         character is printable or not. A printable character is any character
         that occupies a visible position in the display space of a display
         device, such as a computer screen or paper, when printed. This includes
@@ -48,7 +48,7 @@ const Ft_isprint = () => {
       <br />
       <br />
       <S.H3>In summary</S.H3>
-            <S.P>The isprint function is a crucial component of the standard C library, whose utility goes beyond merely checking for printable characters, contributing to the creation of more intuitive user interfaces, safer text processing, and more adaptable software. Whether used in its standard form or through custom implementations, it exemplifies the elegance and efficiency that are characteristic of programming in C.</S.P>
+            <S.P><S.Gold>° </S.Gold> The isprint function is a crucial component of the standard C library, whose utility goes beyond merely checking for printable characters, contributing to the creation of more intuitive user interfaces, safer text processing, and more adaptable software. Whether used in its standard form or through custom implementations, it exemplifies the elegance and efficiency that are characteristic of programming in C.</S.P>
       <Footer />
     </S.ContainerMain>
   )

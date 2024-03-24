@@ -9,10 +9,10 @@ const Ft_memcpy = () => {
       <Header />
       <S.H1>ft_memcpy</S.H1>
       <S.P>
-        The <S.Gold>ft_memcpy</S.Gold> function is a customized implementation
-        of the standard <S.Gold>C {"library's"}</S.Gold> memcpy function. Its
+        The ft_memcpy function is a customized implementation
+        of the standard C {"library's"} memcpy function. Its
         purpose is to copy n bytes of memory from a source location{' '}
-        <S.Gold>(src)</S.Gold> to a destination location <S.Gold>(dest)</S.Gold>
+        (src) to a destination location (dest)
         . {"Let's "}see in detail what it does:
       </S.P>
       <S.SectionInfo>
@@ -69,42 +69,39 @@ const Ft_memcpy = () => {
       <br />
       <S.H3>Function Body:</S.H3>
       <S.P>
-        ° <S.Gold>size_t </S.Gold>
+        <S.Gold>° </S.Gold> size_t
         i; declares a variable i of type size_t, which will be used as a counter
         in the loop.
       </S.P>
       <S.P>
-        ° <S.Gold>char *d </S.Gold>
-        and <S.Gold>char *s;</S.Gold> declare pointers to characters,{' '}
-        <S.Gold>d</S.Gold>
-        (destination) and <S.Gold>s</S.Gold>(source), respectively. Although the
-        original pointer types are <S.Gold>void *</S.Gold>, they are converted
-        to <S.Gold>char * </S.Gold>
+        <S.Gold>° </S.Gold> char *d
+        and char *s; declare pointers to characters,{' '}
+        d
+        (destination) and s(source), respectively. Although the
+        original pointer types are void *, they are converted
+        to char *
         to allow for pointer arithmetic and the manipulation of bytes
         individually.
       </S.P>
-      <S.H3>The Loop while {'(i < n)'}:</S.H3>
       <S.P>
-        ° Inside the loop, <S.Gold>d[ i ] = s[ i ];</S.Gold> copies the byte at
-        the current position i from the source <S.Gold>(s) </S.Gold>to the
-        destination <S.Gold>(d)</S.Gold>. This is done for each byte, from the
-        start <S.Gold>(i=0) </S.Gold>until all the specified n bytes have been
+        <S.Gold>° </S.Gold>The Loop while {'(i < n)'}: Inside the loop, d[ i ] = s[ i ]; copies the byte at
+        the current position i from the source (s) to the
+        destination (d). This is done for each byte, from the
+        start (i=0) until all the specified n bytes have been
         copied.
       </S.P>
       <S.P>
-        ° <S.Gold>i++</S.Gold>; increments the counter i, moving to the next
+        <S.Gold>° </S.Gold> i++; increments the counter i, moving to the next
         byte until the loop has processed all n bytes.
       </S.P>
-      <S.H3>Function Return: return (dest);</S.H3>
       <S.P>
-        After copying n bytes from <S.Gold>src </S.Gold>to dest, the function
+      <S.Gold>° </S.Gold>Function Return: return (dest); After copying n bytes from src to dest, the function
         returns the pointer to the destination. This is useful for function call
         chains where the result of the copy can be immediately utilized.
       </S.P>
-      <S.H3>Summary: ft_memcpy</S.H3>
       <S.P>
-        effectively copies n bytes from the memory location pointed to by{' '}
-        <S.Gold>src </S.Gold>to the location pointed to by <S.Gold>dest</S.Gold>
+      <S.Gold>° </S.Gold>Summary: ft_memcpy: effectively copies n bytes from the memory location pointed to by{' '}
+        src to the location pointed to by dest
         , byte by byte, without checking for overlap between the source and
         destination memory regions. This is crucial for performance in
         situations where overlap is not a concern. The function then returns a
