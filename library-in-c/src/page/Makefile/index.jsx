@@ -74,19 +74,19 @@ const Makefile = () => {
             <S.SpanTab2>
               {' '}
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              {'@ ${CC} ${CFLAGS} -g -c $< -o ${<:.c=.o}'}
+              <S.TextGreen>{'@ ${CC} ${CFLAGS} -g -c $< -o ${<:.c=.o}'}</S.TextGreen>
             </S.SpanTab2>
-            <S.SpanL>{'$( NAME ): ${OBJS}'}</S.SpanL>
+            <S.SpanL><S.TextGreen>{'$( NAME ): ${OBJS}'}</S.TextGreen></S.SpanL>
             <S.SpanTab2>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'@ ar rcs ${NAME} ${OBJS}'}
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<S.TextGreen>{'@ ar rcs ${NAME} ${OBJS}'}</S.TextGreen>
             </S.SpanTab2>
 
-            <S.SpanL>{'all: ${NAME}'}</S.SpanL>
+            <S.SpanL>all: <S.TextGreen>{'${NAME}'}</S.TextGreen></S.SpanL>
 
             <S.SpanL>fclean:</S.SpanL>
             <S.SpanTab2>
               {' '}
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@ ${'{RM} ${NAME}'}
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<S.TextGreen>@ ${'{RM} ${NAME}'}</S.TextGreen>
             </S.SpanTab2>
             <span>re: fclean all</span>
           </S.Article>
