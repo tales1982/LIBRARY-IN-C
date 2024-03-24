@@ -52,7 +52,7 @@ const Libft = () => {
           <Button text="ft_toupper.c" shadowColor="rgba(0, 0, 139, 0.8)" to="/LIBFT/Ft_toupper"/>
           <Button text="ft_tolower.c" shadowColor="rgba(139, 139, 0, 0.8)" to="/LIBFT/Ft_tolower"/>
           <Button text="ft_strchr.c" shadowColor="rgba(139, 0, 139, 0.8)" to="/LIBFT/Ft_strchr"/>
-          <Button text="ft_strrchr.c" shadowColor="rgba(0, 191, 255, 0.8)" to="/Construcao"/>
+          <Button text="ft_strrchr.c" shadowColor="rgba(0, 191, 255, 0.8)" to="/LIBFT/Ft_strrchr"/>
         </S.containerButao>
         <S.containerButao>
           {' '}

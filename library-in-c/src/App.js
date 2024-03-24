@@ -1,37 +1,38 @@
-import GlobalStyle from './globalStyles';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Home from './page/home';
-import Tools from './page/Tools/index';
-import Libft from './page/Libft';
-import HeaderFile from './page/HeaderFiles';
-import Struct from './page/Struct';
-import Makefile from './page/Makefile';
-import Ft_isalpha from './page/LIBFT/Ft_isalpha';
-import Ft_isdigit from './page/LIBFT/Ft_isdigit';
-import Ft_isalnum from './page/LIBFT/Ft_isalnum';
-import Ft_isascii from './page/LIBFT/Ft_isascii';
-import Ft_isprint from './page/LIBFT/Ft_isprint';
-import Construcao from './page/Construcao';
-import Ft_strlen from './page/LIBFT/Ft_strlen';
-import Ft_memset from './page/LIBFT/Ft_memset';
-import Ft_bzero from './page/LIBFT/Ft_bzero';
-import Ft_memcpy from './page/LIBFT/Ft_memcpy';
-import Ft_memmove from './page/LIBFT/Ft_memmove';
-import Ft_strcpy from './page/LIBFT/Ft_strcpy';
-import Ft_strlcat from './page/LIBFT/Ft_strlcat';
-import Printf from './page/Printf';
-import MakefilePrintf from './page/Function_Printf/makefile';
-import HeaderPrntf from './page/Function_Printf/header';
-import Printf_C from './page/Function_Printf/ft_print_c';
-import Ft_toupper from './page/LIBFT//Ft_toupper';
-import Ft_tolower from './page/LIBFT//Ft_tolower';
-import Ft_strchr from './page/LIBFT//Ft_strchr';
-import Ft_pint_char_C from './page/Function_Printf/ft_print_char_c';
-import Ft_print_hex from './page/Function_Printf/ft_print_hex';
-import Ft_print_int from './page/Function_Printf/ft_print_int';
-import Ft_print_point from './page/Function_Printf/ft_print_point';
-import Ft_print_string from './page/Function_Printf/ft_string';
-import Ft_print_unsigned from './page/Function_Printf/ft_print_unsigned';
+import GlobalStyle from './globalStyles'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Home from './page/home'
+import Tools from './page/Tools/index'
+import Libft from './page/Libft'
+import HeaderFile from './page/HeaderFiles'
+import Struct from './page/Struct'
+import Makefile from './page/Makefile'
+import Ft_isalpha from './page/LIBFT/Ft_isalpha'
+import Ft_isdigit from './page/LIBFT/Ft_isdigit'
+import Ft_isalnum from './page/LIBFT/Ft_isalnum'
+import Ft_isascii from './page/LIBFT/Ft_isascii'
+import Ft_isprint from './page/LIBFT/Ft_isprint'
+import Construcao from './page/Construcao'
+import Ft_strlen from './page/LIBFT/Ft_strlen'
+import Ft_memset from './page/LIBFT/Ft_memset'
+import Ft_bzero from './page/LIBFT/Ft_bzero'
+import Ft_memcpy from './page/LIBFT/Ft_memcpy'
+import Ft_memmove from './page/LIBFT/Ft_memmove'
+import Ft_strcpy from './page/LIBFT/Ft_strcpy'
+import Ft_strlcat from './page/LIBFT/Ft_strlcat'
+import Printf from './page/Printf'
+import MakefilePrintf from './page/Function_Printf/makefile'
+import HeaderPrntf from './page/Function_Printf/header'
+import Printf_C from './page/Function_Printf/ft_print_c'
+import Ft_toupper from './page/LIBFT/Ft_toupper'
+import Ft_tolower from './page/LIBFT/Ft_tolower'
+import Ft_strchr from './page/LIBFT/Ft_strchr'
+import Ft_strrchr from './page/LIBFT/Ft_strrchr/index'
+import Ft_pint_char_C from './page/Function_Printf/ft_print_char_c'
+import Ft_print_hex from './page/Function_Printf/ft_print_hex'
+import Ft_print_int from './page/Function_Printf/ft_print_int'
+import Ft_print_point from './page/Function_Printf/ft_print_point'
+import Ft_print_string from './page/Function_Printf/ft_string'
+import Ft_print_unsigned from './page/Function_Printf/ft_print_unsigned'
 
 const rotas = createBrowserRouter([
   {
@@ -161,16 +162,19 @@ const rotas = createBrowserRouter([
   {
     path: '/LIBFT/Ft_strchr',
     element: <Ft_strchr />
+  },
+  {
+    path: '/LIBFT/Ft_strrchr',
+    element: <Ft_strrchr/>
   }
-]);
+])
 function App() {
   return (
     <>
       <GlobalStyle />
       <RouterProvider router={rotas} />
     </>
-  );
+  )
 }
 
-export default App;
-
+export default App
