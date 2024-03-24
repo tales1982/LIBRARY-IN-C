@@ -34,7 +34,7 @@ const Ft_print_int = () => {
         <span>{'{'}</span>
         <S.SpanTab>
           {' '}
-          unsigned long <S.SpanTab2 />
+          unsigned long
           <S.SpanTab />
           temp;
         </S.SpanTab>
@@ -45,7 +45,7 @@ const Ft_print_int = () => {
         </S.SpanTab>
         <S.SpanTab>
           {' '}
-          int <S.SpanTab /> <S.SpanTab2 />
+          int <S.SpanTab />
           <S.SpanTab2 />
           <S.Green>*</S.Green>str;
         </S.SpanTab>
@@ -64,12 +64,10 @@ const Ft_print_int = () => {
         </S.SpanTab>
         <S.SpanTab>{'{'}</S.SpanTab>
         <S.SpanTab>
-          <S.SpanTab2 />
-          <S.SpanTab2 /> temp <S.Green>/=</S.Green> 16;
+          <S.SpanTab /> temp <S.Green>/=</S.Green> 16;
         </S.SpanTab>
         <S.SpanTab>
-          <S.SpanTab2 />
-          <S.SpanTab2 /> i <S.Green>++</S.Green>;
+          <S.SpanTab /> i <S.Green>++</S.Green>;
         </S.SpanTab>
         <S.SpanTab>{'}'}</S.SpanTab>
         <S.SpanTab>
@@ -120,7 +118,7 @@ const Ft_print_int = () => {
         </span>
         <span>{'{'}</span>
         <S.SpanTab>
-          int <S.SpanTab2 />
+          int <S.SpanTab />
           count;
         </S.SpanTab>
         <br />
@@ -131,8 +129,6 @@ const Ft_print_int = () => {
           <S.Red>if </S.Red>( value <S.Green>==</S.Green> 0 )
         </S.SpanTab>
         <S.SpanTab2>
-          <S.SpanTab2 />
-          <S.SpanTab2 />
           count
           <S.Green> +=</S.Green>
           <S.Lilas> print_string</S.Lilas>(<S.Green>{'"( nil )"'}</S.Green>)
@@ -167,22 +163,21 @@ const Ft_print_int = () => {
         </span>
         <span>{'{'}</span>
         <S.SpanTab>
-          int <S.SpanTab2 />
+          int
           <S.SpanTab2 />
           count;{' '}
         </S.SpanTab>
         <S.SpanTab>
-          char <S.SpanTab2 />
+          char <S.SpanTab />
           <S.Green>*</S.Green>printout;
         </S.SpanTab>
         <S.SpanTab>
-          int <S.SpanTab2 />
-          <S.SpanTab2 />
+          int <S.SpanTab />
+          <S.SpanTab />
           <S.Green>*</S.Green>iptr;
         </S.SpanTab>
         <S.SpanTab>
           int <S.SpanTab2 />
-          <S.SpanTab2 />
           i;
         </S.SpanTab>
         <br />
@@ -194,8 +189,8 @@ const Ft_print_int = () => {
           <S.Red>if </S.Red>( count <S.Green>!= </S.Green>0 )
         </S.SpanTab>
         <S.SpanTab>
-          <S.SpanTab2 />
-          <S.SpanTab2 />
+          <S.SpanTab />
+
           <S.Red>return</S.Red>( count );
         </S.SpanTab>
         <S.SpanTab>
@@ -214,48 +209,38 @@ const Ft_print_int = () => {
           <S.Red>if </S.Red>( <S.Green>!</S.Green>printout )
         </S.SpanTab>
         <S.SpanTab>
-          <S.SpanTab2 />
-          <S.SpanTab2 />
+          <S.SpanTab />
           <S.Red>return</S.Red>( 0 );
         </S.SpanTab>
         <S.SpanTab>
           <S.Red>while</S.Red>(value <S.Green>!= </S.Green>0{' '}
           <S.Green>&& </S.Green>i<S.Green>-- {'>='}</S.Green> 0)
         </S.SpanTab>
-        <S.SpanTab2>{'{'}</S.SpanTab2>
+        <S.SpanTab>{'{'}</S.SpanTab>
         <S.SpanTab>
-          <S.SpanTab2 />
-          <S.SpanTab2 />
+          <S.SpanTab />
           <S.Red>if</S.Red> ( (value <S.Green>%</S.Green>16){' '}
           <S.Green>{'<'}</S.Green> 10 )
         </S.SpanTab>
         <S.SpanTab>
           <S.SpanTab2 />
-          <S.SpanTab2 />
-          <S.SpanTab2 />
-          <S.SpanTab2 />
           printout[i <S.Green>+</S.Green> 1] <S.Green>=</S.Green> (value{' '}
           <S.Green>%</S.Green> 16) <S.Green>+</S.Green> {"'0'"};
         </S.SpanTab>
         <S.SpanTab>
-          <S.SpanTab2 />
-          <S.SpanTab2 />
+          <S.SpanTab/>
           <S.Red>else</S.Red>
         </S.SpanTab>
         <S.SpanTab>
-          <S.SpanTab2 />
-          <S.SpanTab2 />
-          <S.SpanTab2 />
           <S.SpanTab2 />
           printout[i <S.Green>+</S.Green> 1] <S.Green>=</S.Green> (value{' '}
           <S.Green>%</S.Green> 16) <S.Green>+</S.Green> asc;
         </S.SpanTab>
         <S.SpanTab>
-          <S.SpanTab2 />
-          <S.SpanTab2 />
+          <S.SpanTab/>
           value <S.Green>/=</S.Green> 16;
         </S.SpanTab>
-        <S.SpanTab2>{'}'}</S.SpanTab2>
+        <S.SpanTab>{'}'}</S.SpanTab>
         <S.SpanTab>
           count <S.Green>= </S.Green>
           <S.Lilas>print_string</S.Lilas>( <S.Green>{'"0x"'}</S.Green> );
