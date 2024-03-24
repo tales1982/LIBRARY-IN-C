@@ -3,11 +3,11 @@ import Header from '../../Components/Header'
 import Footer from '../../Components/Footer'
 import * as S from './styles'
 
-const Ft_pint_char_C = () => {
+const Ft_print_char_C = () => {
   return (
     <S.ContainerMain>
       <Header />
-      <S.H1>Ft_printchar.c</S.H1>
+      <S.H1>Ft_print_char.c</S.H1>
       <S.P>
         This function, named print_char, aims to print a character to the
         standard output (usually the terminal) and return 1. It is defined in C
@@ -88,4 +88,4 @@ const Ft_pint_char_C = () => {
     </S.ContainerMain>
   )
 }
-export default Ft_pint_char_C
+export default Ft_print_char_C

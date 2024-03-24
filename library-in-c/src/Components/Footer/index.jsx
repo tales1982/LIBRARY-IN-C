@@ -5,7 +5,8 @@ const Footer = () => {
   return(
     <>
     <S.footerStyles>
-      <p>Tales Lima © 2024 All rights reserved.</p>
+      <p><S.Link href="https://tales-snowy.vercel.app/" target="_blank" rel="noopener noreferrer">Tales Lima</S.Link> © 2024 All rights reserved.</p>
+
     </S.footerStyles>
     </>
   )

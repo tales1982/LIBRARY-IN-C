@@ -17,3 +17,7 @@ export const footerStyles = styled.footer`
 
 `;
 
+export const Link = styled.a`
+color:${Colors.textDestac}
+
+`

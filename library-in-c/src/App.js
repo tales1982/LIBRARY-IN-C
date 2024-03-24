@@ -26,11 +26,12 @@ import Printf_C from './page/Function_Printf/ft_print_c';
 import Ft_toupper from './page/LIBFT//Ft_toupper';
 import Ft_tolower from './page/LIBFT//Ft_tolower';
 import Ft_strchr from './page/LIBFT//Ft_strchr';
-import Ft_pint_char_C from './page/Function_Printf/ft_printchar_c';
+import Ft_pint_char_C from './page/Function_Printf/ft_print_char_c';
 import Ft_print_hex from './page/Function_Printf/ft_print_hex';
 import Ft_print_int from './page/Function_Printf/ft_print_int';
 import Ft_print_point from './page/Function_Printf/ft_print_point';
 import Ft_print_string from './page/Function_Printf/ft_string';
+import Ft_print_unsigned from './page/Function_Printf/ft_print_unsigned';
 
 const rotas = createBrowserRouter([
   {
@@ -66,7 +67,7 @@ const rotas = createBrowserRouter([
     element: <Printf_C />
   },
   {
-    path: '/page/Function_printf/ft_printchar_c',
+    path: '/page/Function_printf/ft_print_char_c',
     element: <Ft_pint_char_C />
   },
   {
@@ -84,6 +85,10 @@ const rotas = createBrowserRouter([
   {
     path: '/page/Function_printf/ft_print_point',
     element: <Ft_print_point />
+  },
+  {
+    path: '/page/Function_printf/ft_print_unsigned',
+    element: <Ft_print_unsigned />
   },
   {
     path: '/HeaderFiles',
