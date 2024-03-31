@@ -67,14 +67,14 @@ const Ft_strcpy = () => {
       <br />
       <S.H3>Function Body:</S.H3>
       <S.P>
-        <S.Gold>° </S.Gold> <strong>Determining the Source Length:</strong>{' '}
+        <S.Gold>° </S.Gold> Determining the Source Length:{' '}
         size_t src_len = ft_strlen(src); calculates the length
         of the source string ( src ) using the{' '}
         ft_strlen function, which returns the number of
         characters in src before the null termination character.
       </S.P>
       <S.P>
-        <S.Gold>° </S.Gold> <strong>Conditional Copy with Null Termination:</strong> The function
+        <S.Gold>° </S.Gold> Conditional Copy with Null Termination: The function
         then checks if src_len + 1 {'<'} dstsize . This
         condition verifies whether there is sufficient space in the destination{' '}
         ( dst ) to copy the entire source string{' '}
@@ -102,7 +102,7 @@ const Ft_strcpy = () => {
         is properly terminated.
       </S.P>
       <S.P>
-        <S.Gold>° </S.Gold> <strong>Return:</strong> The function returns src_len, the length of
+        <S.Gold>° </S.Gold> Return: The function returns src_len, the length of
         the source string. This is useful for checking if the string was
         truncated when copied to dst.
       </S.P>
