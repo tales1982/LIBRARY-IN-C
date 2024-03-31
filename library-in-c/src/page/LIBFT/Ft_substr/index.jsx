@@ -52,8 +52,7 @@ const Ft_substr = () => {
           <S.Red>static</S.Red> <S.SpanTab /> char <S.Green>*</S.Green>
           <S.Lilas>empty_string</S.Lilas>( void )
         </span>
-        <S.SpanTab></S.SpanTab>
-        <br />
+        <span>{'{'}</span>
         <S.SpanTab>
           char <S.SpanTab />
           <S.Green>*</S.Green>result;
@@ -70,6 +69,7 @@ const Ft_substr = () => {
         <S.SpanTab>
           <S.Red>return </S.Red>( result );
         </S.SpanTab>
+        <span>{'}'}</span>
       </S.SectionInfo>
       <br />
       <S.H3>The ft_substr Function</S.H3>
@@ -80,6 +80,7 @@ const Ft_substr = () => {
           <S.Lilas>ft_substr</S.Lilas>( char <S.Red>const</S.Red>{' '}
           <S.Green>*</S.Green>s, unsigned int start, size_t len )
         </span>
+        <span>{'{'}</span>
         <S.SpanTab>
           size_t
           <S.SpanTab /> s_len;
