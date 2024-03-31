@@ -19,7 +19,7 @@ export const ContainerMain = styled.div`
   position: relative;
   display: flex;
   width: 100vw;
-  height: auto;
+  height: 100vh;
   background-color: ${Colors.bgSection};
 
   /***************** Resposabilidade Mobile *******************/
