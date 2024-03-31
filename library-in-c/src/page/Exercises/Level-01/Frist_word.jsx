@@ -28,28 +28,28 @@ const first_word = () => {
           If the number of parameters is not 1, or if there are no words, simply
           display a newline.
         </S.P>
-        <S.P>Examples:</S.P>
+        <S.P><S.TextOrange>Examples</S.TextOrange>:</S.P>
         <S.P>
-          ${'>'} ./first_word {'"FOR PONY" '}| cat -e
+          <S.TextRed>${'>'} ./first_word </S.TextRed>{'"FOR PONY" '}| cat -e
         </S.P>
-        <S.P>FOR$</S.P>
+        <S.P><S.TextGreen>FOR$</S.TextGreen></S.P>
         <S.P>
-          ${'>'} ./first_word{' '}
+        <S.TextRed>${'>'} ./first_word{' '}</S.TextRed>
           {'"this        ...    is sparta, then again, maybe    not" '}| cat -e
         </S.P>
-        <S.P>this$</S.P>
+        <S.P><S.TextGreen>this$</S.TextGreen> </S.P>
         <S.P>
-          ${'>'}./first_word{' "'}
+        <S.TextRed>${'>'}./first_word</S.TextRed>{' "'}
           <S.SpanTab />
           {' "'} | cat -e
         </S.P>
-        <S.P>$</S.P>
+        <S.P><S.TextGreen>$</S.TextGreen></S.P>
         <S.P>
-          ${'>'} ./first_word {'"a" "b"'} | cat -e
+        <S.TextRed>${'>'} ./first_word </S.TextRed> {'"a" "b"'} | cat -e
         </S.P>
-        <S.P>$</S.P>
+        <S.P><S.TextGreen>$</S.TextGreen> </S.P>
         <S.P>
-          ${'>'} ./first_word {'"  lorem,ipsum  "'} | cat -e
+        <S.TextRed>${'>'} ./first_word </S.TextRed> {'"  lorem,ipsum  "'} | cat -e
         </S.P>
         <S.P>lorem,ipsum$</S.P>
         <S.P>${'>'}</S.P>

@@ -72,8 +72,8 @@ export const SectionInfo = styled.section`
   background-color: #000a2d;
   color: #fff;
   font-family: ${Fonts.fontHighlight};
-  max-width: 70%;
-  width: auto;
+  max-width: 60%;
+  width: 100%;
   height: auto;
   border-radius: 10px;
   padding: 10px;
@@ -81,10 +81,12 @@ export const SectionInfo = styled.section`
   /***************** Resposabilidade Mobile *******************/
   @media (max-width: 764px) {
     max-width: 90%;
+    width: auto;
   }
 
   @media (min-width: 765px) and (max-width: 1024px) {
     max-width: 90%;
+    width: auto;
   }
 `
 /***************** H1 ************** */
