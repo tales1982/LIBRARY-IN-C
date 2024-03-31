@@ -58,7 +58,7 @@ const Libft = () => {
           {' '}
           <Button text="ft_strncmp.c" shadowColor="rgba(144, 238, 144, 0.8)" to="/LIBFT/Ft_strncmp"/>
           <Button text="ft_memchr.c" shadowColor="rgba(255, 165, 0, 0.8)" to="/LIBFT/Ft_memchr"/>
-          <Button text="ft_memcmp.c" shadowColor="rgba(144, 238, 144, 0.8)" to="/Construcao"/>
+          <Button text="ft_memcmp.c" shadowColor="rgba(144, 238, 144, 0.8)" to="/LIBFT/Ft_memcmp"/>
           <Button text="ft_strnstr.c" shadowColor="rgba(255, 165, 0, 0.8)" to="/Construcao"/>
         </S.containerButao>
 
