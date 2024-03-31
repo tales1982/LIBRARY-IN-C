@@ -38,6 +38,7 @@ import Ft_memchr from './page/LIBFT/Ft_memchr'
 import Ft_memcmp from './page/LIBFT/Ft_memcmp'
 import Ft_strnstr from './page/LIBFT/Ft_strnstr'
 import Ft_atoi from './page/LIBFT/Ft_atoi'
+import Ft_calloc from './page/LIBFT/Ft_calloc'
 
 const rotas = createBrowserRouter([
   {
@@ -191,6 +192,10 @@ const rotas = createBrowserRouter([
   {
     path: '/LIBFT/Ft_atoi',
     element: <Ft_atoi />
+  },
+  {
+    path: '/LIBFT/Ft_calloc',
+    element: <Ft_calloc />
   }
 ])
 function App() {
