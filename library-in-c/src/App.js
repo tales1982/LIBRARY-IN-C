@@ -1,5 +1,15 @@
 import GlobalStyle from './globalStyles'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Printf from './page/Printf'
+import MakefilePrintf from './page/Function_Printf/makefile'
+import HeaderPrntf from './page/Function_Printf/header'
+import Printf_C from './page/Function_Printf/ft_print_c'
+import Ft_pint_char_C from './page/Function_Printf/ft_print_char_c'
+import Ft_print_hex from './page/Function_Printf/ft_print_hex'
+import Ft_print_int from './page/Function_Printf/ft_print_int'
+import Ft_print_point from './page/Function_Printf/ft_print_point'
+import Ft_print_string from './page/Function_Printf/ft_string'
+import Ft_print_unsigned from './page/Function_Printf/ft_print_unsigned'
 import Home from './page/home'
 import Tools from './page/Tools/index'
 import Libft from './page/Libft'
@@ -19,20 +29,11 @@ import Ft_memcpy from './page/LIBFT/Ft_memcpy'
 import Ft_memmove from './page/LIBFT/Ft_memmove'
 import Ft_strcpy from './page/LIBFT/Ft_strcpy'
 import Ft_strlcat from './page/LIBFT/Ft_strlcat'
-import Printf from './page/Printf'
-import MakefilePrintf from './page/Function_Printf/makefile'
-import HeaderPrntf from './page/Function_Printf/header'
-import Printf_C from './page/Function_Printf/ft_print_c'
 import Ft_toupper from './page/LIBFT/Ft_toupper'
 import Ft_tolower from './page/LIBFT/Ft_tolower'
 import Ft_strchr from './page/LIBFT/Ft_strchr'
-import Ft_strrchr from './page/LIBFT/Ft_strrchr/index'
-import Ft_pint_char_C from './page/Function_Printf/ft_print_char_c'
-import Ft_print_hex from './page/Function_Printf/ft_print_hex'
-import Ft_print_int from './page/Function_Printf/ft_print_int'
-import Ft_print_point from './page/Function_Printf/ft_print_point'
-import Ft_print_string from './page/Function_Printf/ft_string'
-import Ft_print_unsigned from './page/Function_Printf/ft_print_unsigned'
+import Ft_strrchr from './page/LIBFT/Ft_strrchr'
+import Ft_strncmp from './page/LIBFT/Ft_strncmp'
 
 const rotas = createBrowserRouter([
   {
@@ -166,6 +167,10 @@ const rotas = createBrowserRouter([
   {
     path: '/LIBFT/Ft_strrchr',
     element: <Ft_strrchr/>
+  },
+  {
+    path: '/LIBFT/Ft_strncmp',
+    element: <Ft_strncmp />
   }
 ])
 function App() {

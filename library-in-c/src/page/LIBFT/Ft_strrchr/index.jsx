@@ -17,10 +17,10 @@ const Ft_strrchr = () => {
         function operates in detail.
       </S.P>
       <S.SectionInfo>
-        <span>char <S.SpanTab/><S.Gold>° </S.Gold> <S.Lilas>ft_strrchr</S.Lilas>( const char <S.Gold>° </S.Gold> s, int c )</span>
+        <span>char <S.SpanTab/><S.Green>* </S.Green> <S.Lilas>ft_strrchr</S.Lilas>( const char <S.Green>* </S.Green> s, int c )</span>
         <span>{'{'}</span>
         <S.SpanTab>unsigned int	<S.SpanTab />i;</S.SpanTab>
-        <S.SpanTab>char	<S.SpanTab2 /><S.Gold>° </S.Gold>res;</S.SpanTab>
+        <S.SpanTab>char	<S.SpanTab2 /><S.Green>* </S.Green>res;</S.SpanTab>
         <S.SpanTab>char	<S.SpanTab2 />cc;</S.SpanTab>
         <br />
         <S.SpanTab>cc <S.Green>=</S.Green> ( char ) c;</S.SpanTab>
@@ -29,18 +29,18 @@ const Ft_strrchr = () => {
         <S.SpanTab><S.Red>while</S.Red> ( s[ i ] )</S.SpanTab>
         <S.SpanTab>{'{'}</S.SpanTab>
         <S.SpanTab2><S.Red>if</S.Red> ( s[i] <S.Green>== </S.Green>cc )</S.SpanTab2>
-        <S.SpanTab><S.SpanTab2 /> res <S.Green>=</S.Green> ( char <S.Gold>° </S.Gold> ) <S.Green>&</S.Green>s[ i ]; </S.SpanTab>
+        <S.SpanTab><S.SpanTab2 /> res <S.Green>=</S.Green> ( char <S.Green>* </S.Green> ) <S.Green>&</S.Green>s[ i ]; </S.SpanTab>
         <S.SpanTab2>i<S.Green>++</S.Green>;</S.SpanTab2>
         <S.SpanTab>{'}'}</S.SpanTab>
         <S.SpanTab> <S.Red>if</S.Red> ( s[ i ] <S.Green>== </S.Green> cc )</S.SpanTab>
-        <S.SpanTab2>res <S.Green>= </S.Green>(char <S.Gold>° </S.Gold>) <S.Green>&</S.Green>s[ i ]; </S.SpanTab2>
+        <S.SpanTab2>res <S.Green>= </S.Green>(char <S.Green>* </S.Green>) <S.Green>&</S.Green>s[ i ]; </S.SpanTab2>
         <S.SpanTab><S.Red>return</S.Red> ( res );</S.SpanTab>
         <span>{'}'}</span>
       </S.SectionInfo>
       <br />
       <S.H3>Parameters</S.H3>
-      <S.P>° <S.Gold>const char *s: </S.Gold>A constant pointer to char, representing the string where the search will be conducted.</S.P>
-      <S.P>° <S.Gold>int c: </S.Gold> The character to be located within the string s. Although it is passed as an integer, c is treated as a character.</S.P>
+      <S.P><S.Gold>° </S.Gold>const char *s: A constant pointer to char, representing the string where the search will be conducted.</S.P>
+      <S.P><S.Gold>° </S.Gold>int c:  The character to be located within the string s. Although it is passed as an integer, c is treated as a character.</S.P>
       <S.H3>Detailed Process</S.H3>
       <S.P><S.Gold>Iteration through String s:</S.Gold> </S.P>
       <S.P><S.Gold>° </S.Gold> unsigned int i; is used to iterate through the string s.</S.P>
