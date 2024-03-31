@@ -85,6 +85,10 @@ export const Ul = styled.ul`
     display: inline-block;
     overflow: hidden;
 
+    &:hover{
+      color: aliceblue;
+    }
+
     &::before {
       content: '';
       position: absolute;

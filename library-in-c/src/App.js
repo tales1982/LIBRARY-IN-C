@@ -40,6 +40,7 @@ import Ft_strnstr from './page/LIBFT/Ft_strnstr'
 import Ft_atoi from './page/LIBFT/Ft_atoi'
 import Ft_calloc from './page/LIBFT/Ft_calloc'
 import Ft_strdup from './page/LIBFT/Ft_strdup'
+import Ft_substr from './page/LIBFT/Ft_substr'
 
 const rotas = createBrowserRouter([
   {
@@ -199,8 +200,12 @@ const rotas = createBrowserRouter([
     element: <Ft_calloc />
   },
   {
-    path: '/LIBFT/Ft_strldup',
+    path: '/LIBFT/Ft_strdup',
     element: <Ft_strdup />
+  },
+  {
+    path: '/LIBFT/Ft_substr',
+    element: <Ft_substr />
   }
 ])
 function App() {
