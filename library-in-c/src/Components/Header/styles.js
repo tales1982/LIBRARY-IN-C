@@ -73,6 +73,10 @@ export const Ul = styled.ul`
   font-weight: bold;
   font-size: 18px;
 
+  @media (max-width: 764px) {
+    flex-wrap: wrap;
+  }
+
   li {
     text-decoration: none;
   }
@@ -84,6 +88,7 @@ export const Ul = styled.ul`
     position: relative;
     display: inline-block;
     overflow: hidden;
+
 
     &:hover{
       color: aliceblue;
@@ -111,9 +116,12 @@ export const Ul = styled.ul`
 `
 
 export const Nav = styled.nav`
-  width: 300px;
+  width: auto;
   flex-wrap: wrap;
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 764px) {
+    width: 96%;
+  }
 `

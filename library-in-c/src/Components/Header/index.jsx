@@ -16,6 +16,8 @@ const Header = () => {
           <Link to={'/Tools'}>Tools</Link>
           <Link to={'/Libft'}>Libft</Link>
           <Link to={'/Printf'}>Printf</Link>
+          {/*<Link to={'/Printf'}>Get_Next_Line</Link>*/}
+          <Link to={'/Exercises'}>Exercises</Link>
         </S.Ul>
       </S.Nav>
     </S.HeaderStyles>

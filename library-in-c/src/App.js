@@ -1,6 +1,9 @@
 import GlobalStyle from './globalStyles'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Printf from './page/Printf'
+import Home from './page/home'
+import Tools from './page/Tools/index'
+import Libft from './page/Libft'
 import MakefilePrintf from './page/Function_Printf/makefile'
 import HeaderPrntf from './page/Function_Printf/header'
 import Printf_C from './page/Function_Printf/ft_print_c'
@@ -10,9 +13,6 @@ import Ft_print_int from './page/Function_Printf/ft_print_int'
 import Ft_print_point from './page/Function_Printf/ft_print_point'
 import Ft_print_string from './page/Function_Printf/ft_string'
 import Ft_print_unsigned from './page/Function_Printf/ft_print_unsigned'
-import Home from './page/home'
-import Tools from './page/Tools/index'
-import Libft from './page/Libft'
 import HeaderFile from './page/HeaderFiles'
 import Struct from './page/Struct'
 import Makefile from './page/Makefile'
@@ -41,6 +41,9 @@ import Ft_atoi from './page/LIBFT/Ft_atoi'
 import Ft_calloc from './page/LIBFT/Ft_calloc'
 import Ft_strdup from './page/LIBFT/Ft_strdup'
 import Ft_substr from './page/LIBFT/Ft_substr'
+import Exercises from './page/Exercises'
+import MenuLevel01 from './page/Exercises/Level-01/Menu-level-01'
+import Frist_word from './page/Exercises/Level-01/Frist_word'
 
 const rotas = createBrowserRouter([
   {
@@ -62,6 +65,18 @@ const rotas = createBrowserRouter([
   {
     path: '/Printf',
     element: <Printf />
+  },
+  {
+    path: '/Exercises',
+    element: <Exercises />
+  },
+  {
+    path: '/Exercises/Level-01/Menu-level-01',
+    element: <MenuLevel01 />
+  },
+  {
+    path: '/Exercises/Level-01/Frist_word',
+    element: <Frist_word />
   },
   {
     path: '/page/Function_printf/makefile',

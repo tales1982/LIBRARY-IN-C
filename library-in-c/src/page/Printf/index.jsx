@@ -88,9 +88,6 @@ const Printf = () => {
             alt="ft_print_unsigned.c"
           />
           </S.ContainerCard>
-
-
-
         </S.ContainerPrintf>
       </S.Div>
       <Footer />
