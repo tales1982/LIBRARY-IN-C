@@ -43,7 +43,7 @@ export const FCor = {
   white: '#fff',
   green: '#00ff7f',
   black: '#000',
-  red: '#c13151',
+  red: '#c93939',
   gold: '#ffd700',
   lila: '#FD00FD'
 }
