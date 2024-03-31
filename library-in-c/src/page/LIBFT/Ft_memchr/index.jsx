@@ -49,7 +49,7 @@ const Ft_memchr = () => {
         </S.SpanTab2>
         <S.SpanTab2>
           <S.SpanTab />
-          <S.Red>return </S.Red>( ( char <S.Green>*</S.Green>)s + i);
+          <S.Red>return </S.Red>( ( char <S.Green>*</S.Green>)s + i );
         </S.SpanTab2>
         <S.SpanTab2>
           i<S.Green>++</S.Green>;
