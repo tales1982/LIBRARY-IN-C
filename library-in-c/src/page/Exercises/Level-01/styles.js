@@ -39,17 +39,20 @@ export const ContainerExercises = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-color: ${Colors.bgSection};
   width: 100%;
-  height: auto;
+  height:100vh;
   color: #fff;
 
   /***************** Resposabilidade Mobile *******************/
   @media (max-width: 764px) {
     width: 100%;
+    height: 100%;
   }
   @media (min-width: 765px) and (max-width: 1024px) {
     width: 100%;
+    height: 100%;
   }
 `
 export const containerButao = styled.article`
