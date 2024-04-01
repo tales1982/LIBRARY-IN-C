@@ -29,7 +29,7 @@ const MenuLevel01 = () => {
           <Button
             text="ft_strcpy"
             shadowColor="rgba(139, 139, 0, 0.8)"
-            to="/"
+            to="../Exercises/Level-01/ftstrcpy"
           />
         </S.containerButao>
         <S.containerButao>

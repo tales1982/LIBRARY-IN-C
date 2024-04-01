@@ -37,6 +37,7 @@ const FtPutstr = () => {
           <br />
           <S.P>Your function must be declared as follows:</S.P>
           <S.P>
+            <br />
             <S.TextOrange>
               void <S.SpanTab /> ft_putstr ( char *str );
             </S.TextOrange>
