@@ -41,7 +41,7 @@ const MenuLevel01 = () => {
           <Button
             text="ft_swap"
             shadowColor="rgba(0, 100, 0, 0.8)"
-            to="/"
+            to="../Exercises/Level-01/ftswap"
           />
           <Button
             text="repeat_alpha"
