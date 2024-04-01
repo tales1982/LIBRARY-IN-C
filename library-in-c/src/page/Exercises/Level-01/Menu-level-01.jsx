@@ -51,7 +51,7 @@ const MenuLevel01 = () => {
           <Button
             text="rev_print"
             shadowColor="rgba(139, 139, 0, 0.8)"
-            to="/"
+            to="../Exercises/Level-01/revPrint"
           />
         </S.containerButao>
         <S.containerButao>
