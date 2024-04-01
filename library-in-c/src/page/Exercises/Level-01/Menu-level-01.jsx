@@ -46,7 +46,7 @@ const MenuLevel01 = () => {
           <Button
             text="repeat_alpha"
             shadowColor="rgba(0, 0, 139, 0.8)"
-            to="/"
+            to="../Exercises/Level-01/repeatAlpha"
           />
           <Button
             text="rev_print"

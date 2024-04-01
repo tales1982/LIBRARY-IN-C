@@ -49,6 +49,7 @@ import FtPutstr from './page/Exercises/Level-01/ftputstr'
 import FtStrcpy from './page/Exercises/Level-01/ftstrcpy'
 import FtStrlen from './page/Exercises/Level-01/ftstrlen'
 import FtSwap from './page/Exercises/Level-01/ftswap'
+import RepeatAlpha from './page/Exercises/Level-01/repeatAlpha'
 
 const rotas = createBrowserRouter([
   {
@@ -102,6 +103,10 @@ const rotas = createBrowserRouter([
   {
     path: '/Exercises/Level-01/ftswap',
     element: <FtSwap />
+  },
+  {
+    path: '/Exercises/Level-01/repeatAlpha',
+    element: <RepeatAlpha />
   },
   {
     path: '/page/Function_printf/makefile',
