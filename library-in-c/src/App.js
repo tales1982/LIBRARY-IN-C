@@ -43,7 +43,7 @@ import Ft_strdup from './page/LIBFT/Ft_strdup'
 import Ft_substr from './page/LIBFT/Ft_substr'
 import Exercises from './page/Exercises'
 import MenuLevel01 from './page/Exercises/Level-01/Menu-level-01'
-import Frist_word from './page/Exercises/Level-01/Frist_word'
+import FristWord from './page/Exercises/Level-01/fristWord'
 
 const rotas = createBrowserRouter([
   {
@@ -75,8 +75,8 @@ const rotas = createBrowserRouter([
     element: <MenuLevel01 />
   },
   {
-    path: '/Exercises/Level-01/Frist_word',
-    element: <Frist_word />
+    path: '/Exercises/Level-01/FristWord',
+    element: <FristWord />
   },
   {
     path: '/page/Function_printf/makefile',

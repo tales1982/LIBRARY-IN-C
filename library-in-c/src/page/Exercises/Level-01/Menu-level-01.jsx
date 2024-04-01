@@ -12,9 +12,9 @@ const MenuLevel01 = () => {
       <S.ContainerExercises>
         <S.containerButao>
           <Button
-            text="first_word"
+            text="firstWord"
             shadowColor="rgba(255, 0, 0, 0.8)"
-            to="../Exercises/Level-01/Frist_word"
+            to="../Exercises/Level-01/FristWord"
           />
           <Button
             text="fizzbuzz"
