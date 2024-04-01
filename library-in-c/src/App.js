@@ -47,6 +47,7 @@ import FristWord from './page/Exercises/Level-01/fristWord'
 import Fizzbuzz from './page/Exercises/Level-01/fizzbuzz'
 import FtPutstr from './page/Exercises/Level-01/ftputstr'
 import FtStrcpy from './page/Exercises/Level-01/ftstrcpy'
+import FtStrlen from './page/Exercises/Level-01/ftstrlen'
 
 const rotas = createBrowserRouter([
   {
@@ -92,6 +93,10 @@ const rotas = createBrowserRouter([
   {
     path: '/Exercises/Level-01/ftstrcpy',
     element: <FtStrcpy />
+  },
+  {
+    path: '/Exercises/Level-01/ftstrlen',
+    element: <FtStrlen />
   },
   {
     path: '/page/Function_printf/makefile',
