@@ -156,7 +156,7 @@ export const P = styled.p`
   width: 70%;
   font-size: 16px;
   font-weight: normal;
-  padding: 10px;
+  padding: 3px;
   color: #fff;
 
   /***************** Resposabilidade Mobile *******************/
@@ -211,6 +211,7 @@ export const TextOrange = styled.span`
 `
 /********Tabulacao para os codigos *************/
 export const SpanTab = styled.span`
+  line-height: 1.5;
   padding-left: 30px;
   /***************** Resposabilidade Mobile *******************/
   @media (max-width: 764px) {
@@ -223,7 +224,7 @@ export const SpanTab = styled.span`
 `
 export const SpanTab2 = styled.span`
   padding-left: 60px;
-
+  line-height: 1.5;
   /***************** Resposabilidade Mobile *******************/
   @media (max-width: 764px) {
     padding-left: 20px;

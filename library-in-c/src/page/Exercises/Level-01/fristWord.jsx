@@ -104,7 +104,6 @@ const FirstWord = () => {
           <S.SpanTab>{'}'}</S.SpanTab>
           <S.SpanTab><S.Red>write</S.Red> (1, {'"\\n"'}, 1); </S.SpanTab>
           <span>{'}'}</span>
-
         </S.SectionExercises>
         <br />
         <Footer />

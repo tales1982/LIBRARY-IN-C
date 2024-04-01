@@ -44,6 +44,7 @@ import Ft_substr from './page/LIBFT/Ft_substr'
 import Exercises from './page/Exercises'
 import MenuLevel01 from './page/Exercises/Level-01/Menu-level-01'
 import FristWord from './page/Exercises/Level-01/fristWord'
+import Fizzbuzz from './page/Exercises/Level-01/fizzbuzz'
 
 const rotas = createBrowserRouter([
   {
@@ -77,6 +78,10 @@ const rotas = createBrowserRouter([
   {
     path: '/Exercises/Level-01/FristWord',
     element: <FristWord />
+  },
+  {
+    path: '/Exercises/Level-01/fizzbuzz',
+    element: <Fizzbuzz />
   },
   {
     path: '/page/Function_printf/makefile',
