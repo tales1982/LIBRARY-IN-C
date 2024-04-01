@@ -22,9 +22,9 @@ const MenuLevel01 = () => {
             to="../Exercises/Level-01/fizzbuzz"
           />
           <Button
-            text="ftputstr"
+            text="ft_putstr"
             shadowColor="rgba(0, 0, 139, 0.8)"
-            to="/"
+            to="../Exercises/Level-01/ftputstr"
           />
           <Button
             text="ft_strcpy"
