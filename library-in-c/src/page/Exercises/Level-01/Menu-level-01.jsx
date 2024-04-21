@@ -58,22 +58,22 @@ const MenuLevel01 = () => {
           <Button
             text="rot_13"
             shadowColor="rgba(255, 0, 0, 0.8)"
-            to="/"
+            to="../Exercises/Level-01/rot13"
           />
           <Button
             text="rotone"
             shadowColor="rgba(0, 100, 0, 0.8)"
-            to="/"
+            to="../Exercises/Level-01/rotone"
           />
           <Button
             text="search_and_replace"
             shadowColor="rgba(0, 0, 139, 0.8)"
-            to="/"
+            to="../Exercises/Level-01/seach"
           />
           <Button
             text="ulstr"
             shadowColor="rgba(139, 139, 0, 0.8)"
-            to="/"
+            to="ulstr"
           />
         </S.containerButao>
       </S.ContainerExercises>
