@@ -35,15 +35,15 @@ const Rot13 = () => {
           <S.P>If the number of arguments is not 1, the program displays a newline.</S.P>
           <S.P><S.TextOrange>Examples:</S.TextOrange></S.P>
           <br />
-          <S.P><S.Red>{'$>'} ./rot_13 {'"abc"'}</S.Red>{'"zaz"'}| cat -e</S.P>
+          <S.P><S.Red>{'$>'} ./rot_13 </S.Red>{'"abc" '} {' "zaz"'}| cat -e</S.P>
           <S.P><S.Green>nop</S.Green></S.P>
-          <S.P><S.Red>{'$>'} ./rot_13 {'"My horse is Amazing." '}| cat -e</S.Red> {'"dub0 a POIL"'} | cat -e</S.P>
+          <S.P><S.Red>{'$>'} ./rot_13 </S.Red> {'"My horse is Amazing." '}{' "dub0 a POIL"'} | cat -e</S.P>
           <S.P><S.Green>Zl ubefr vf Nznmvat$</S.Green></S.P>
-          <S.P><S.Red>{'$>'} ./rot_13 {'"AkjhZ zLKIJz , 23y "'} | cat -e</S.Red> | cat -e</S.P>
+          <S.P><S.Red>{'$>'} ./rot_13 </S.Red>{'"AkjhZ zLKIJz , 23y "'}  | cat -e</S.P>
           <S.P><S.Green>NxwuM mYXVWm , 23l $</S.Green></S.P>
-          <S.P><S.Red>{'$>'} ./rot_13 | cat -e</S.Red> | cat -e</S.P>
+          <S.P><S.Red>{'$>'} ./rot_13 </S.Red> | cat -e</S.P>
           <S.P><S.Green>$</S.Green></S.P>
-          <S.P><S.Red>{'$>'}./rot_13 {'" "'} | cat -e</S.Red></S.P>
+          <S.P><S.Red>{'$>'}./rot_13</S.Red> {'" "'} | cat -e</S.P>
           <S.P><S.Green>$</S.Green></S.P>
           <S.P><S.Red>{'$>'}</S.Red></S.P>
         </S.SectionInfo>

@@ -52,6 +52,7 @@ import FtSwap from './page/Exercises/Level-01/ftswap'
 import RepeatAlpha from './page/Exercises/Level-01/repeatAlpha'
 import RevPrint from './page/Exercises/Level-01/revPrint'
 import Rot13 from './page/Exercises/Level-01/rot13'
+import Rotone from './page/Exercises/Level-01/rotone'
 
 const rotas = createBrowserRouter([
   {
@@ -117,6 +118,10 @@ const rotas = createBrowserRouter([
   {
     path: '/Exercises/Level-01/rot13',
     element: <Rot13 />
+  },
+  {
+    path: '/Exercises/Level-01/rotone',
+    element: <Rotone />
   },
   {
     path: '/page/Function_printf/makefile',
