@@ -53,6 +53,8 @@ import RepeatAlpha from './page/Exercises/Level-01/repeatAlpha'
 import RevPrint from './page/Exercises/Level-01/revPrint'
 import Rot13 from './page/Exercises/Level-01/rot13'
 import Rotone from './page/Exercises/Level-01/rotone'
+import SearchAndReplace from './page/Exercises/Level-01/search'
+import Ulstr from './page/Exercises/Level-01/ulstr'
 
 const rotas = createBrowserRouter([
   {
@@ -122,6 +124,14 @@ const rotas = createBrowserRouter([
   {
     path: '/Exercises/Level-01/rotone',
     element: <Rotone />
+  },
+  {
+    path: '/Exercises/Level-01/search',
+    element: <SearchAndReplace />
+  },
+  {
+    path: '/Exercises/Level-01/ulstr',
+    element: <Ulstr />
   },
   {
     path: '/page/Function_printf/makefile',
